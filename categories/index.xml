@@ -6,10 +6,19 @@
     <description>Recent content in Categories on JIANGs Daily Lab</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 06 Jun 2020 10:07:47 +0600</lastBuildDate>
+    <lastBuildDate>Tue, 09 Jun 2020 10:07:47 +0600</lastBuildDate>
     
 	<atom:link href="https://viccjiang.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>自我成長</title>
+      <link>https://viccjiang.github.io/categories/%E8%87%AA%E6%88%91%E6%88%90%E9%95%B7/</link>
+      <pubDate>Tue, 09 Jun 2020 10:07:47 +0600</pubDate>
+      
+      <guid>https://viccjiang.github.io/categories/%E8%87%AA%E6%88%91%E6%88%90%E9%95%B7/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>工作日常</title>
@@ -35,15 +44,6 @@
       <pubDate>Tue, 29 Oct 2019 10:07:47 +0600</pubDate>
       
       <guid>https://viccjiang.github.io/categories/%E6%8E%A8%E8%96%A6%E5%A5%BD%E7%89%A9/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>自我成長</title>
-      <link>https://viccjiang.github.io/categories/%E8%87%AA%E6%88%91%E6%88%90%E9%95%B7/</link>
-      <pubDate>Tue, 29 Oct 2019 10:07:47 +0600</pubDate>
-      
-      <guid>https://viccjiang.github.io/categories/%E8%87%AA%E6%88%91%E6%88%90%E9%95%B7/</guid>
       <description></description>
     </item>
     
