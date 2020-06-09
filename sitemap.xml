@@ -3,11 +3,6 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://viccjiang.github.io/about/</loc>
-    <lastmod>2019-10-29T13:49:23+06:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://viccjiang.github.io/blog/</loc>
     <lastmod>2019-10-29T13:49:23+06:00</lastmod>
   </url>
@@ -24,6 +19,11 @@
   
   <url>
     <loc>https://viccjiang.github.io/search/</loc>
+    <lastmod>2019-10-29T13:49:23+06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://viccjiang.github.io/about/</loc>
     <lastmod>2019-10-29T13:49:23+06:00</lastmod>
   </url>
   
