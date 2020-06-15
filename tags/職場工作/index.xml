@@ -1,29 +1,20 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>職場工作 on JIANGs Daily Lab｜將是生活實驗室</title>
+    <title>職場工作 on JIANGs Daily LAB 將是生活實驗室</title>
     <link>https://viccjiang.github.io/tags/%E8%81%B7%E5%A0%B4%E5%B7%A5%E4%BD%9C/</link>
-    <description>Recent content in 職場工作 on JIANGs Daily Lab｜將是生活實驗室</description>
+    <description>Recent content in 職場工作 on JIANGs Daily LAB 將是生活實驗室</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>zh-TW</language>
-    <lastBuildDate>Tue, 09 Jun 2020 10:07:47 +0600</lastBuildDate>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 29 Oct 2019 10:07:47 +0600</lastBuildDate>
     
 	<atom:link href="https://viccjiang.github.io/tags/%E8%81%B7%E5%A0%B4%E5%B7%A5%E4%BD%9C/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>後防疫時代，工作技能不能少</title>
-      <link>https://viccjiang.github.io/blog/20200609_02_workinh/</link>
-      <pubDate>Tue, 09 Jun 2020 10:07:47 +0600</pubDate>
-      
-      <guid>https://viccjiang.github.io/blog/20200609_02_workinh/</guid>
-      <description>Heading 1 Heading 2 Heading 3 Heading 4 Heading 5 Heading 6 Emphasis Emphasis, aka italics, with asterisks or underscores.</description>
-    </item>
-    
-    <item>
       <title>How To Use Checklists To Improve Your UX</title>
       <link>https://viccjiang.github.io/blog/post-1/</link>
-      <pubDate>Sat, 06 Jun 2020 10:07:47 +0600</pubDate>
+      <pubDate>Tue, 29 Oct 2019 10:07:47 +0600</pubDate>
       
       <guid>https://viccjiang.github.io/blog/post-1/</guid>
       <description>Heading 1 Heading 2 Heading 3 Heading 4 Heading 5 Heading 6 Emphasis Emphasis, aka italics, with asterisks or underscores.</description>

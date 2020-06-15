@@ -1,33 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Categories on JIANGs Daily Lab｜將是生活實驗室</title>
+    <title>Categories on JIANGs Daily LAB 將是生活實驗室</title>
     <link>https://viccjiang.github.io/categories/</link>
-    <description>Recent content in Categories on JIANGs Daily Lab｜將是生活實驗室</description>
+    <description>Recent content in Categories on JIANGs Daily LAB 將是生活實驗室</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>zh-TW</language>
-    <lastBuildDate>Tue, 09 Jun 2020 10:22:47 +0600</lastBuildDate>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 29 Oct 2019 10:07:47 +0600</lastBuildDate>
     
 	<atom:link href="https://viccjiang.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>自我成長</title>
-      <link>https://viccjiang.github.io/categories/%E8%87%AA%E6%88%91%E6%88%90%E9%95%B7/</link>
-      <pubDate>Tue, 09 Jun 2020 10:22:47 +0600</pubDate>
-      
-      <guid>https://viccjiang.github.io/categories/%E8%87%AA%E6%88%91%E6%88%90%E9%95%B7/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>工作日常</title>
-      <link>https://viccjiang.github.io/categories/%E5%B7%A5%E4%BD%9C%E6%97%A5%E5%B8%B8/</link>
-      <pubDate>Tue, 09 Jun 2020 10:07:47 +0600</pubDate>
-      
-      <guid>https://viccjiang.github.io/categories/%E5%B7%A5%E4%BD%9C%E6%97%A5%E5%B8%B8/</guid>
-      <description></description>
-    </item>
     
     <item>
       <title>創業筆記</title>
@@ -39,11 +21,29 @@
     </item>
     
     <item>
+      <title>工作日常</title>
+      <link>https://viccjiang.github.io/categories/%E5%B7%A5%E4%BD%9C%E6%97%A5%E5%B8%B8/</link>
+      <pubDate>Tue, 29 Oct 2019 10:07:47 +0600</pubDate>
+      
+      <guid>https://viccjiang.github.io/categories/%E5%B7%A5%E4%BD%9C%E6%97%A5%E5%B8%B8/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>推薦好物</title>
       <link>https://viccjiang.github.io/categories/%E6%8E%A8%E8%96%A6%E5%A5%BD%E7%89%A9/</link>
       <pubDate>Tue, 29 Oct 2019 10:07:47 +0600</pubDate>
       
       <guid>https://viccjiang.github.io/categories/%E6%8E%A8%E8%96%A6%E5%A5%BD%E7%89%A9/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>自我成長</title>
+      <link>https://viccjiang.github.io/categories/%E8%87%AA%E6%88%91%E6%88%90%E9%95%B7/</link>
+      <pubDate>Tue, 29 Oct 2019 10:07:47 +0600</pubDate>
+      
+      <guid>https://viccjiang.github.io/categories/%E8%87%AA%E6%88%91%E6%88%90%E9%95%B7/</guid>
       <description></description>
     </item>
     
