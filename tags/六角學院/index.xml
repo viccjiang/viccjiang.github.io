@@ -6,13 +6,23 @@
     <description>Recent content in 六角學院 on JIANGs Daily LAB</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 05 Nov 2020 09:07:47 +0600</lastBuildDate>
+    <lastBuildDate>Fri, 13 Nov 2020 09:07:47 +0600</lastBuildDate>
     
 	<atom:link href="https://viccjiang.github.io/tags/%E5%85%AD%E8%A7%92%E5%AD%B8%E9%99%A2/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>2020秋季六角學院切版直播班Week3</title>
+      <title>六角學院切版直播班2020秋季Week4</title>
+      <link>https://viccjiang.github.io/blog/hexschool_layout_week04/</link>
+      <pubDate>Fri, 13 Nov 2020 09:07:47 +0600</pubDate>
+      
+      <guid>https://viccjiang.github.io/blog/hexschool_layout_week04/</guid>
+      <description>這週的直播學習開始導入Gulp自動化流程和SCSS系統，看似很容易，但在一開始安裝時就頻頻卡關，好險有老師與助教寫的手冊，暫時解決卡關的問題，mac很多時候都要加sudo，又學會一招了，週二助教開的直播加碼，老實說開始有點聽不太懂，有點消化不良，下班回家又重新看了一遍和聽一遍，觀念還是覺得很模糊，本來第四週要開始用Gulp和SCSS寫看看，結果不知從何下手，而且時間上的不允許，沒辦法再打掉重練了，大概是因為前面基礎都還沒打穩健吧，決定要重看影片再來試試看，這週就先把第三第四週寫個兩頁RWD了，Gulp和SCSS持續研究中～
+第四週 - 多頁式網頁設計 本週訓練菜單  1.1 做當週關卡作業，吸收當週教授觀念 1.3 將本週教授內容寫成部落格，以加深程式觀念 1.</description>
+    </item>
+    
+    <item>
+      <title>六角學院切版直播班2020秋季Week3</title>
       <link>https://viccjiang.github.io/blog/hexschool_layout_week03/</link>
       <pubDate>Thu, 05 Nov 2020 09:07:47 +0600</pubDate>
       
@@ -22,7 +32,7 @@
     </item>
     
     <item>
-      <title>2020秋季六角學院切版直播班Week2</title>
+      <title>六角學院切版直播班2020秋季Week2</title>
       <link>https://viccjiang.github.io/blog/hexschool_layout_week02/</link>
       <pubDate>Mon, 26 Oct 2020 09:07:47 +0600</pubDate>
       
@@ -32,7 +42,7 @@
     </item>
     
     <item>
-      <title>2020秋季六角學院切版直播班Week1</title>
+      <title>六角學院切版直播班2020秋季Week1</title>
       <link>https://viccjiang.github.io/blog/hexschool_layout_week01/</link>
       <pubDate>Sun, 25 Oct 2020 09:07:47 +0600</pubDate>
       
