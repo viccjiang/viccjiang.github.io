@@ -6,10 +6,20 @@
     <description>Recent content in 六角學院 on JIANGs Daily LAB</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 13 Nov 2020 09:07:47 +0600</lastBuildDate>
+    <lastBuildDate>Fri, 20 Nov 2020 09:07:47 +0600</lastBuildDate>
     
 	<atom:link href="https://viccjiang.github.io/tags/%E5%85%AD%E8%A7%92%E5%AD%B8%E9%99%A2/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>六角學院切版直播班2020秋季Week5</title>
+      <link>https://viccjiang.github.io/blog/hexschool_layout_week05/</link>
+      <pubDate>Fri, 20 Nov 2020 09:07:47 +0600</pubDate>
+      
+      <guid>https://viccjiang.github.io/blog/hexschool_layout_week05/</guid>
+      <description>Photo by Ben Kolde on Unsplash
+ 這週手刻了一個後台表單設計，真的好難啊，頭快要炸了，目前還不太會什麼 OOCSS BEM之類的，Bootstrap元件也還不會使用，所以很單純地用自己這幾週所學的會的語法拼湊出來，上周的 gulp &amp;amp; scss也都還沒搞清楚，這周末要繼續拚之前還沒搞懂的東西（ 更新 11/21 順利地 git build -&amp;gt; git deploy)，但上傳過程大概搞了四個小時，中間一直有問題，一直失敗一直找問題點，找不到問題沒有上傳就更焦慮，一直卡在git build &amp;amp; git deploy，總覺得就是沒有學會才會這樣，心裡想著一定要上傳成功，參考了Ray助教的 Gulp教學，看了大概十次影片，最後終於成功了！！！這大概是這週最有成就感的事情吧，對於gh-pages 又多了一層了解！原來開發者最有成就感的事情就是順利把問題解決（筆記）！最後發現一直出錯是因為.</description>
+    </item>
     
     <item>
       <title>六角學院切版直播班2020秋季Week4</title>
