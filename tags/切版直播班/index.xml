@@ -6,10 +6,19 @@
     <description>Recent content in 切版直播班 on JIANGs Daily LAB</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 20 Nov 2020 09:07:47 +0600</lastBuildDate>
+    <lastBuildDate>Fri, 27 Nov 2020 09:07:47 +0600</lastBuildDate>
     
 	<atom:link href="https://viccjiang.github.io/tags/%E5%88%87%E7%89%88%E7%9B%B4%E6%92%AD%E7%8F%AD/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>六角學院切版直播班2020秋季Week6</title>
+      <link>https://viccjiang.github.io/blog/hexschool_layout_week06/</link>
+      <pubDate>Fri, 27 Nov 2020 09:07:47 +0600</pubDate>
+      
+      <guid>https://viccjiang.github.io/blog/hexschool_layout_week06/</guid>
+      <description>上週作業嘗試用了 Gulp 部署到 Github Pages 發現相當方便且快速，相較於Github Desktop，Gulp 真的快速許多，雖然要記的指令很多，順序也要記一下，雖然上傳失敗很多次，但最後成功了真的很令人振奮，為此做了個自己在部署時的筆記 Gulp gh-pages 部署筆記。這週的作業也是用 Gulp 來開發，除了可以用 layout.</description>
+    </item>
     
     <item>
       <title>六角學院切版直播班2020秋季Week5</title>
