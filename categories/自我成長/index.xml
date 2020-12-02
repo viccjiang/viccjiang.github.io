@@ -6,10 +6,19 @@
     <description>Recent content in 自我成長 on JIANGs Daily LAB</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 27 Nov 2020 09:07:47 +0600</lastBuildDate>
+    <lastBuildDate>Wed, 02 Dec 2020 09:07:47 +0600</lastBuildDate>
     
 	<atom:link href="https://viccjiang.github.io/categories/%E8%87%AA%E6%88%91%E6%88%90%E9%95%B7/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>六角學院切版直播班2020秋季Week7</title>
+      <link>https://viccjiang.github.io/blog/hexschool_layout_week07/</link>
+      <pubDate>Wed, 02 Dec 2020 09:07:47 +0600</pubDate>
+      
+      <guid>https://viccjiang.github.io/blog/hexschool_layout_week07/</guid>
+      <description>跟著洧杰老師的腳步終於來到第七週了，這週課程也相對歡樂，相較於 RWD Bootstrap Gulp 是簡單多的 CSS 動畫效果，在 AOS 視差滾動效果裡 background-attachment: fixed 這個語法非常重要，主要是固定背景的方式，來達到視覺滾動的效果，這次的作業練習也有使用到這個語法，另外，第一周到第七週作業完成度也達到70%了，目前對於自己的行動力感到相當滿意，但是對於未來轉職之路還是很迷惘</description>
+    </item>
     
     <item>
       <title>六角學院切版直播班2020秋季Week6</title>
