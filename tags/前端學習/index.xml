@@ -6,10 +6,21 @@
     <description>Recent content in 前端學習 on JIANGs Daily LAB</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 02 Dec 2020 09:07:47 +0600</lastBuildDate>
+    <lastBuildDate>Wed, 16 Dec 2020 09:07:47 +0600</lastBuildDate>
     
 	<atom:link href="https://viccjiang.github.io/tags/%E5%89%8D%E7%AB%AF%E5%AD%B8%E7%BF%92/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>六角學院切版直播班2020秋季Week8</title>
+      <link>https://viccjiang.github.io/blog/hexschool_layout_week08/</link>
+      <pubDate>Wed, 16 Dec 2020 09:07:47 +0600</pubDate>
+      
+      <guid>https://viccjiang.github.io/blog/hexschool_layout_week08/</guid>
+      <description>最後一週啦，作業真的要衝刺了，上週看到老師在 slack 發的心得文，感到相當激勵，因為在這裡你會發現很多人跟你一樣都在為未來做準備，你不是孤軍奮戰，小組也有人在跟你一起努力，互相鼓勵是很必須的， 走到這步時，也發現自己的刻意練習也練習了兩個月，每天上班第一件事情就是開slack做每日任務10~15分鐘，晚上下班一定會複習前一週的影片，每天至少兩小時不斷的複習與練習，會發現自己進步了很多，我們大家都走到第八週這一步了，接下來才是真正的開始 ~
+第八週：CSS 模組化管理 一個成熟的前端介面，不論是版型管理、語法支援度、元件應用都得顧及到位，本週將會詳細介紹各角度的技術詮釋，以做為完美的收尾。
+作品主題：大型訂房網站</description>
+    </item>
     
     <item>
       <title>六角學院切版直播班2020秋季Week7</title>
