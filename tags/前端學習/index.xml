@@ -6,10 +6,35 @@
     <description>Recent content in 前端學習 on JIANGs Daily LAB</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 26 Dec 2020 09:07:47 +0600</lastBuildDate>
+    <lastBuildDate>Fri, 15 Jan 2021 09:07:47 +0600</lastBuildDate>
     
 	<atom:link href="https://viccjiang.github.io/tags/%E5%89%8D%E7%AB%AF%E5%AD%B8%E7%BF%92/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>六角線上研討會2021年前端工程求職等級表</title>
+      <link>https://viccjiang.github.io/blog/weblayout_training_20210115/</link>
+      <pubDate>Fri, 15 Jan 2021 09:07:47 +0600</pubDate>
+      
+      <guid>https://viccjiang.github.io/blog/weblayout_training_20210115/</guid>
+      <description>六角學院這門線上講座開的很是時候，因為年初了大家都開始在安排本年度的學習進度規劃、職涯方向、求職方法等，前陣子也才剛跟洧杰老師諮詢過自己的未來方向與學習目標，但想必有很多同學跟我有一樣的困擾，老師才會特地開一門講座讓大家了解吧！
+最近也發現人力銀行很多公司開出很多前端職缺，AI大前端時代一直都在進步，每種職缺要求的技能技術不盡相同，自己目前都只符合切版這種職缺，但也不敢說自己很會切版，目前知道自己未來會站在一個分水嶺，要專精的前往前端設計師還是前端工程師，這也端看我自己未來幾個月的學習進度，航道已開啟，準備衝刺了！
+這是本週最期待的一堂課 主題：2021 年 前端工程求職等級表 主講：六角校長 廖洧杰
+符合以下背景，歡迎參考這份線上筆記：</description>
+    </item>
+    
+    <item>
+      <title>2021年 零基礎邁向前端工程師</title>
+      <link>https://viccjiang.github.io/blog/weblayout_training_20210109/</link>
+      <pubDate>Sat, 09 Jan 2021 09:07:47 +0600</pubDate>
+      
+      <guid>https://viccjiang.github.io/blog/weblayout_training_20210109/</guid>
+      <description>這是今年針對自己的前端轉職做的規劃（參考了六角學院的前端開發者地圖），在去年底經過切版直播班洗禮之後，瞬間點開了好幾個技能，花了三個月每天至少兩小時的學習時間，學會一項前端技能，這是絕對辦的到的，也發現到原來自己的自學力與自制力已經進化轉換養成每日學習的好習慣，每天都會固定時間觀看影音課程，就算沒啥時間也會看個一兩個小段落，這大概跟切版直播班的每日刻意練習有關吧！
+ 啊我已經上完切版直播班了，然後哩？
+ 因鑑於自己目前是inhouse的平面設計師（也就是在特定領域的公司裡長期專注於維護某項產品或品牌的設計師），但這幾年開始有了停滯不前的窘境，覺得要開始優化自己的設計師職涯，而不是被困在這了．．．
+ 必須繼續努力改變人生啊
+ 當然，轉職這麼重大的事情，畢竟是砍掉重練，也有跟洧杰老師討論過，老師覺得我較適合前端設計師（會設計，會JS若又會用到Vue的話，未來在業界會較吃香），所以未來一年也是會朝這方向前進，其實在前端設計還是前端工程職位我都不設限，只希望自己可以向前進，畢竟未來都是要靠程式設計改變社會，前幾天看新聞，為了迎接AI潮流，程式設計已經納入未來國高中生的課綱了（哪泥，國中我在幹嘛啊，我還在玩Gameboy咧）！嗯，或許以後高中應該不用再分理組跟文組了吧！</description>
+    </item>
     
     <item>
       <title>六角學院網頁切版直播班心得 - 2020年秋季班</title>
