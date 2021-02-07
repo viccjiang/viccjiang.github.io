@@ -12,7 +12,50 @@
     
     
     <item>
-      <title>六角線上研討會2021年前端工程求職等級表</title>
+      <title>《工作必須有錢有愛有意義》讓迷惘的你，找到理想人生</title>
+      <link>https://viccjiang.github.io/blog/weblayout_training_javascript_20210203/</link>
+      <pubDate>Wed, 03 Feb 2021 09:07:47 +0600</pubDate>
+      
+      <guid>https://viccjiang.github.io/blog/weblayout_training_javascript_20210203/</guid>
+      <description>引導你找到自己的興趣與志向，培養對生活與工作的熱情
+ 自從去年初 COVID-19 疫情開始後，扣除上班的時間，待在家的時間變多變長了，思考人生的機會變多了，某天也是突然有種危機意識感「如果在這種時機轉職，會是怎樣呢？」這個人生申論題時常在我的生活中出現，因為我有一顆不安於現狀的心，時常在想如果某件事有變化會怎樣，雖然有時候是庸人自擾，但也許也是一種未雨綢繆，就因為自己這種個性吧，嘗試過很多事情很多工作，但你永遠不可能依賴著工作過生活，所以人生必須要有別的選項，而不是只有工作！
+ 圖片出處：佐依・理想生活設計＆自主學習 社團 https://www.facebook.com/groups/zoeyk.co</description>
+    </item>
+    
+    <item>
+      <title>善用 ORID 焦點討論法，讓思考流動</title>
+      <link>https://viccjiang.github.io/blog/weblayout_training_javascript_20210202/</link>
+      <pubDate>Tue, 02 Feb 2021 09:07:47 +0600</pubDate>
+      
+      <guid>https://viccjiang.github.io/blog/weblayout_training_javascript_20210202/</guid>
+      <description>也可當作提問框架或 寫作的技巧
+ 為了方便學習記憶，最近開始在寫一些學習筆記或讀書心得，結果發現自己寫得很零散，沒有一個架構或是段落，所以上網估狗了一些做筆記的方法，發現了一個不錯又好上手的方式，結果發現這筆記的方式也是提問的技巧：
+ ORID 焦點討論法
+也可以當作 提問框架 / 寫作技巧，以我個人學習或閱讀書籍為例子，每天的學習筆記或讀書心得，可以根據這四個大方向來進行：</description>
+    </item>
+    
+    <item>
+      <title>從想到做培養原子習慣</title>
+      <link>https://viccjiang.github.io/blog/weblayout_training_javascript_20210201/</link>
+      <pubDate>Mon, 01 Feb 2021 09:07:47 +0600</pubDate>
+      
+      <guid>https://viccjiang.github.io/blog/weblayout_training_javascript_20210201/</guid>
+      <description>其實這裡都是寫給自己的心靈雞湯，隨時補充能量用，因為在朝前端努力的同時，正向思考很重要！
+ 每天都進步 1%，一年後，你會進步 37倍； 每天都退步 1%，一年後，你會弱化到趨近於 0！ 一點小改變、一個好習慣，將會產生複利效應， 如滾雪球般，為你帶來豐碩的人生成果！</description>
+    </item>
+    
+    <item>
+      <title>六角學院 JavaScript 直播班 課前筆記#1</title>
+      <link>https://viccjiang.github.io/blog/weblayout_training_javascript_20210128/</link>
+      <pubDate>Thu, 28 Jan 2021 09:07:47 +0600</pubDate>
+      
+      <guid>https://viccjiang.github.io/blog/weblayout_training_javascript_20210128/</guid>
+      <description>基礎觀念：學程式 = 任務拆解 ( 拆解成小任務 )
+變數(Variable)與值(Value) 宣告變數的方法：  let const var  基本型別(primitives types) 介紹  字串 (String) 數字 (Number) 布林 (Boolean) undefined null Symbol  型別操作方法  物件型別，例如陣列(array)與物件(object)  JavaScript 記憶體  不會跨頁面共享記憶體空間，每頁網頁都有個別存放位置  小駝峰命名法  變數開頭命名用小寫 若開頭大寫是有其他用意的，主要是建立 class 類別所用(比較進階用法)，所以還請大家先習慣用小駝峰命名 變數、常數與命名  typeof  可以查詢型別  如何宣告變數 ?</description>
+    </item>
+    
+    <item>
+      <title>六角學院線上研討會2021年前端工程求職等級表</title>
       <link>https://viccjiang.github.io/blog/weblayout_training_20210115/</link>
       <pubDate>Fri, 15 Jan 2021 09:07:47 +0600</pubDate>
       
