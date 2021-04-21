@@ -6,10 +6,21 @@
     <description>Recent content on JIANGs Daily LAB</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 03 Feb 2021 09:07:47 +0600</lastBuildDate>
+    <lastBuildDate>Wed, 21 Apr 2021 09:07:47 +0600</lastBuildDate>
     
 	<atom:link href="https://viccjiang.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>六角學院 JavaScript 直播班 2021 春季 - JS學徒打怪團練</title>
+      <link>https://viccjiang.github.io/blog/weblayout_training_javascript_20210421/</link>
+      <pubDate>Wed, 21 Apr 2021 09:07:47 +0600</pubDate>
+      
+      <guid>https://viccjiang.github.io/blog/weblayout_training_javascript_20210421/</guid>
+      <description>學習前端技術，不停的挑戰與修煉。
+ 自從去年初 COVID-19 疫情開始後，扣除上班的時間，待在家的時間變多變長了，思考人生的機會變多了，某天也是突然有種危機意識感「如果在這種時機轉職，會是怎樣呢？」這個人生申論題時常在我的生活中出現，因為我有一顆不安於現狀的心，時常在想如果某件事有變化會怎樣，雖然有時候是庸人自擾，但也許也是一種未雨綢繆，就因為自己這種個性吧，嘗試過很多事情很多工作，但你永遠不可能依賴著工作過生活，所以人生必須要有別的選項，而不是只有工作！
+  這篇記錄著進入JS絕望峽谷產生的各種心情起伏 ～</description>
+    </item>
     
     <item>
       <title>《工作必須有錢有愛有意義》讓迷惘的你，找到理想人生</title>
