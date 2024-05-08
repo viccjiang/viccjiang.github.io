@@ -12,7 +12,7 @@
   <meta name="author" content="Jiang">
 
 
-  <meta name="generator" content="Hugo 0.70.0" />
+  <meta name="generator" content="Hugo 0.120.4">
 
   <!-- plugins -->
   
@@ -35,6 +35,15 @@
 
   
 
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-JMV8187M77"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-JMV8187M77');
+</script>
 
 </head><body>
 <!-- preloader start -->
@@ -222,7 +231,7 @@
 錯誤示範：<del>左側以第6週當根目錄，子目錄裡所有的SCSS都編譯跑到外側了，希望其他同學不要跟我一樣設定錯誤</del></p>
 </blockquote>
 <p><img src="https://i.imgur.com/hVBPuRx.png" alt=""></p>
-<p>Q7：想問關於圖片尺寸設定的問題。不管是使用手刻的&quot;max-width:100%&rdquo; 以及 &ldquo;height:auto&quot;或是bs4所使用的 &ldquo;.img-fluid&rdquo;，都會遇到圖片實際的縮放高度，和設計稿不一樣，但一般又最好不要寫死圖片高度，請問有沒有更好的方式，讓畫面上的圖片大小可以完全符合設計稿呢?  或者是改成&quot;background-image&quot;的形式來呈現呢?</p>
+<p>Q7：想問關於圖片尺寸設定的問題。不管是使用手刻的&quot;max-width:100%&quot; 以及 &ldquo;height:auto&quot;或是bs4所使用的 &ldquo;.img-fluid&rdquo;，都會遇到圖片實際的縮放高度，和設計稿不一樣，但一般又最好不要寫死圖片高度，請問有沒有更好的方式，讓畫面上的圖片大小可以完全符合設計稿呢?  或者是改成&quot;background-image&quot;的形式來呈現呢?</p>
 <blockquote>
 <p>目前坊間主流大概都是用類似 background cover 去做
 <a href="https://www.youtube.com/watch?v=1EYUsAlVqY0">CSS 不輕易寫死高度的藝術 </a></p>
@@ -230,7 +239,7 @@
 <blockquote>
 <p>外面再包一個 container 在這一層決定寬高後（可能是動態的）然後設定裡面的img, 類似：</p>
 </blockquote>
-<pre><code class="language-css=" data-lang="css=">.img-container img {
+<pre tabindex="0"><code class="language-css=" data-lang="css=">.img-container img {
     width: 100%
     height: 100%
     object-fit: cover;
@@ -256,7 +265,7 @@
 <li>第6行，這個<code>aria-describedby=&quot;name&quot;</code>是什麼?</li>
 <li><code>&lt;select&gt;</code> 標籤裡面可以不用寫上 <code>name=&quot;XXX&quot;</code> 嗎?</li>
 <li><code>&lt;option&gt;</code> 標籤裡面可以不用寫上 <code>value=&quot;高雄市&quot;</code> 嗎?</li>
-<li>如果遇到像地址，這種多個<code>&lt;select&gt;</code> ，為了配合<code>&lt;label for=&quot;address&quot;&gt;</code>，每個<code>&lt;select&gt;</code> 的id=&quot;XXX&rdquo; ，建議該如何寫呢?</li>
+<li>如果遇到像地址，這種多個<code>&lt;select&gt;</code> ，為了配合<code>&lt;label for=&quot;address&quot;&gt;</code>，每個<code>&lt;select&gt;</code> 的id=&ldquo;XXX&rdquo; ，建議該如何寫呢?</li>
 <li>第45行，關於<code>&lt;button&gt;</code> 的使用時機? 如果有表單要送出，記得老師先前是說要使用<code>&lt;input&gt;</code>，這題建議該用哪種?</li>
 </ol>
 <blockquote>
@@ -269,29 +278,29 @@
 </ol>
 </blockquote>
 <h2 id="bootstrap-快速範本">Bootstrap 快速範本</h2>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html"><span style="color:#75715e">&lt;!doctype html&gt;</span>
-&lt;<span style="color:#f92672">html</span> <span style="color:#a6e22e">lang</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;en&#34;</span>&gt;
-  &lt;<span style="color:#f92672">head</span>&gt;
-    <span style="color:#75715e">&lt;!-- Required meta tags --&gt;</span>
-    &lt;<span style="color:#f92672">meta</span> <span style="color:#a6e22e">charset</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;utf-8&#34;</span>&gt;
-    &lt;<span style="color:#f92672">meta</span> <span style="color:#a6e22e">name</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;viewport&#34;</span> <span style="color:#a6e22e">content</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;width=device-width, initial-scale=1, shrink-to-fit=no&#34;</span>&gt;
-
-    <span style="color:#75715e">&lt;!-- Bootstrap CSS --&gt;</span>
-    &lt;<span style="color:#f92672">link</span> <span style="color:#a6e22e">rel</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;stylesheet&#34;</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css&#34;</span> <span style="color:#a6e22e">integrity</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS&#34;</span> <span style="color:#a6e22e">crossorigin</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;anonymous&#34;</span>&gt;
-
-    &lt;<span style="color:#f92672">title</span>&gt;Hello, world!&lt;/<span style="color:#f92672">title</span>&gt;
-  &lt;/<span style="color:#f92672">head</span>&gt;
-  &lt;<span style="color:#f92672">body</span>&gt;
-    &lt;<span style="color:#f92672">h1</span>&gt;Hello, world!&lt;/<span style="color:#f92672">h1</span>&gt;
-
-    <span style="color:#75715e">&lt;!-- Optional JavaScript --&gt;</span>
-    <span style="color:#75715e">&lt;!-- jQuery first, then Popper.js, then Bootstrap JS --&gt;</span>
-    &lt;<span style="color:#f92672">script</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;https://code.jquery.com/jquery-3.3.1.slim.min.js&#34;</span> <span style="color:#a6e22e">integrity</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo&#34;</span> <span style="color:#a6e22e">crossorigin</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;anonymous&#34;</span>&gt;&lt;/<span style="color:#f92672">script</span>&gt;
-    &lt;<span style="color:#f92672">script</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js&#34;</span> <span style="color:#a6e22e">integrity</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut&#34;</span> <span style="color:#a6e22e">crossorigin</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;anonymous&#34;</span>&gt;&lt;/<span style="color:#f92672">script</span>&gt;
-    &lt;<span style="color:#f92672">script</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js&#34;</span> <span style="color:#a6e22e">integrity</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k&#34;</span> <span style="color:#a6e22e">crossorigin</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;anonymous&#34;</span>&gt;&lt;/<span style="color:#f92672">script</span>&gt;
-  &lt;/<span style="color:#f92672">body</span>&gt;
-&lt;/<span style="color:#f92672">html</span>&gt;
-</code></pre></div><h2 id="mobile-first-與-desktop-first-差別">Mobile first 與 Desktop first 差別</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span><span style="color:#75715e">&lt;!doctype html&gt;</span>
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">html</span> <span style="color:#a6e22e">lang</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;en&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>  &lt;<span style="color:#f92672">head</span>&gt;
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">&lt;!-- Required meta tags --&gt;</span>
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">meta</span> <span style="color:#a6e22e">charset</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;utf-8&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">meta</span> <span style="color:#a6e22e">name</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;viewport&#34;</span> <span style="color:#a6e22e">content</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;width=device-width, initial-scale=1, shrink-to-fit=no&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">&lt;!-- Bootstrap CSS --&gt;</span>
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">link</span> <span style="color:#a6e22e">rel</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;stylesheet&#34;</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css&#34;</span> <span style="color:#a6e22e">integrity</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS&#34;</span> <span style="color:#a6e22e">crossorigin</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;anonymous&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">title</span>&gt;Hello, world!&lt;/<span style="color:#f92672">title</span>&gt;
+</span></span><span style="display:flex;"><span>  &lt;/<span style="color:#f92672">head</span>&gt;
+</span></span><span style="display:flex;"><span>  &lt;<span style="color:#f92672">body</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">h1</span>&gt;Hello, world!&lt;/<span style="color:#f92672">h1</span>&gt;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">&lt;!-- Optional JavaScript --&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">&lt;!-- jQuery first, then Popper.js, then Bootstrap JS --&gt;</span>
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">script</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;https://code.jquery.com/jquery-3.3.1.slim.min.js&#34;</span> <span style="color:#a6e22e">integrity</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo&#34;</span> <span style="color:#a6e22e">crossorigin</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;anonymous&#34;</span>&gt;&lt;/<span style="color:#f92672">script</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">script</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js&#34;</span> <span style="color:#a6e22e">integrity</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut&#34;</span> <span style="color:#a6e22e">crossorigin</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;anonymous&#34;</span>&gt;&lt;/<span style="color:#f92672">script</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">script</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js&#34;</span> <span style="color:#a6e22e">integrity</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k&#34;</span> <span style="color:#a6e22e">crossorigin</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;anonymous&#34;</span>&gt;&lt;/<span style="color:#f92672">script</span>&gt;
+</span></span><span style="display:flex;"><span>  &lt;/<span style="color:#f92672">body</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">html</span>&gt;
+</span></span></code></pre></div><h2 id="mobile-first-與-desktop-first-差別">Mobile first 與 Desktop first 差別</h2>
 <ul>
 <li><a href="https://codepen.io/liao/pen/WNQJVqr?editors=1100">desktop first</a>  =&gt; max-width 這個解析度以下</li>
 <li><a href="https://codepen.io/liao/pen/jObxgeW?editors=1100">mobile first</a>  =&gt; min-width 這個解析度以上</li>
@@ -341,7 +350,7 @@
 <li>常見觀念：col 左右不能推 上下可以推</li>
 </ul>
 <p>ex:</p>
-<pre><code class="language-htmlembedded=" data-lang="htmlembedded=">  &lt;div class=&quot;row&quot;&gt;
+<pre tabindex="0"><code class="language-htmlembedded=" data-lang="htmlembedded=">  &lt;div class=&#34;row&#34;&gt;
     .col-3.green.mb-5*8&gt;h2{標題}
   &lt;/div&gt;
 </code></pre><p>mb-5 上下可以推
@@ -390,7 +399,7 @@
         
         <div id="disqus_thread"></div>
 <script type="application/javascript">
-    var disqus_config = function () {
+    window.disqus_config = function () {
     
     
     
@@ -512,7 +521,7 @@
     a.src = g;
     m.parentNode.insertBefore(a, m)
   })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
-  ga('create', 'UA-181241869-1', 'auto');
+  ga('create', '', 'auto');
   ga('send', 'pageview');
 </script></body>
 </html>

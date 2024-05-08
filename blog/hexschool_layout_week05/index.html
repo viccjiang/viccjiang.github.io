@@ -12,7 +12,7 @@
   <meta name="author" content="Jiang">
 
 
-  <meta name="generator" content="Hugo 0.70.0" />
+  <meta name="generator" content="Hugo 0.120.4">
 
   <!-- plugins -->
   
@@ -35,6 +35,15 @@
 
   
 
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-JMV8187M77"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-JMV8187M77');
+</script>
 
 </head><body>
 <!-- preloader start -->
@@ -161,11 +170,11 @@
 <ul>
 <li><strong>component 與 util 的拆分</strong></li>
 </ul>
-<pre><code class="language-htmlembedded=" data-lang="htmlembedded=">&lt;div class=&quot;card&quot;&gt;
-   &lt;div class=&quot;card__item&quot;&gt;
+<pre tabindex="0"><code class="language-htmlembedded=" data-lang="htmlembedded=">&lt;div class=&#34;card&#34;&gt;
+   &lt;div class=&#34;card__item&#34;&gt;
 &lt;/div&gt;
-</code></pre><pre><code class="language-htmlembedded=" data-lang="htmlembedded=">&lt;div class=&quot;fz-26 mb-3 mb-md-4 w50 fon-xl font-sm-xl'&gt;
-  &lt;div class=&quot;w100 d-flex&quot;&gt;&lt;/div&gt;
+</code></pre><pre tabindex="0"><code class="language-htmlembedded=" data-lang="htmlembedded=">&lt;div class=&#34;fz-26 mb-3 mb-md-4 w50 fon-xl font-sm-xl&#39;&gt;
+  &lt;div class=&#34;w100 d-flex&#34;&gt;&lt;/div&gt;
 &lt;/div&gt;
 </code></pre><ul>
 <li><strong>component 與 util 的拆分洧杰老師解析</strong>
@@ -212,13 +221,13 @@
 <ul>
 <li>常見圖示使用技巧
 以 Material Icon 為例，載入CDN
-<pre><code class="language-htmlembedded=" data-lang="htmlembedded=">&lt;link href=&quot;&lt;https://fonts.googleapis.com/icon?family=Material+Icons&gt;&quot; rel=&quot;stylesheet&quot;&gt;
-</code></pre><p>加入到網頁的寫法有兩種</p>
-<pre><code class="language-htmlembedded=" data-lang="htmlembedded=">&lt;span class=&quot;material-icons&quot;&gt;
+<pre tabindex="0"><code class="language-htmlembedded=" data-lang="htmlembedded=">&lt;link href=&#34;&lt;https://fonts.googleapis.com/icon?family=Material+Icons&gt;&#34; rel=&#34;stylesheet&#34;&gt;
+</code></pre>加入到網頁的寫法有兩種
+<pre tabindex="0"><code class="language-htmlembedded=" data-lang="htmlembedded=">&lt;span class=&#34;material-icons&#34;&gt;
     accessibility
 &lt;/span&gt;
-</code></pre><p>或是</p>
-<pre><code class="language-htmlembedded=" data-lang="htmlembedded=">&lt;i class=&quot;material-icons&quot;&gt;
+</code></pre>或是
+<pre tabindex="0"><code class="language-htmlembedded=" data-lang="htmlembedded=">&lt;i class=&#34;material-icons&#34;&gt;
     accessibility
 &lt;/i&gt;
 </code></pre></li>
@@ -231,10 +240,10 @@
 <li><a href="https://www.w3schools.com/html/html_forms.asp">w3schools</a></li>
 <li><a href="https://developers.google.com/web/fundamentals/design-and-ux/input/forms">讓人驚艷的表單設計 Google</a></li>
 <li>name 屬性為後端傳值、id 為 label 所用</li>
-<li>method=&quot;post&quot;傳送給後端</li>
+<li>method=&ldquo;post&quot;傳送給後端</li>
 <li>button是用來和js互動用 無法送出表單</li>
 <li>submit是可以送出表單</li>
-<li>name=&quot;account&rdquo; 是for後端</li>
+<li>name=&ldquo;account&rdquo; 是for後端</li>
 <li>label for id 提升使用體驗</li>
 </ul>
 </li>
@@ -243,7 +252,7 @@
 <ul>
 <li>設計響應式時需注意的項目(date、tel)
 <ul>
-<li>input type=&quot;date&rdquo; 瀏覽器的資源度不一樣，最好不要使用</li>
+<li>input type=&ldquo;date&rdquo; 瀏覽器的資源度不一樣，最好不要使用</li>
 <li>可以找套件 calendar jqueryui datepicker</li>
 <li><a href="https://jqueryui.com/datepicker/">日期套件</a></li>
 </ul>
@@ -290,18 +299,18 @@
 <ol>
 <li>載入css</li>
 </ol>
-<pre><code class="language-htmlembedded=" data-lang="htmlembedded=">&lt;link rel=&quot;stylesheet&quot; href=&quot;https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css&quot;
-        integrity=&quot;sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS&quot; crossorigin=&quot;anonymous&quot;&gt;
+<pre tabindex="0"><code class="language-htmlembedded=" data-lang="htmlembedded=">&lt;link rel=&#34;stylesheet&#34; href=&#34;https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css&#34;
+        integrity=&#34;sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS&#34; crossorigin=&#34;anonymous&#34;&gt;
 </code></pre><ol start="2">
 <li>載入js</li>
 </ol>
-<pre><code class="language-htmlembedded=" data-lang="htmlembedded=">&lt;script src=&quot;https://code.jquery.com/jquery-3.3.1.slim.min.js&quot; integrity=&quot;sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo&quot; crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;
-&lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js&quot; integrity=&quot;sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut&quot; crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;
-&lt;script src=&quot;https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js&quot; integrity=&quot;sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k&quot; crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;
+<pre tabindex="0"><code class="language-htmlembedded=" data-lang="htmlembedded=">&lt;script src=&#34;https://code.jquery.com/jquery-3.3.1.slim.min.js&#34; integrity=&#34;sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo&#34; crossorigin=&#34;anonymous&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js&#34; integrity=&#34;sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut&#34; crossorigin=&#34;anonymous&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js&#34; integrity=&#34;sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k&#34; crossorigin=&#34;anonymous&#34;&gt;&lt;/script&gt;
 </code></pre><ol start="3">
 <li>實做測試看是否有載入bs成功</li>
 </ol>
-<pre><code class="language-htmlembedded=" data-lang="htmlembedded=">&lt;a href=&quot;#&quot; class=&quot;btn btn-primary&quot;&gt;按鈕&lt;/a&gt;
+<pre tabindex="0"><code class="language-htmlembedded=" data-lang="htmlembedded=">&lt;a href=&#34;#&#34; class=&#34;btn btn-primary&#34;&gt;按鈕&lt;/a&gt;
 </code></pre><!-- raw HTML omitted -->
 <h4 id="utilities-flex-spacing">Utilities, flex, spacing</h4>
 <ul>
@@ -327,7 +336,7 @@
 <li>aria-describedby 身障使用</li>
 <li>先使用input就好</li>
 </ul>
-<pre><code class="language-htmlembedded=" data-lang="htmlembedded=">&lt;input type=&quot;submit&quot; value=&quot;送出&quot;&gt;
+<pre tabindex="0"><code class="language-htmlembedded=" data-lang="htmlembedded=">&lt;input type=&#34;submit&#34; value=&#34;送出&#34;&gt;
 </code></pre><ul>
 <li>input一定要搭配form標籤</li>
 </ul>
@@ -337,21 +346,20 @@
 </ul>
 <!-- raw HTML omitted -->
 <h4 id="手寫-scss-結構參考">手寫 SCSS 結構參考</h4>
-<pre><code>@import &quot;variable&quot;;// 變數  
-@import &quot;reset&quot;;  // reset.css  
-@import &quot;base&quot;; // 全站設定
-@import &quot;util&quot;; // 工具類 class，.mb-1、.pr-3
+<pre tabindex="0"><code>@import &#34;variable&#34;;// 變數  
+@import &#34;reset&#34;;  // reset.css  
+@import &#34;base&#34;; // 全站設定
+@import &#34;util&#34;; // 工具類 class，.mb-1、.pr-3
 
 // layout 共同框架,第一層
-@import &quot;layout/header&quot;;
-@import &quot;layout/footer&quot;;
-@import &quot;layout/menu&quot;;
-@import &quot;layout/aisde&quot;;
+@import &#34;layout/header&#34;;
+@import &#34;layout/footer&#34;;
+@import &#34;layout/menu&#34;;
+@import &#34;layout/aisde&#34;;
 
 // 頁面設計
-@import &quot;pages/index&quot;;     
-@import &quot;pages/cart&quot;;     
-
+@import &#34;pages/index&#34;;     
+@import &#34;pages/cart&#34;;     
 </code></pre><h4 id="老師解析">老師解析</h4>
 <ul>
 <li>容器</li>
@@ -390,7 +398,7 @@
         
         <div id="disqus_thread"></div>
 <script type="application/javascript">
-    var disqus_config = function () {
+    window.disqus_config = function () {
     
     
     
@@ -512,7 +520,7 @@
     a.src = g;
     m.parentNode.insertBefore(a, m)
   })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
-  ga('create', 'UA-181241869-1', 'auto');
+  ga('create', '', 'auto');
   ga('send', 'pageview');
 </script></body>
 </html>

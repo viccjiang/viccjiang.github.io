@@ -12,7 +12,7 @@
   <meta name="author" content="Jiang">
 
 
-  <meta name="generator" content="Hugo 0.70.0" />
+  <meta name="generator" content="Hugo 0.120.4">
 
   <!-- plugins -->
   
@@ -35,6 +35,15 @@
 
   
 
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-JMV8187M77"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-JMV8187M77');
+</script>
 
 </head><body>
 <!-- preloader start -->
@@ -294,9 +303,9 @@ gulp</p>
 </li>
 <li>import 拆分規劃</li>
 </ul>
-<pre><code class="language-css=" data-lang="css=">@import &quot;variable&quot;;
-@import &quot;reset&quot;;
-@import &quot;layout&quot;;
+<pre tabindex="0"><code class="language-css=" data-lang="css=">@import &#34;variable&#34;;
+@import &#34;reset&#34;;
+@import &#34;layout&#34;;
 
 1.變數的檔案放在最前面，這樣一來後面的檔案才能夠引用變數的css內容。
 2.reset的檔案放在layout前面，才不會導致選擇器的css內容被reset覆蓋。 
@@ -331,23 +340,22 @@ gulp</p>
 <blockquote>
 <p>加入下列程式碼時，最外層大括號拿掉再放進去，中括號最後面加上逗號 &ldquo;,&rdquo; 和後面原本在裡面的的程式碼做區隔</p>
 </blockquote>
-<pre><code>{
-    &quot;liveSassCompile.settings.formats&quot;: [
+<pre tabindex="0"><code>{
+    &#34;liveSassCompile.settings.formats&#34;: [
         {
-            &quot;format&quot;: &quot;compressed&quot;,
-            &quot;extensionName&quot;: &quot;.min.css&quot;,
-            &quot;savePath&quot;: &quot;/css/&quot;
+            &#34;format&#34;: &#34;compressed&#34;,
+            &#34;extensionName&#34;: &#34;.min.css&#34;,
+            &#34;savePath&#34;: &#34;/css/&#34;
         }
     ]
 }
 </code></pre><h3 id="scss-結構參考">SCSS 結構參考</h3>
 <p>一個頁面一個scss</p>
-<pre><code>@import &quot;variable&quot;;// 變數  
-@import &quot;reset&quot;;  // reset.css  
-@import &quot;layout&quot;; // 共同框架,第一層
-@import &quot;index&quot;;     
-@import &quot;page1&quot;;     
-
+<pre tabindex="0"><code>@import &#34;variable&#34;;// 變數  
+@import &#34;reset&#34;;  // reset.css  
+@import &#34;layout&#34;; // 共同框架,第一層
+@import &#34;index&#34;;     
+@import &#34;page1&#34;;     
 </code></pre><h3 id="老師範例">老師範例</h3>
 <ul>
 <li><a href="https://github.com/gonsakon/mopcon2014/blob/master/sass/all.sass">2014 MOPCON</a></li>
@@ -395,7 +403,7 @@ gulp</p>
         
         <div id="disqus_thread"></div>
 <script type="application/javascript">
-    var disqus_config = function () {
+    window.disqus_config = function () {
     
     
     
@@ -517,7 +525,7 @@ gulp</p>
     a.src = g;
     m.parentNode.insertBefore(a, m)
   })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
-  ga('create', 'UA-181241869-1', 'auto');
+  ga('create', '', 'auto');
   ga('send', 'pageview');
 </script></body>
 </html>

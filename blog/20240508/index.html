@@ -6,7 +6,7 @@
   <!-- mobile responsive meta -->
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description"
-    content="六角學院JavaScript直播班課前筆記">
+    content="三個學習重點，讓輸出發揮綜效">
 
   
   <meta name="author" content="Jiang">
@@ -142,242 +142,68 @@
         <a href="/categories/%e8%87%aa%e6%88%91%e6%88%90%e9%95%b7"
           class="text-primary">自我成長</a>
         
-        <h2>六角學院 JavaScript 直播班 課前筆記#1</h2>
+        <h2>三個學習重點，讓輸出發揮綜效</h2>
         <div class="mb-3 post-meta">
           <span>By Jiang</span>
           
           <span class="border-bottom border-primary px-2 mx-1"></span>
-          <span>28 January 2021</span>
+          <span>08 May 2024</span>
           
         </div>
         
-        <img src="https://viccjiang.github.io/images/post/post-13.jpg" class="img-fluid w-100 mb-4" alt="六角學院 JavaScript 直播班 課前筆記#1">
+        <img src="https://viccjiang.github.io/images/post/post-20240508.jpg" class="img-fluid w-100 mb-4" alt="三個學習重點，讓輸出發揮綜效">
         
         <div class="content mb-5">
           <h4 id="heading"></h4>
-<p>基礎觀念：學程式 = 任務拆解 ( 拆解成小任務 )</p>
+<p>這是一篇關於直播班的學習心態分享。</p>
 <!-- raw HTML omitted -->
-<h2 id="變數variable與值value">變數(Variable)與值(Value)</h2>
-<h3 id="宣告變數的方法">宣告變數的方法：</h3>
+<hr>
+<p>這次比較特別的是開始使用 ChatGPT、notion AI 來輔助學習，讓學習輸出時更加有複利效應。</p>
+<p>有時候覺得自己怎麼沒有進步的時候，回頭看看以前的寫得 code 會覺得自己進步很多，很多以前看不懂得 code 現在可以很快就掌握起來。</p>
+<hr>
+<h5 id="最主要三個學習重點">最主要三個學習重點</h5>
 <ol>
-<li>let</li>
-<li>const</li>
-<li>var</li>
-</ol>
-<h3 id="基本型別primitives-types-介紹">基本型別(primitives types) 介紹</h3>
-<ol>
-<li>字串 (String)</li>
-<li>數字 (Number)</li>
-<li>布林 (Boolean)</li>
-<li>undefined</li>
-<li>null</li>
-<li>Symbol</li>
-</ol>
-<h3 id="型別操作方法">型別操作方法</h3>
+<li>
+<p>課前預習課程 → 跟上老師節奏 → 課後複習課程</p>
+</li>
+<li>
+<p>每週任務的刻意練習 ←→ 小步測試 ←→ 反覆驗證</p>
+</li>
+<li>
+<p>充分運用課程提供的額外資源</p>
 <ul>
-<li>物件型別，例如陣列(array)與物件(object)</li>
+<li>作業批改 — 盡可能修改助教給的建議</li>
+<li>每日的助教問答 — 可以在 DC 群盡情向助教們發問</li>
+<li>小組討論 — 跟組員一起動腦討論，會意外獲得更多</li>
+<li>每日任務 — 每天的小任務提升信心</li>
 </ul>
-<h3 id="javascript-記憶體">JavaScript 記憶體</h3>
-<ul>
-<li>不會跨頁面共享記憶體空間，每頁網頁都有個別存放位置</li>
-</ul>
-<h3 id="小駝峰命名法">小駝峰命名法</h3>
-<ol>
-<li>變數開頭命名用小寫</li>
-<li>若開頭大寫是有其他用意的，主要是建立 class 類別所用(比較進階用法)，所以還請大家先習慣用小駝峰命名</li>
-<li><a href="https://eyesofkids.gitbooks.io/javascript-start-from-es6/content/part3/var_const_naming.html">變數、常數與命名</a></li>
-</ol>
-<h3 id="typeof">typeof</h3>
-<ul>
-<li>可以查詢型別</li>
-</ul>
-<h2 id="如何宣告變數-">如何宣告變數 ?</h2>
-<p>let 變數名稱 = value;</p>
-<p>let a = 1;</p>
-<p>let 宣告一個變數</p>
-<p>a 變數名稱為a</p>
-<p>= 賦予值為1</p>
-<h2 id="number-型別">Number 型別</h2>
-<p>可直接運算 + - * / %(餘數)</p>
-<p>5 ** 2 &raquo; 5的平方</p>
-<p>5 ** 3 &raquo; 5的立方</p>
-<p>可以先乘除後加減</p>
-<p>可作為正整數、小數點、負數</p>
-<h3 id="模擬情境-小明去商店買牛奶">模擬情境 小明去商店買牛奶</h3>
-<ol>
-<li>
-<p>小明來帶冰箱前，看見牛奶1瓶30元</p>
-</li>
-<li>
-<p>於是她買了6瓶</p>
-</li>
-<li>
-<p>開始計算總共多少錢</p>
 </li>
 </ol>
-<table>
-<thead>
-<tr>
-<th>變數</th>
-<th>值</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>milkPrice</td>
-<td>30</td>
-</tr>
-<tr>
-<td>milkNum</td>
-<td>6</td>
-</tr>
-<tr>
-<td>total</td>
-<td>180</td>
-</tr>
-</tbody>
-</table>
-<p>total 算式 milkPrice * milkNum</p>
-<p>(值的位置只能放型別，算式可以放在console.log)</p>
-<h3 id="模擬情境--課前最終作業二-">模擬情境 ( 課前最終作業二 )</h3>
-<p>練習一：小美買冰塊</p>
-<p><img src="https://i.imgur.com/uwhMee3.png" alt=""></p>
-<p>練習二：小華去速食店
-<img src="https://i.imgur.com/o9bCQM8.png" alt=""></p>
-<h2 id="letconstvar">let、const、var</h2>
-<h3 id="let">let</h3>
-<p>let coke = 20; let 是宣告 coke是變數  = 是賦予</p>
-<p>coke = 40; 在這可以直接取出coke重新賦予宣告過的變數</p>
-<h3 id="const">const</h3>
-<p>let a = 1; 變數</p>
-<p>const b = 2; 常數</p>
-<h3 id="var">var</h3>
-<p>現在不建議使用了，因為較不嚴僅</p>
-<h3 id="letconst-差別在於">let、const 差別在於</h3>
-<p>let 可以修改變數的值 (可覆寫) -&gt; 可變的變數</p>
-<p>const 不可以修改變數的值 (不可複寫) -&gt; 不可變的常數</p>
-<h3 id="模擬情境-帽子折扣與價錢">模擬情境 帽子折扣與價錢</h3>
-<table>
-<thead>
-<tr>
-<th>變數</th>
-<th>值</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>sale</td>
-<td>0.7</td>
-</tr>
-<tr>
-<td>hatPrice</td>
-<td>100</td>
-</tr>
-<tr>
-<td>hatNum</td>
-<td>3</td>
-</tr>
-<tr>
-<td>total</td>
-<td>210</td>
-</tr>
-</tbody>
-</table>
-<p>const sale = 0.7;</p>
-<p>const hatPrice = 100;</p>
-<p>let hatNum = 3;</p>
-<p>let total = sale * hatPrice * hatNum</p>
-<h2 id="宣告變數的特性">宣告變數的特性</h2>
+<hr>
+<h5 id="學習心態的轉變">學習心態的轉變</h5>
 <ol>
-<li>
-<p>開頭不可為數字</p>
-</li>
-<li>
-<p>變數有區分大小寫</p>
-</li>
-<li>
-<p>可接受中文</p>
-</li>
-<li>
-<p>下底線_</p>
-</li>
-<li>
-<p>不要使用到 JS 關鍵字 保留字 JavaScript keyword</p>
-</li>
+<li>現在看到程式報錯不會緊張</li>
+<li>遇到困難知道查資料的方法 ex. 如何下這個關鍵字、stackoverflow、ChatGPT、notion AI</li>
+<li>進步，是隨著時間一步一步累積，急不得，挫折感是必然，成長是必須</li>
+<li>學習看官方文件，隨時查文件</li>
+<li>遇到較為困難的地方可以先做筆記</li>
 </ol>
-<h2 id="建立環境">建立環境</h2>
+<hr>
+<h5 id="programming-is-10-writing-code-and-90-understanding-why-its-not-working">Programming Is 10% Writing Code And 90% Understanding Why It’s Not Working</h5>
+<hr>
 <ol>
-<li>
-<p>index.html</p>
-</li>
-<li>
-<p>all.js</p>
-</li>
-<li>
-<p>index 載入 <!-- raw HTML omitted --><!-- raw HTML omitted --></p>
-</li>
+<li>看懂這行 code 的 報錯提示</li>
+<li>知道每一行的報錯大概在幹嘛</li>
+<li>報錯時，看懂行數然後再做求證</li>
+<li>最常犯的錯是打錯字，強烈建議安裝拼字套件</li>
+<li>次要犯的錯是 api 寫錯，導致接不到 api</li>
+<li>很推薦新手先看 JS Error 參考資料，可以省去很多懷疑自己的時候</li>
 </ol>
-<h2 id="印出顯示的資料">印出顯示的資料</h2>
-<p>console.log(a);</p>
-<p>a 是帶入想印出的變數</p>
-<p>console.log(a,b);</p>
-<p>可以印出兩個變數</p>
-<h2 id="賦值運算子">賦值運算子</h2>
-<h3 id="--">+= -=</h3>
-<p>let a = 50;</p>
-<pre><code>a = a+100; 取出a再加上100
-</code></pre>
-<p>let a =50;</p>
-<pre><code>a = a+10; 另一種寫法是 a = a+=10;
-</code></pre>
-<p>let a =50;</p>
-<pre><code>a = a-10; 另一種寫法是 a = a-=10;
-</code></pre>
-<h3 id="----">++ - -</h3>
-<p>let a = 0;</p>
-<p>let b = 0;</p>
-<p>a++; 針對自己的變數+=1(累加1)</p>
-<p>a- -; 針對自己的變數-=1(累減1)</p>
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
-<h2 id="宣告字串的方式">宣告字串的方式</h2>
-<p>加上 雙引號&quot;   &quot; 單引號&rsquo;  '</p>
-<p>let a = &rsquo; hello &rsquo; ;</p>
-<p>let b = &quot; hihi &quot; ;</p>
-<h2 id="字串相加的方式">字串相加的方式</h2>
-<p>let a = &lsquo;hello&rsquo; + &lsquo;你好嗎&rsquo;;</p>
-<p>ex.</p>
-<p>let friendName = &lsquo;Tom&rsquo;;</p>
-<p>let content = &lsquo;你好嗎&rsquo;;</p>
-<p>console.log(friendName + content);</p>
-<p>console.log(friendName + &rsquo;  &rsquo; + content);</p>
-<!-- raw HTML omitted -->
-<h2 id="typeof-1">typeof</h2>
-<p>查詢 值value 的型別</p>
-<h2 id="自動轉型的貼心功能">自動轉型的貼心功能</h2>
-<p>字串相加轉為數字</p>
-<h2 id="nan">NaN</h2>
-<p>存在的目的在回報非數字或異常的狀況</p>
-<h2 id="parseint-型別轉換">parseInt 型別轉換</h2>
-<p>字串變數字 &ldquo;2&rdquo; -&gt; 2</p>
-<p>使用方法 ex. let age = parseInt (&ldquo;30&rdquo;);</p>
-<!-- raw HTML omitted -->
-<h2 id="字串的處理方法">字串的處理方法</h2>
-<p>length 字數元計算</p>
-<p>trim(); 過濾空白字元 除去空白字元</p>
-<h2 id="value-資料指向">value 資料指向</h2>
-<p>let myEmail = &rsquo; Tom &lsquo;;</p>
-<p>let nameLength = myEmail.length;</p>
-<p>let updateLength = myEmail.trim();</p>
-<p>console.log(myEmail);</p>
-<p>console.log(nameLength);</p>
-<p>console.log(updateLength);</p>
-<!-- raw HTML omitted -->
-<h2 id="樣板字面值-template-literals-httpsdevelopermozillaorgzh-twdocswebjavascriptreferencetemplate_literals">樣板字面值 <a href="https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/Reference/Template_literals">Template literals </a></h2>
-<pre tabindex="0"><code>let myName = &#39;Tom&#39;;
-let myAge = 18;
-let content = `你好我是${myName},我今年${myAge}歲`;
-</code></pre><!-- raw HTML omitted -->
+<hr>
+<h5 id="javascript-開發中常見錯誤解決辦法">JavaScript 開發中常見錯誤解決辦法</h5>
+<p><a href="https://www.casper.tw/development/2020/09/16/chrome-js-alert/">https://www.casper.tw/development/2020/09/16/chrome-js-alert/</a></p>
+<h5 id="javascript-錯誤類型javascript-error-reference">JavaScript 錯誤類型(JavaScript Error Reference)</h5>
+<p><a href="https://israynotarray.com/javascript/20211126/12988607/">https://israynotarray.com/javascript/20211126/12988607/</a></p>
 
         </div>
 

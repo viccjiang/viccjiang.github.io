@@ -12,7 +12,7 @@
   <meta name="author" content="Jiang">
 
 
-  <meta name="generator" content="Hugo 0.70.0" />
+  <meta name="generator" content="Hugo 0.120.4">
 
   <!-- plugins -->
   
@@ -35,6 +35,15 @@
 
   
 
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-JMV8187M77"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-JMV8187M77');
+</script>
 
 </head><body>
 <!-- preloader start -->
@@ -174,11 +183,11 @@
 <ul>
 <li>常用背景圖視差滾動</li>
 </ul>
-<pre><code class="language-css=" data-lang="css=">background-attachment: fixed;
+<pre tabindex="0"><code class="language-css=" data-lang="css=">background-attachment: fixed;
 </code></pre><ul>
 <li>這個 CSS 屬性能夠設定，背景圖片的位置是否要固定在 viewport（視圖）上，還是背景圖片會隨著它的 containing block（外層容器）一起滾動。</li>
 </ul>
-<pre><code class="language-css=" data-lang="css=">background-attachment: scroll;
+<pre tabindex="0"><code class="language-css=" data-lang="css=">background-attachment: scroll;
 background-attachment: fixed;
 background-attachment: local;
 </code></pre><ol>
@@ -200,12 +209,12 @@ b. backrawds：回到原本位置
 c. both 擁有上面兩個的功能</li>
 <li><a href="https://animate.style/">animate css</a>
 using a CDN
-<pre><code class="language-htmlembedded=" data-lang="htmlembedded=">&lt;link
-    rel=&quot;stylesheet&quot;
-    href=&quot;https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css&quot;
+<pre tabindex="0"><code class="language-htmlembedded=" data-lang="htmlembedded=">&lt;link
+    rel=&#34;stylesheet&#34;
+    href=&#34;https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css&#34;
   /&gt;
-</code></pre><p>Basic usage</p>
-<pre><code class="language-htmlembedded=" data-lang="htmlembedded=">&lt;h1 class=&quot;animate__animated animate__bounce&quot;&gt;An animated element&lt;/h1&gt;
+</code></pre>Basic usage
+<pre tabindex="0"><code class="language-htmlembedded=" data-lang="htmlembedded=">&lt;h1 class=&#34;animate__animated animate__bounce&#34;&gt;An animated element&lt;/h1&gt;
 </code></pre></li>
 <li>MIT 授權 不能拿掉註解</li>
 </ol>
@@ -241,31 +250,31 @@ using a CDN
 </ol>
 <h3 id="載入步驟">載入步驟</h3>
 <p>在 <!-- raw HTML omitted -->前加上以下程式碼</p>
-<pre><code>&lt;link rel=&quot;stylesheet&quot; href=&quot;https://unpkg.com/aos@next/dist/aos.css&quot; /&gt;
-&lt;script src=&quot;https://unpkg.com/aos@next/dist/aos.js&quot;&gt;&lt;/script&gt;
+<pre tabindex="0"><code>&lt;link rel=&#34;stylesheet&#34; href=&#34;https://unpkg.com/aos@next/dist/aos.css&#34; /&gt;
+&lt;script src=&#34;https://unpkg.com/aos@next/dist/aos.js&#34;&gt;&lt;/script&gt;
 &lt;script&gt;
  AOS.init();
 &lt;/script&gt;
 </code></pre><p>AOS 單一設計</p>
-<pre><code>&lt;div
-    data-aos=&quot;fade-up&quot;
-    data-aos-offset=&quot;200&quot;
-    data-aos-delay=&quot;50&quot; 
-    data-aos-duration=&quot;1000&quot;
-    data-aos-easing=&quot;ease-in-out&quot;
-    data-aos-mirror=&quot;true&quot;
-    data-aos-once=&quot;false&quot;
-    data-aos-anchor-placement=&quot;top-center&quot;&gt;
+<pre tabindex="0"><code>&lt;div
+    data-aos=&#34;fade-up&#34;
+    data-aos-offset=&#34;200&#34;
+    data-aos-delay=&#34;50&#34; 
+    data-aos-duration=&#34;1000&#34;
+    data-aos-easing=&#34;ease-in-out&#34;
+    data-aos-mirror=&#34;true&#34;
+    data-aos-once=&#34;false&#34;
+    data-aos-anchor-placement=&#34;top-center&#34;&gt;
   &lt;/div&gt;
 </code></pre><p>AOS 全域設計</p>
-<pre><code>AOS.init({
+<pre tabindex="0"><code>AOS.init({
   // Global settings:
-  disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
-  startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
-  initClassName: 'aos-init', // class applied after initialization
-  animatedClassName: 'aos-animate', // class applied on animation
+  disable: false, // accepts following values: &#39;phone&#39;, &#39;tablet&#39;, &#39;mobile&#39;, boolean, expression or function
+  startEvent: &#39;DOMContentLoaded&#39;, // name of the event dispatched on the document, that AOS should initialize on
+  initClassName: &#39;aos-init&#39;, // class applied after initialization
+  animatedClassName: &#39;aos-animate&#39;, // class applied on animation
   useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
-  disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+  disableMutationObserver: false, // disables automatic mutations&#39; detections (advanced)
   debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
   throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
   
@@ -274,10 +283,10 @@ using a CDN
   offset: 120, // offset (in px) from the original trigger point
   delay: 0, // values from 0 to 3000, with step 50ms
   duration: 400, // values from 0 to 3000, with step 50ms
-  easing: 'ease', // default easing for AOS animations
+  easing: &#39;ease&#39;, // default easing for AOS animations
   once: false, // whether animation should happen only once - while scrolling down
   mirror: false, // whether elements should animate out while scrolling past them
-  anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+  anchorPlacement: &#39;top-bottom&#39;, // defines which position of the element regarding to window should trigger the animation
 
 });
 </code></pre><blockquote>
@@ -316,7 +325,7 @@ offset: 120,滿足大於120px才會出現</p>
         
         <div id="disqus_thread"></div>
 <script type="application/javascript">
-    var disqus_config = function () {
+    window.disqus_config = function () {
     
     
     
@@ -438,7 +447,7 @@ offset: 120,滿足大於120px才會出現</p>
     a.src = g;
     m.parentNode.insertBefore(a, m)
   })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
-  ga('create', 'UA-181241869-1', 'auto');
+  ga('create', '', 'auto');
   ga('send', 'pageview');
 </script></body>
 </html>

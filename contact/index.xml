@@ -7,9 +7,6 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 29 Oct 2019 13:49:23 +0600</lastBuildDate>
-    
-	<atom:link href="https://viccjiang.github.io/contact/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <atom:link href="https://viccjiang.github.io/contact/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
