@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>開發工具 on JIANGs Daily LAB</title>
+    <link>https://viccjiang.github.io/categories/%E9%96%8B%E7%99%BC%E5%B7%A5%E5%85%B7/</link>
+    <description>Recent content in 開發工具 on JIANGs Daily LAB</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 03 Apr 2026 18:00:00 +0800</lastBuildDate>
+    <atom:link href="https://viccjiang.github.io/categories/%E9%96%8B%E7%99%BC%E5%B7%A5%E5%85%B7/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Claude Code 設定與 Statusline 實作紀錄</title>
+      <link>https://viccjiang.github.io/blog/20260403_claude_code_setup/</link>
+      <pubDate>Fri, 03 Apr 2026 18:00:00 +0800</pubDate>
+      <guid>https://viccjiang.github.io/blog/20260403_claude_code_setup/</guid>
+      <description>Claude Code 是什麼？ Claude Code 是 Anthropic 推出的 CLI 開發工具，可以直接在終端機中與 Claude AI 互動，協助你完成程式開發、除錯、重構等工作。</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en-us"><head>
+  <meta charset="utf-8">
+  <title>JIANGs Daily LAB</title>
+
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description"
+    content="Claude Code 設定與 Statusline 實作紀錄">
+
+  
+  <meta name="author" content="Jiang">
+
+
+  <meta name="generator" content="Hugo 0.120.4">
+
+  <!-- plugins -->
+  
+  <link rel="stylesheet" href="https://viccjiang.github.io/plugins/bootstrap/bootstrap.min.css ">
+  
+  <link rel="stylesheet" href="https://viccjiang.github.io/plugins/slick/slick.css ">
+  
+  <link rel="stylesheet" href="https://viccjiang.github.io/plugins/themify-icons/themify-icons.css ">
+  
+  <link rel="stylesheet" href="https://viccjiang.github.io/plugins/venobox/venobox.css ">
+  
+
+  <!-- Main Stylesheet -->
+  
+  <link rel="stylesheet" href="https://viccjiang.github.io/scss/style.min.css" media="screen">
+
+  <!--Favicon-->
+  <link rel="shortcut icon" href="https://viccjiang.github.io/images/favicon.png " type="image/x-icon">
+  <link rel="icon" href="https://viccjiang.github.io/images/favicon.png " type="image/x-icon">
+
+  
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-JMV8187M77"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-JMV8187M77');
+</script>
+
+</head><body>
+<!-- preloader start -->
+<div class="preloader">
+  
+</div>
+<!-- preloader end -->
+<!-- navigation -->
+<header class="navigation">
+  <div class="container">
+    
+    <nav class="navbar navbar-expand-lg navbar-white bg-transparent border-bottom pl-0">
+      <a class="navbar-brand mobile-view" href="https://viccjiang.github.io/"><img class="img-fluid"
+          src="https://viccjiang.github.io/images/logo.png" alt="JIANGs Daily LAB"></a>
+      <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation">
+        <i class="ti-menu h3"></i>
+      </button>
+
+      <div class="collapse navbar-collapse text-center" id="navigation">
+        <div class="desktop-view">
+          <ul class="navbar-nav mr-auto">
+            
+            <li class="nav-item">
+              <a class="nav-link" href="https://github.com/viccjiang"><i class="ti-github"></i></a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link" href="https://www.pinkoi.com/store/zhexiemao"><i class="ti-link"></i></a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link" href="https://jiangsdesign.medium.com/"><i class="ti-pencil-alt"></i></a>
+            </li>
+            
+          </ul>
+        </div>
+
+        <a class="navbar-brand mx-auto desktop-view" href="https://viccjiang.github.io/"><img class="img-fluid"
+            src="https://viccjiang.github.io/images/logo.png" alt="JIANGs Daily LAB"></a>
+
+        <ul class="navbar-nav">
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://viccjiang.github.io/blog">所有文章</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://viccjiang.github.io/about">關於我</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://viccjiang.github.io/contact">聯絡我</a>
+          </li>
+          
+          
+        </ul>
+
+        
+        <!-- search -->
+        <div class="search pl-lg-4">
+          <button id="searchOpen" class="search-btn"><i class="ti-search"></i></button>
+        </div>
+        
+
+        
+      </div>
+    </nav>
+  </div>
+</header>
+<!-- /navigation -->
+
+<section class="section-sm">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 mx-auto">
+        
+        <a href="/categories/%e9%96%8b%e7%99%bc%e5%b7%a5%e5%85%b7"
+          class="text-primary">開發工具</a>
+        
+        <h2>Claude Code 設定與 Statusline 實作紀錄</h2>
+        <div class="mb-3 post-meta">
+          <span>By Jiang</span>
+          
+          <span class="border-bottom border-primary px-2 mx-1"></span>
+          <span>03 April 2026</span>
+          
+        </div>
+        
+        <img src="https://viccjiang.github.io/images/post/post-20260403.jpg" class="img-fluid w-100 mb-4" alt="Claude Code 設定與 Statusline 實作紀錄">
+        
+        <div class="content mb-5">
+          <h4 id="claude-code-是什麼">Claude Code 是什麼？</h4>
+<p>Claude Code 是 Anthropic 推出的 CLI 開發工具，可以直接在終端機中與 Claude AI 互動，協助你完成程式開發、除錯、重構等工作。</p>
+<hr>
+<h5 id="安裝方式">安裝方式</h5>
+<p>請參考官方文件：<a href="https://code.claude.com/docs/zh-TW/overview#%E9%96%8B%E5%A7%8B%E4%BD%BF%E7%94%A8">Claude Code 開始使用</a></p>
+<hr>
+<h5 id="基礎設定">基礎設定</h5>
+<h6 id="1-登入">1. 登入</h6>
+<p>首次啟動時會引導你登入 Anthropic 帳號，登入後即可開始使用。</p>
+<h6 id="2-claudemd">2. CLAUDE.md</h6>
+<p>在專案根目錄建立 <code>CLAUDE.md</code>，可以提供專案的背景資訊給 Claude，例如：</p>
+<ul>
+<li>專案的建置與執行指令</li>
+<li>程式碼架構說明</li>
+<li>開發慣例與注意事項</li>
+</ul>
+<p>Claude 會自動讀取這個檔案，讓回答更貼合你的專案。</p>
+<hr>
+<h5 id="常用斜線指令">常用斜線指令</h5>
+<p><strong>基本操作</strong></p>
+<table>
+<thead>
+<tr>
+<th>指令</th>
+<th>說明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>claude</code></td>
+<td>啟動互動模式</td>
+</tr>
+<tr>
+<td><code>/help</code></td>
+<td>查看說明</td>
+</tr>
+<tr>
+<td><code>/clear</code></td>
+<td>清除對話紀錄（別名：<code>/reset</code>、<code>/new</code>）</td>
+</tr>
+</tbody>
+</table>
+<p><strong>會話管理</strong></p>
+<table>
+<thead>
+<tr>
+<th>指令</th>
+<th>說明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>/resume</code></td>
+<td>恢復先前的對話</td>
+</tr>
+<tr>
+<td><code>/compact</code></td>
+<td>壓縮對話內容以節省 token</td>
+</tr>
+<tr>
+<td><code>/context</code></td>
+<td>可視化目前語境使用情況</td>
+</tr>
+<tr>
+<td><code>/copy</code></td>
+<td>複製最後一個回應到剪貼簿</td>
+</tr>
+</tbody>
+</table>
+<p><strong>模型與模式</strong></p>
+<table>
+<thead>
+<tr>
+<th>指令</th>
+<th>說明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>/model</code></td>
+<td>選擇或更改 AI 模型</td>
+</tr>
+<tr>
+<td><code>/plan</code></td>
+<td>進入計畫模式，先規劃再執行</td>
+</tr>
+<tr>
+<td><code>/effort</code></td>
+<td>設定模型努力等級（low / medium / high）</td>
+</tr>
+</tbody>
+</table>
+<p><strong>設定與界面</strong></p>
+<table>
+<thead>
+<tr>
+<th>指令</th>
+<th>說明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>/statusline</code></td>
+<td>配置狀態列顯示內容</td>
+</tr>
+<tr>
+<td><code>/theme</code></td>
+<td>改變色彩主題</td>
+</tr>
+<tr>
+<td><code>/init</code></td>
+<td>用 CLAUDE.md 初始化專案</td>
+</tr>
+<tr>
+<td><code>/usage</code></td>
+<td>顯示計畫使用限制與速率限制狀態</td>
+</tr>
+<tr>
+<td><code>/stats</code></td>
+<td>顯示當前會話的統計資訊</td>
+</tr>
+<tr>
+<td><code>/memory</code></td>
+<td>編輯 CLAUDE.md 記憶檔案</td>
+</tr>
+</tbody>
+</table>
+<p><strong>程式碼與 Git</strong></p>
+<table>
+<thead>
+<tr>
+<th>指令</th>
+<th>說明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>/diff</code></td>
+<td>開啟互動式 diff 檢視器</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h5 id="statusline-實際操作">Statusline 實際操作</h5>
+<p>Claude Code 的 <code>/statusline</code> 指令可以自訂終端機底部的狀態列，即時顯示模型、用量、Git 分支等資訊。</p>
+<h6 id="設定方式">設定方式</h6>
+<ol>
+<li>在 Claude Code 中輸入 <code>/statusline</code>，選擇自動配置或手動設定</li>
+<li>設定會寫入 <code>~/.claude/settings.json</code>，例如：</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;statusLine&#34;</span>: {
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;type&#34;</span>: <span style="color:#e6db74">&#34;command&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;command&#34;</span>: <span style="color:#e6db74">&#34;bash C:/Users/USER/.claude/statusline-command.sh&#34;</span>
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><ol start="3">
+<li>對應的腳本放在 <code>~/.claude/statusline-command.sh</code></li>
+</ol>
+<h6 id="我的-statusline-腳本">我的 statusline 腳本</h6>
+<p>這個腳本會顯示三行資訊：</p>
+<ul>
+<li><strong>第一行</strong>：模型名稱 | 語境使用量 | 專案目錄（Git 分支）</li>
+<li><strong>第二行</strong>：5 小時用量進度條 + 重置時間</li>
+<li><strong>第三行</strong>：7 天用量進度條 + 重置時間</li>
+</ul>
+<p>進度條以圓點呈現，並依用量百分比變色：</p>
+<ul>
+<li>綠色（&lt; 60%）→ 黃色（60~80%）→ 紅色（&gt; 80%）</li>
+</ul>
+<p>腳本透過 <code>jq</code> 解析 Claude Code 傳入的 JSON 資料，擷取模型名稱、語境視窗使用率、速率限制等欄位，再組合成格式化的輸出。</p>
+<h6 id="顯示效果範例">顯示效果範例</h6>
+<pre tabindex="0"><code>Claude 4 Opus | 📝 45% | myproject (main*)
+current ●●●●○○○○○○ 40%  ○ 14:30
+weekly  ●●○○○○○○○○ 20%  ○ 04/07 09:00
+</code></pre><blockquote>
+<p>分支名稱後面的 <code>*</code> 表示有未提交的變更。</p>
+</blockquote>
+<hr>
+<h5 id="實用技巧">實用技巧</h5>
+<ol>
+<li><strong>直接描述需求</strong> — 不需要告訴 Claude 該看哪個檔案，它會自己搜尋</li>
+<li><strong>提供截圖</strong> — 可以貼上截圖路徑，Claude 能讀取圖片內容</li>
+<li><strong>善用 CLAUDE.md</strong> — 把專案特有的知識寫進去，減少重複說明</li>
+<li><strong>檔案編輯</strong> — Claude 可以直接幫你修改程式碼，修改前會先讀取原始內容</li>
+</ol>
+<hr>
+<h5 id="小結">小結</h5>
+<p>Claude Code 讓 AI 真正融入開發流程，從搜尋程式碼、修改檔案到執行指令，都能在終端機中一站完成。適合用來加速日常開發、快速理解陌生的 codebase，或是處理繁瑣的重構任務。</p>
+<hr>
+<h5 id="參考資料">參考資料</h5>
+<ul>
+<li><a href="https://code.claude.com/docs/zh-TW/overview">Claude Code 官方文件（繁體中文）</a></li>
+</ul>
+
+        </div>
+
+        
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<footer style="margin-top: 50px;">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center mb-5">
+        <a href="https://viccjiang.github.io/"><img src="https://viccjiang.github.io/images/logo.png" alt="JIANGs Daily LAB"></a>
+      </div>
+      <div class="col-lg-4 col-sm-6 mb-5">
+        <h6 class="mb-4">社群連結</h6>
+        <ul class="list-unstyled">
+          
+          <li class="mb-3"><a class="text-dark" href="https://github.com/viccjiang">github</a></li>
+          
+          <li class="mb-3"><a class="text-dark" href="https://www.pinkoi.com/store/zhexiemao">Pinkoi</a></li>
+          
+          <li class="mb-3"><a class="text-dark" href="https://jiangsdesign.medium.com/">Medium</a></li>
+          
+        </ul>
+      </div>
+      <div class="col-lg-4 col-sm-6 mb-5">
+        <h6 class="mb-4">文章分類</h6>
+        <ul class="list-unstyled">
+          <li class="mb-3"><a class="text-dark"
+              href="/categories/%e5%85%ad%e8%a7%92%e5%ad%b8%e9%99%a2">六角學院</a>
+          </li>
+          <li class="mb-3"><a class="text-dark"
+              href="/categories/%e8%87%aa%e6%88%91%e6%88%90%e9%95%b7">自我成長</a>
+          </li>
+          <li class="mb-3"><a class="text-dark"
+              href="/categories/%e8%ae%80%e6%9b%b8%e5%bf%83%e5%be%97">讀書心得</a>
+          </li>
+          <li class="mb-3"><a class="text-dark"
+              href="/categories/%e9%96%8b%e7%99%bc%e5%b7%a5%e5%85%b7">開發工具</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-lg-4 col-sm-6 mb-5">
+        <h6 class="mb-4">網站地圖</h6>
+        <ul class="list-unstyled">
+          
+          <li class="mb-3"><a class="text-dark" href="https://viccjiang.github.io/about">about</a></li>
+          
+          <li class="mb-3"><a class="text-dark" href="https://viccjiang.github.io/blog">blog</a></li>
+          
+          <li class="mb-3"><a class="text-dark" href="https://viccjiang.github.io/contact">contact</a></li>
+          
+        </ul>
+      </div>
+      <div class="col-12 border-top py-4 text-center">
+        | copyright © 2020 <a href="https://viccjiang.github.io/">JIANGs</a> All Rights Reserved |
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+<!-- search overlay -->
+<div id="search-overlay" class="search-overlay">
+  <div class="search-overlay-inner">
+    <button id="searchClose" class="search-overlay-close"><i class="ti-close"></i></button>
+    <div class="search-overlay-header">
+      <div class="search-input-wrapper">
+        <i class="ti-search search-input-icon"></i>
+        <input id="search-query" type="text" placeholder="搜尋文章..." autocomplete="off">
+      </div>
+    </div>
+    <div class="search-overlay-results" id="search-results"></div>
+  </div>
+</div>
+
+
+<script>
+  var indexURL = "https://viccjiang.github.io/index.json"
+</script>
+
+<!-- JS Plugins -->
+
+<script src="https://viccjiang.github.io/plugins/jQuery/jquery.min.js"></script>
+
+<script src="https://viccjiang.github.io/plugins/bootstrap/bootstrap.min.js"></script>
+
+<script src="https://viccjiang.github.io/plugins/slick/slick.min.js"></script>
+
+<script src="https://viccjiang.github.io/plugins/venobox/venobox.min.js"></script>
+
+<script src="https://viccjiang.github.io/plugins/search/fuse.min.js"></script>
+
+<script src="https://viccjiang.github.io/plugins/search/mark.js"></script>
+
+<script src="https://viccjiang.github.io/plugins/search/search.js"></script>
+
+<!-- Main Script -->
+
+<script src="https://viccjiang.github.io/js/script.min.js"></script>
+<!-- google analitycs -->
+<script>
+  (function (i, s, o, g, r, a, m) {
+    i['GoogleAnalyticsObject'] = r;
+    i[r] = i[r] || function () {
+      (i[r].q = i[r].q || []).push(arguments)
+    }, i[r].l = 1 * new Date();
+    a = s.createElement(o),
+      m = s.getElementsByTagName(o)[0];
+    a.async = 1;
+    a.src = g;
+    m.parentNode.insertBefore(a, m)
+  })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+  ga('create', '', 'auto');
+  ga('send', 'pageview');
+</script></body>
+</html>
