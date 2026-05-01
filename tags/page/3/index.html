@@ -3,6 +3,18 @@
   <meta charset="utf-8">
   <title>JIANGs Daily LAB</title>
 
+  <!-- Theme (dark mode) — 必須儘早執行，避免閃爍 -->
+  <script>
+    (function () {
+      try {
+        var stored = localStorage.getItem('theme');
+        var prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+        var theme = stored || (prefersDark ? 'dark' : 'light');
+        document.documentElement.setAttribute('data-theme', theme);
+      } catch (e) {}
+    })();
+  </script>
+
   <!-- mobile responsive meta -->
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description"
@@ -113,6 +125,19 @@
         </div>
         
 
+        <!-- theme toggle -->
+        <button id="themeToggle" class="theme-toggle" type="button" aria-label="切換深色模式" title="切換深色 / 淺色模式">
+          <!-- moon (light 模式時顯示) -->
+          <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+          <!-- sun (dark 模式時顯示) -->
+          <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="4"></circle>
+            <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"></path>
+          </svg>
+        </button>
+
         
       </div>
     </nav>
@@ -132,31 +157,45 @@
     
     <h4 class="widget-title">About Me</h4>
     
-    <img src="https://viccjiang.github.io/images/author.jpg" alt=""
-      class="img-fluid author-thumb-sm d-block mx-auto rounded-circle mb-4">
+    <img
+      src="https://viccjiang.github.io/images/author.jpg"
+      alt=""
+      class="img-fluid author-thumb-sm d-block mx-auto rounded-circle mb-4"
+    />
     
     <p>Hey，我是 Jiang V ，
 Front end Developer &amp; Graphic Designer &amp; Dreamer</p>
-    <a href="https://viccjiang.github.io/about/" class="btn btn-outline-primary">Know More</a>
+    <a href="https://viccjiang.github.io/about/" class="btn btn-outline-primary">了解更多</a>
     
   </div>
   
   <div class="widget">
     <h4 class="widget-title">Category</h4>
     <ul class="list-unstyled">
-      <li><a href="/categories/%e5%89%b5%e6%a5%ad%e7%ad%86%e8%a8%98">創業筆記</a>
+      <li>
+        <a href="/categories/%e5%85%ad%e8%a7%92%e5%ad%b8%e9%99%a2"
+          >六角學院</a
+        >
       </li>
-      <li><a href="/categories/%e5%b7%a5%e4%bd%9c%e6%97%a5%e5%b8%b8">工作日常</a>
+      <li>
+        <a href="/categories/%e5%89%8d%e7%ab%af%e9%96%8b%e7%99%bc"
+          >前端開發</a
+        >
       </li>
-      <li><a href="/categories/%e6%8e%a8%e8%96%a6%e5%a5%bd%e7%89%a9">推薦好物</a>
+      <li>
+        <a href="/categories/%e8%87%aa%e6%88%91%e6%88%90%e9%95%b7"
+          >自我成長</a
+        >
       </li>
-      <li><a href="/categories/%e8%87%aa%e6%88%91%e6%88%90%e9%95%b7">自我成長</a>
+      <li>
+        <a href="/categories/%e8%ae%80%e6%9b%b8%e5%bf%83%e5%be%97"
+          >讀書心得</a
+        >
       </li>
-      <li><a href="/categories/%e8%ae%80%e6%9b%b8%e5%bf%83%e5%be%97">讀書心得</a>
-      </li>
-      <li><a href="/categories/%e9%96%8b%e7%99%bc%e5%b7%a5%e5%85%b7">開發工具</a>
-      </li>
-      <li><a href="/categories/%e9%a2%a8%e6%a0%bc%e6%89%8b%e4%bd%9c">風格手作</a>
+      <li>
+        <a href="/categories/%e9%96%8b%e7%99%bc%e5%b7%a5%e5%85%b7"
+          >開發工具</a
+        >
       </li>
     </ul>
   </div>
@@ -164,40 +203,132 @@ Front end Developer &amp; Graphic Designer &amp; Dreamer</p>
   <div class="widget">
     <h4 class="widget-title">Tag</h4>
     <ul class="list-inline">
-      <li class="list-inline-item"><a class="d-block p-2 bg-primary text-white"
-          href="/tags/ai-%e5%b7%a5%e5%85%b7">Ai 工具</a></li>
-      <li class="list-inline-item"><a class="d-block p-2 bg-primary text-white"
-          href="/tags/claude-code">Claude code</a></li>
-      <li class="list-inline-item"><a class="d-block p-2 bg-primary text-white"
-          href="/tags/hahow">Hahow</a></li>
-      <li class="list-inline-item"><a class="d-block p-2 bg-primary text-white"
-          href="/tags/hexschool">Hexschool</a></li>
-      <li class="list-inline-item"><a class="d-block p-2 bg-primary text-white"
-          href="/tags/%e5%85%ad%e8%a7%92%e5%ad%b8%e9%99%a2">六角學院</a></li>
-      <li class="list-inline-item"><a class="d-block p-2 bg-primary text-white"
-          href="/tags/%e5%88%87%e7%89%88%e7%9b%b4%e6%92%ad%e7%8f%ad">切版直播班</a></li>
-      <li class="list-inline-item"><a class="d-block p-2 bg-primary text-white"
-          href="/tags/%e5%89%8d%e7%ab%af%e5%ad%b8%e7%bf%92">前端學習</a></li>
-      <li class="list-inline-item"><a class="d-block p-2 bg-primary text-white"
-          href="/tags/%e5%93%81%e7%89%8c%e8%a1%8c%e9%8a%b7">品牌行銷</a></li>
-      <li class="list-inline-item"><a class="d-block p-2 bg-primary text-white"
-          href="/tags/%e6%8a%95%e8%b3%87%e7%90%86%e8%b2%a1">投資理財</a></li>
-      <li class="list-inline-item"><a class="d-block p-2 bg-primary text-white"
-          href="/tags/%e7%94%a2%e5%93%81%e8%a8%ad%e8%a8%88">產品設計</a></li>
-      <li class="list-inline-item"><a class="d-block p-2 bg-primary text-white"
-          href="/tags/%e8%81%b7%e5%a0%b4%e4%ba%ba%e9%9a%9b">職場人際</a></li>
-      <li class="list-inline-item"><a class="d-block p-2 bg-primary text-white"
-          href="/tags/%e8%81%b7%e5%a0%b4%e5%b7%a5%e4%bd%9c">職場工作</a></li>
-      <li class="list-inline-item"><a class="d-block p-2 bg-primary text-white"
-          href="/tags/%e8%a8%ad%e8%a8%88%e6%94%9d%e5%bd%b1">設計攝影</a></li>
-      <li class="list-inline-item"><a class="d-block p-2 bg-primary text-white"
-          href="/tags/%e8%ae%80%e6%9b%b8%e5%bf%83%e5%be%97">讀書心得</a></li>
-      <li class="list-inline-item"><a class="d-block p-2 bg-primary text-white"
-          href="/tags/%e8%b3%aa%e6%84%9f%e6%89%8b%e4%bd%9c">質感手作</a></li>
-      <li class="list-inline-item"><a class="d-block p-2 bg-primary text-white"
-          href="/tags/%e9%80%b2%e4%bf%ae%e8%aa%b2%e7%a8%8b">進修課程</a></li>
-      <li class="list-inline-item"><a class="d-block p-2 bg-primary text-white"
-          href="/tags/%e9%96%8b%e7%99%bc%e7%92%b0%e5%a2%83">開發環境</a></li>
+      <li class="list-inline-item">
+        <a
+          class="d-block p-2 bg-primary text-white"
+          href="/tags/ai-%e5%b7%a5%e5%85%b7"
+          >Ai 工具</a
+        >
+      </li>
+      <li class="list-inline-item">
+        <a
+          class="d-block p-2 bg-primary text-white"
+          href="/tags/claude-code"
+          >Claude code</a
+        >
+      </li>
+      <li class="list-inline-item">
+        <a
+          class="d-block p-2 bg-primary text-white"
+          href="/tags/css"
+          >Css</a
+        >
+      </li>
+      <li class="list-inline-item">
+        <a
+          class="d-block p-2 bg-primary text-white"
+          href="/tags/ga4"
+          >Ga4</a
+        >
+      </li>
+      <li class="list-inline-item">
+        <a
+          class="d-block p-2 bg-primary text-white"
+          href="/tags/google-analytics"
+          >Google analytics</a
+        >
+      </li>
+      <li class="list-inline-item">
+        <a
+          class="d-block p-2 bg-primary text-white"
+          href="/tags/gtm"
+          >Gtm</a
+        >
+      </li>
+      <li class="list-inline-item">
+        <a
+          class="d-block p-2 bg-primary text-white"
+          href="/tags/hahow"
+          >Hahow</a
+        >
+      </li>
+      <li class="list-inline-item">
+        <a
+          class="d-block p-2 bg-primary text-white"
+          href="/tags/hexschool"
+          >Hexschool</a
+        >
+      </li>
+      <li class="list-inline-item">
+        <a
+          class="d-block p-2 bg-primary text-white"
+          href="/tags/is"
+          >Is</a
+        >
+      </li>
+      <li class="list-inline-item">
+        <a
+          class="d-block p-2 bg-primary text-white"
+          href="/tags/selector"
+          >Selector</a
+        >
+      </li>
+      <li class="list-inline-item">
+        <a
+          class="d-block p-2 bg-primary text-white"
+          href="/tags/where"
+          >Where</a
+        >
+      </li>
+      <li class="list-inline-item">
+        <a
+          class="d-block p-2 bg-primary text-white"
+          href="/tags/%e5%85%ad%e8%a7%92%e5%ad%b8%e9%99%a2"
+          >六角學院</a
+        >
+      </li>
+      <li class="list-inline-item">
+        <a
+          class="d-block p-2 bg-primary text-white"
+          href="/tags/%e5%88%87%e7%89%88%e7%9b%b4%e6%92%ad%e7%8f%ad"
+          >切版直播班</a
+        >
+      </li>
+      <li class="list-inline-item">
+        <a
+          class="d-block p-2 bg-primary text-white"
+          href="/tags/%e5%89%8d%e7%ab%af%e5%ad%b8%e7%bf%92"
+          >前端學習</a
+        >
+      </li>
+      <li class="list-inline-item">
+        <a
+          class="d-block p-2 bg-primary text-white"
+          href="/tags/%e8%ae%80%e6%9b%b8%e5%bf%83%e5%be%97"
+          >讀書心得</a
+        >
+      </li>
+      <li class="list-inline-item">
+        <a
+          class="d-block p-2 bg-primary text-white"
+          href="/tags/%e8%bf%bd%e8%b9%a4"
+          >追蹤</a
+        >
+      </li>
+      <li class="list-inline-item">
+        <a
+          class="d-block p-2 bg-primary text-white"
+          href="/tags/%e9%80%b2%e4%bf%ae%e8%aa%b2%e7%a8%8b"
+          >進修課程</a
+        >
+      </li>
+      <li class="list-inline-item">
+        <a
+          class="d-block p-2 bg-primary text-white"
+          href="/tags/%e9%96%8b%e7%99%bc%e7%92%b0%e5%a2%83"
+          >開發環境</a
+        >
+      </li>
     </ul>
   </div>
   
@@ -205,27 +336,34 @@ Front end Developer &amp; Graphic Designer &amp; Dreamer</p>
     <h4 class="widget-title">Social</h4>
     <ul class="list-inline social-links">
       
-      <li class="list-inline-item"><a href="https://github.com/viccjiang"><i class="ti-github"></i></a></li>
+      <li class="list-inline-item">
+        <a href="https://github.com/viccjiang"><i class="ti-github"></i></a>
+      </li>
       
-      <li class="list-inline-item"><a href="https://www.pinkoi.com/store/zhexiemao"><i class="ti-link"></i></a></li>
+      <li class="list-inline-item">
+        <a href="https://www.pinkoi.com/store/zhexiemao"><i class="ti-link"></i></a>
+      </li>
       
-      <li class="list-inline-item"><a href="https://jiangsdesign.medium.com/"><i class="ti-pencil-alt"></i></a></li>
+      <li class="list-inline-item">
+        <a href="https://jiangsdesign.medium.com/"><i class="ti-pencil-alt"></i></a>
+      </li>
       
     </ul>
   </div>
   
   
 </div>
+
       
       <div class="col-lg-8 mb-5 mb-lg-0">
         <div class="row">
           
           
           <div class="col-12 mb-4">
-    <a href="https://viccjiang.github.io/tags/%E5%93%81%E7%89%8C%E8%A1%8C%E9%8A%B7/" class="card-link" style="text-decoration: none; color: inherit;">
+    <a href="https://viccjiang.github.io/tags/%E9%96%8B%E7%99%BC%E7%92%B0%E5%A2%83/" class="card-link" style="text-decoration: none; color: inherit;">
     <article class="card" style="cursor: pointer;">
         <div class="card-body">
-            <span class="h5 d-block mb-3">品牌行銷</span>
+            <span class="h5 d-block mb-3">開發環境</span>
             <div class="mb-3 post-meta">
                 <span>By Jiang</span>
                 
@@ -244,10 +382,10 @@ Front end Developer &amp; Graphic Designer &amp; Dreamer</p>
 
           
           <div class="col-12 mb-4">
-    <a href="https://viccjiang.github.io/tags/%E6%8A%95%E8%B3%87%E7%90%86%E8%B2%A1/" class="card-link" style="text-decoration: none; color: inherit;">
+    <a href="https://viccjiang.github.io/tags/%E5%85%AD%E8%A7%92%E5%AD%B8%E9%99%A2/" class="card-link" style="text-decoration: none; color: inherit;">
     <article class="card" style="cursor: pointer;">
         <div class="card-body">
-            <span class="h5 d-block mb-3">投資理財</span>
+            <span class="h5 d-block mb-3">六角學院</span>
             <div class="mb-3 post-meta">
                 <span>By Jiang</span>
                 
@@ -266,10 +404,10 @@ Front end Developer &amp; Graphic Designer &amp; Dreamer</p>
 
           
           <div class="col-12 mb-4">
-    <a href="https://viccjiang.github.io/tags/%E7%94%A2%E5%93%81%E8%A8%AD%E8%A8%88/" class="card-link" style="text-decoration: none; color: inherit;">
+    <a href="https://viccjiang.github.io/tags/hexschool/" class="card-link" style="text-decoration: none; color: inherit;">
     <article class="card" style="cursor: pointer;">
         <div class="card-body">
-            <span class="h5 d-block mb-3">產品設計</span>
+            <span class="h5 d-block mb-3">hexschool</span>
             <div class="mb-3 post-meta">
                 <span>By Jiang</span>
                 
@@ -288,10 +426,10 @@ Front end Developer &amp; Graphic Designer &amp; Dreamer</p>
 
           
           <div class="col-12 mb-4">
-    <a href="https://viccjiang.github.io/tags/%E8%81%B7%E5%A0%B4%E4%BA%BA%E9%9A%9B/" class="card-link" style="text-decoration: none; color: inherit;">
+    <a href="https://viccjiang.github.io/tags/%E5%89%8D%E7%AB%AF%E5%AD%B8%E7%BF%92/" class="card-link" style="text-decoration: none; color: inherit;">
     <article class="card" style="cursor: pointer;">
         <div class="card-body">
-            <span class="h5 d-block mb-3">職場人際</span>
+            <span class="h5 d-block mb-3">前端學習</span>
             <div class="mb-3 post-meta">
                 <span>By Jiang</span>
                 
@@ -310,10 +448,10 @@ Front end Developer &amp; Graphic Designer &amp; Dreamer</p>
 
           
           <div class="col-12 mb-4">
-    <a href="https://viccjiang.github.io/tags/%E8%81%B7%E5%A0%B4%E5%B7%A5%E4%BD%9C/" class="card-link" style="text-decoration: none; color: inherit;">
+    <a href="https://viccjiang.github.io/tags/%E9%80%B2%E4%BF%AE%E8%AA%B2%E7%A8%8B/" class="card-link" style="text-decoration: none; color: inherit;">
     <article class="card" style="cursor: pointer;">
         <div class="card-body">
-            <span class="h5 d-block mb-3">職場工作</span>
+            <span class="h5 d-block mb-3">進修課程</span>
             <div class="mb-3 post-meta">
                 <span>By Jiang</span>
                 
@@ -394,13 +532,10 @@ Front end Developer &amp; Graphic Designer &amp; Dreamer</p>
         <h6 class="mb-4">文章分類</h6>
         <ul class="list-unstyled">
           <li class="mb-3"><a class="text-dark"
-              href="/categories/%e5%89%b5%e6%a5%ad%e7%ad%86%e8%a8%98">創業筆記</a>
+              href="/categories/%e5%85%ad%e8%a7%92%e5%ad%b8%e9%99%a2">六角學院</a>
           </li>
           <li class="mb-3"><a class="text-dark"
-              href="/categories/%e5%b7%a5%e4%bd%9c%e6%97%a5%e5%b8%b8">工作日常</a>
-          </li>
-          <li class="mb-3"><a class="text-dark"
-              href="/categories/%e6%8e%a8%e8%96%a6%e5%a5%bd%e7%89%a9">推薦好物</a>
+              href="/categories/%e5%89%8d%e7%ab%af%e9%96%8b%e7%99%bc">前端開發</a>
           </li>
           <li class="mb-3"><a class="text-dark"
               href="/categories/%e8%87%aa%e6%88%91%e6%88%90%e9%95%b7">自我成長</a>
@@ -410,9 +545,6 @@ Front end Developer &amp; Graphic Designer &amp; Dreamer</p>
           </li>
           <li class="mb-3"><a class="text-dark"
               href="/categories/%e9%96%8b%e7%99%bc%e5%b7%a5%e5%85%b7">開發工具</a>
-          </li>
-          <li class="mb-3"><a class="text-dark"
-              href="/categories/%e9%a2%a8%e6%a0%bc%e6%89%8b%e4%bd%9c">風格手作</a>
           </li>
         </ul>
       </div>
@@ -453,6 +585,28 @@ Front end Developer &amp; Graphic Designer &amp; Dreamer</p>
 
 <script>
   var indexURL = "https://viccjiang.github.io/index.json"
+</script>
+
+<script>
+  (function () {
+    var btn = document.getElementById('themeToggle');
+    if (!btn) return;
+    btn.addEventListener('click', function () {
+      var current = document.documentElement.getAttribute('data-theme') === 'dark' ? 'dark' : 'light';
+      var next = current === 'dark' ? 'light' : 'dark';
+      document.documentElement.setAttribute('data-theme', next);
+      try { localStorage.setItem('theme', next); } catch (e) {}
+    });
+    if (window.matchMedia) {
+      var mql = window.matchMedia('(prefers-color-scheme: dark)');
+      var handler = function (e) {
+        try { if (localStorage.getItem('theme')) return; } catch (err) {}
+        document.documentElement.setAttribute('data-theme', e.matches ? 'dark' : 'light');
+      };
+      if (mql.addEventListener) mql.addEventListener('change', handler);
+      else if (mql.addListener) mql.addListener(handler);
+    }
+  })();
 </script>
 
 <!-- JS Plugins -->

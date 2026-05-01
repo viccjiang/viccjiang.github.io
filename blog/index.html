@@ -3,6 +3,18 @@
   <meta charset="utf-8">
   <title>JIANGs Daily LAB</title>
 
+  <!-- Theme (dark mode) — 必須儘早執行，避免閃爍 -->
+  <script>
+    (function () {
+      try {
+        var stored = localStorage.getItem('theme');
+        var prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+        var theme = stored || (prefersDark ? 'dark' : 'light');
+        document.documentElement.setAttribute('data-theme', theme);
+      } catch (e) {}
+    })();
+  </script>
+
   <!-- mobile responsive meta -->
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description"
@@ -113,6 +125,19 @@
         </div>
         
 
+        <!-- theme toggle -->
+        <button id="themeToggle" class="theme-toggle" type="button" aria-label="切換深色模式" title="切換深色 / 淺色模式">
+          <!-- moon (light 模式時顯示) -->
+          <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+          <!-- sun (dark 模式時顯示) -->
+          <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="4"></circle>
+            <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"></path>
+          </svg>
+        </button>
+
         
       </div>
     </nav>
@@ -153,6 +178,11 @@ Front end Developer &amp; Graphic Designer &amp; Dreamer</p>
         >
       </li>
       <li>
+        <a href="/categories/%e5%89%8d%e7%ab%af%e9%96%8b%e7%99%bc"
+          >前端開發</a
+        >
+      </li>
+      <li>
         <a href="/categories/%e8%87%aa%e6%88%91%e6%88%90%e9%95%b7"
           >自我成長</a
         >
@@ -190,6 +220,34 @@ Front end Developer &amp; Graphic Designer &amp; Dreamer</p>
       <li class="list-inline-item">
         <a
           class="d-block p-2 bg-primary text-white"
+          href="/tags/css"
+          >Css</a
+        >
+      </li>
+      <li class="list-inline-item">
+        <a
+          class="d-block p-2 bg-primary text-white"
+          href="/tags/ga4"
+          >Ga4</a
+        >
+      </li>
+      <li class="list-inline-item">
+        <a
+          class="d-block p-2 bg-primary text-white"
+          href="/tags/google-analytics"
+          >Google analytics</a
+        >
+      </li>
+      <li class="list-inline-item">
+        <a
+          class="d-block p-2 bg-primary text-white"
+          href="/tags/gtm"
+          >Gtm</a
+        >
+      </li>
+      <li class="list-inline-item">
+        <a
+          class="d-block p-2 bg-primary text-white"
           href="/tags/hahow"
           >Hahow</a
         >
@@ -199,6 +257,27 @@ Front end Developer &amp; Graphic Designer &amp; Dreamer</p>
           class="d-block p-2 bg-primary text-white"
           href="/tags/hexschool"
           >Hexschool</a
+        >
+      </li>
+      <li class="list-inline-item">
+        <a
+          class="d-block p-2 bg-primary text-white"
+          href="/tags/is"
+          >Is</a
+        >
+      </li>
+      <li class="list-inline-item">
+        <a
+          class="d-block p-2 bg-primary text-white"
+          href="/tags/selector"
+          >Selector</a
+        >
+      </li>
+      <li class="list-inline-item">
+        <a
+          class="d-block p-2 bg-primary text-white"
+          href="/tags/where"
+          >Where</a
         >
       </li>
       <li class="list-inline-item">
@@ -227,6 +306,13 @@ Front end Developer &amp; Graphic Designer &amp; Dreamer</p>
           class="d-block p-2 bg-primary text-white"
           href="/tags/%e8%ae%80%e6%9b%b8%e5%bf%83%e5%be%97"
           >讀書心得</a
+        >
+      </li>
+      <li class="list-inline-item">
+        <a
+          class="d-block p-2 bg-primary text-white"
+          href="/tags/%e8%bf%bd%e8%b9%a4"
+          >追蹤</a
         >
       </li>
       <li class="list-inline-item">
@@ -272,6 +358,61 @@ Front end Developer &amp; Graphic Designer &amp; Dreamer</p>
       <div class="col-lg-8 mb-5 mb-lg-0">
         <div class="row">
           
+          
+          <div class="col-12 mb-4">
+    <a href="https://viccjiang.github.io/blog/20260501_css_is_selector/" class="card-link" style="text-decoration: none; color: inherit;">
+    <article class="card" style="cursor: pointer;">
+        <div class="card-body">
+            <span class="h5 d-block mb-3">CSS :is() 是什麼？讓選擇器更簡潔的實用語法</span>
+            <div class="mb-3 post-meta">
+                <span>By Jiang</span>
+                
+                <span class="border-bottom border-primary px-2 mx-1"></span>
+                <span>01 May 2026</span>
+                
+                
+                <span class="border-bottom border-primary px-2 mx-1"></span>
+                <span class="text-primary">前端開發</span>
+                
+            </div>
+            <p class="card-text d-none d-md-block">CSS :is() 是什麼？讓選擇器更簡潔的實用語法 在寫 CSS 時，我們常常會遇到多個 selector  …</p>
+        </div>
+        
+        <img src="https://viccjiang.github.io/images/post/post-20260501.jpg" alt="CSS :is() 是什麼？讓選擇器更簡潔的實用語法" style="width: 200px; min-width: 200px; height: 150px; object-fit: cover; border-radius: 0 .25rem .25rem 0;">
+        
+    </article>
+    </a>
+    <hr style="margin: 10px 0 0 0;">
+</div>
+
+          
+          <div class="col-12 mb-4">
+    <a href="https://viccjiang.github.io/blog/20260409_gtm_ga_setup/" class="card-link" style="text-decoration: none; color: inherit;">
+    <article class="card" style="cursor: pointer;">
+        <div class="card-body">
+            <span class="h5 d-block mb-3">GTM + GA4 事件追蹤設定</span>
+            <div class="mb-3 post-meta">
+                <span>By Jiang</span>
+                
+                <span class="border-bottom border-primary px-2 mx-1"></span>
+                <span>09 April 2026</span>
+                
+                
+                <span class="border-bottom border-primary px-2 mx-1"></span>
+                <span class="text-primary">開發工具</span>
+                
+            </div>
+            <p class="card-text d-none d-md-block">GTM + GA4 事件追蹤設定流程 追蹤目標：區塊曝光（event_a）與項目點擊（event_b）
+背景說 …</p>
+        </div>
+        
+        <img src="https://viccjiang.github.io/images/post/post-20260409.jpg" alt="GTM &#43; GA4 事件追蹤設定" style="width: 200px; min-width: 200px; height: 150px; object-fit: cover; border-radius: 0 .25rem .25rem 0;">
+        
+    </article>
+    </a>
+    <hr style="margin: 10px 0 0 0;">
+</div>
+
           
           <div class="col-12 mb-4">
     <a href="https://viccjiang.github.io/blog/20260403_claude_code_setup/" class="card-link" style="text-decoration: none; color: inherit;">
@@ -358,71 +499,6 @@ Front end Developer &amp; Graphic Designer &amp; Dreamer</p>
 </div>
 
           
-          <div class="col-12 mb-4">
-    <a href="https://viccjiang.github.io/blog/weblayout_training_javascript_20210421/" class="card-link" style="text-decoration: none; color: inherit;">
-    <article class="card" style="cursor: pointer;">
-        <div class="card-body">
-            <span class="h5 d-block mb-3">六角學院 JavaScript 直播班 2021 春季 - JS學徒打怪團練</span>
-            <div class="mb-3 post-meta">
-                <span>By Jiang</span>
-                
-                <span class="border-bottom border-primary px-2 mx-1"></span>
-                <span>21 April 2021</span>
-                
-                
-                <span class="border-bottom border-primary px-2 mx-1"></span>
-                <span class="text-primary">自我成長</span>
-                
-                <span class="border-bottom border-primary px-2 mx-1"></span>
-                <span class="text-primary">六角學院</span>
-                
-            </div>
-            <p class="card-text d-none d-md-block">學習前端技術，不停的挑戰與修煉。
-自從去年初 COVID-19 疫情開始後，扣除上班的時間，待在家的時間變多變 …</p>
-        </div>
-        
-        <img src="https://viccjiang.github.io/images/post/post-0421.jpg" alt="六角學院 JavaScript 直播班 2021 春季 - JS學徒打怪團練" style="width: 200px; min-width: 200px; height: 150px; object-fit: cover; border-radius: 0 .25rem .25rem 0;">
-        
-    </article>
-    </a>
-    <hr style="margin: 10px 0 0 0;">
-</div>
-
-          
-          <div class="col-12 mb-4">
-    <a href="https://viccjiang.github.io/blog/weblayout_training_javascript_20210203/" class="card-link" style="text-decoration: none; color: inherit;">
-    <article class="card" style="cursor: pointer;">
-        <div class="card-body">
-            <span class="h5 d-block mb-3">《工作必須有錢有愛有意義》讓迷惘的你，找到理想人生</span>
-            <div class="mb-3 post-meta">
-                <span>By Jiang</span>
-                
-                <span class="border-bottom border-primary px-2 mx-1"></span>
-                <span>03 February 2021</span>
-                
-                
-                <span class="border-bottom border-primary px-2 mx-1"></span>
-                <span class="text-primary">自我成長</span>
-                
-                <span class="border-bottom border-primary px-2 mx-1"></span>
-                <span class="text-primary">讀書心得</span>
-                
-                <span class="border-bottom border-primary px-2 mx-1"></span>
-                <span class="text-primary">六角學院</span>
-                
-            </div>
-            <p class="card-text d-none d-md-block">引導你找到自己的興趣與志向，培養對生活與工作的熱情
-自從去年初 COVID-19 疫情開始後，扣除上班的時間， …</p>
-        </div>
-        
-        <img src="https://viccjiang.github.io/images/post/post-0203.jpeg" alt="《工作必須有錢有愛有意義》讓迷惘的你，找到理想人生" style="width: 200px; min-width: 200px; height: 150px; object-fit: cover; border-radius: 0 .25rem .25rem 0;">
-        
-    </article>
-    </a>
-    <hr style="margin: 10px 0 0 0;">
-</div>
-
-          
         </div>
       </div>
 
@@ -450,10 +526,13 @@ Front end Developer &amp; Graphic Designer &amp; Dreamer</p>
         <a href="/blog/page/4/" aria-label="Page 4" class="page-link" role="button">4</a>
       </li>
       <li class="page-item">
+        <a href="/blog/page/5/" aria-label="Page 5" class="page-link" role="button">5</a>
+      </li>
+      <li class="page-item">
         <a href="/blog/page/2/" aria-label="Next" class="page-link" role="button"><span aria-hidden="true">&raquo;</span></a>
       </li>
       <li class="page-item">
-        <a href="/blog/page/4/" aria-label="Last" class="page-link" role="button"><span aria-hidden="true">&raquo;&raquo;</span></a>
+        <a href="/blog/page/5/" aria-label="Last" class="page-link" role="button"><span aria-hidden="true">&raquo;&raquo;</span></a>
       </li>
     </ul>
       </div>
@@ -487,6 +566,9 @@ Front end Developer &amp; Graphic Designer &amp; Dreamer</p>
         <ul class="list-unstyled">
           <li class="mb-3"><a class="text-dark"
               href="/categories/%e5%85%ad%e8%a7%92%e5%ad%b8%e9%99%a2">六角學院</a>
+          </li>
+          <li class="mb-3"><a class="text-dark"
+              href="/categories/%e5%89%8d%e7%ab%af%e9%96%8b%e7%99%bc">前端開發</a>
           </li>
           <li class="mb-3"><a class="text-dark"
               href="/categories/%e8%87%aa%e6%88%91%e6%88%90%e9%95%b7">自我成長</a>
@@ -536,6 +618,28 @@ Front end Developer &amp; Graphic Designer &amp; Dreamer</p>
 
 <script>
   var indexURL = "https://viccjiang.github.io/index.json"
+</script>
+
+<script>
+  (function () {
+    var btn = document.getElementById('themeToggle');
+    if (!btn) return;
+    btn.addEventListener('click', function () {
+      var current = document.documentElement.getAttribute('data-theme') === 'dark' ? 'dark' : 'light';
+      var next = current === 'dark' ? 'light' : 'dark';
+      document.documentElement.setAttribute('data-theme', next);
+      try { localStorage.setItem('theme', next); } catch (e) {}
+    });
+    if (window.matchMedia) {
+      var mql = window.matchMedia('(prefers-color-scheme: dark)');
+      var handler = function (e) {
+        try { if (localStorage.getItem('theme')) return; } catch (err) {}
+        document.documentElement.setAttribute('data-theme', e.matches ? 'dark' : 'light');
+      };
+      if (mql.addEventListener) mql.addEventListener('change', handler);
+      else if (mql.addListener) mql.addListener(handler);
+    }
+  })();
 </script>
 
 <!-- JS Plugins -->

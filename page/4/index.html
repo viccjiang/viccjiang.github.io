@@ -3,6 +3,18 @@
   <meta charset="utf-8">
   <title>JIANGs Daily LAB</title>
 
+  <!-- Theme (dark mode) — 必須儘早執行，避免閃爍 -->
+  <script>
+    (function () {
+      try {
+        var stored = localStorage.getItem('theme');
+        var prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+        var theme = stored || (prefersDark ? 'dark' : 'light');
+        document.documentElement.setAttribute('data-theme', theme);
+      } catch (e) {}
+    })();
+  </script>
+
   <!-- mobile responsive meta -->
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description"
@@ -113,6 +125,19 @@
         </div>
         
 
+        <!-- theme toggle -->
+        <button id="themeToggle" class="theme-toggle" type="button" aria-label="切換深色模式" title="切換深色 / 淺色模式">
+          <!-- moon (light 模式時顯示) -->
+          <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+          <!-- sun (dark 模式時顯示) -->
+          <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="4"></circle>
+            <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"></path>
+          </svg>
+        </button>
+
         
       </div>
     </nav>
@@ -148,6 +173,11 @@ Front end Developer &amp; Graphic Designer &amp; Dreamer</p>
       <li>
         <a href="/categories/%e5%85%ad%e8%a7%92%e5%ad%b8%e9%99%a2"
           >六角學院</a
+        >
+      </li>
+      <li>
+        <a href="/categories/%e5%89%8d%e7%ab%af%e9%96%8b%e7%99%bc"
+          >前端開發</a
         >
       </li>
       <li>
@@ -188,6 +218,34 @@ Front end Developer &amp; Graphic Designer &amp; Dreamer</p>
       <li class="list-inline-item">
         <a
           class="d-block p-2 bg-primary text-white"
+          href="/tags/css"
+          >Css</a
+        >
+      </li>
+      <li class="list-inline-item">
+        <a
+          class="d-block p-2 bg-primary text-white"
+          href="/tags/ga4"
+          >Ga4</a
+        >
+      </li>
+      <li class="list-inline-item">
+        <a
+          class="d-block p-2 bg-primary text-white"
+          href="/tags/google-analytics"
+          >Google analytics</a
+        >
+      </li>
+      <li class="list-inline-item">
+        <a
+          class="d-block p-2 bg-primary text-white"
+          href="/tags/gtm"
+          >Gtm</a
+        >
+      </li>
+      <li class="list-inline-item">
+        <a
+          class="d-block p-2 bg-primary text-white"
           href="/tags/hahow"
           >Hahow</a
         >
@@ -197,6 +255,27 @@ Front end Developer &amp; Graphic Designer &amp; Dreamer</p>
           class="d-block p-2 bg-primary text-white"
           href="/tags/hexschool"
           >Hexschool</a
+        >
+      </li>
+      <li class="list-inline-item">
+        <a
+          class="d-block p-2 bg-primary text-white"
+          href="/tags/is"
+          >Is</a
+        >
+      </li>
+      <li class="list-inline-item">
+        <a
+          class="d-block p-2 bg-primary text-white"
+          href="/tags/selector"
+          >Selector</a
+        >
+      </li>
+      <li class="list-inline-item">
+        <a
+          class="d-block p-2 bg-primary text-white"
+          href="/tags/where"
+          >Where</a
         >
       </li>
       <li class="list-inline-item">
@@ -225,6 +304,13 @@ Front end Developer &amp; Graphic Designer &amp; Dreamer</p>
           class="d-block p-2 bg-primary text-white"
           href="/tags/%e8%ae%80%e6%9b%b8%e5%bf%83%e5%be%97"
           >讀書心得</a
+        >
+      </li>
+      <li class="list-inline-item">
+        <a
+          class="d-block p-2 bg-primary text-white"
+          href="/tags/%e8%bf%bd%e8%b9%a4"
+          >追蹤</a
         >
       </li>
       <li class="list-inline-item">
@@ -271,6 +357,65 @@ Front end Developer &amp; Graphic Designer &amp; Dreamer</p>
         <div class="row">
 
           
+          
+          <div class="col-12 mb-4">
+            <a href="https://viccjiang.github.io/blog/hexschool_layout_week06/" class="card-link" style="text-decoration: none; color: inherit;">
+            <article class="card" style="cursor: pointer;">
+              <div class="card-body">
+                <span class="h5 d-block mb-3">六角學院切版直播班2020秋季Week6</span>
+                <div class="mb-3 post-meta">
+                  <span>By Jiang</span>
+                  
+                  <span class="border-bottom border-primary px-2 mx-1"></span>
+                  <span>27 November 2020</span>
+                  
+                  
+                  <span class="border-bottom border-primary px-2 mx-1"></span>
+                  <span class="text-primary">自我成長</span>
+                  
+                  <span class="border-bottom border-primary px-2 mx-1"></span>
+                  <span class="text-primary">六角學院</span>
+                  
+                </div>
+                <p class="card-text d-none d-md-block">上週作業嘗試用了 Gulp 部署到 Github Pages 發現相當方便且快速，相較於Github …</p>
+              </div>
+              
+              <img src="https://viccjiang.github.io/images/post/post-06.jpg" alt="六角學院切版直播班2020秋季Week6" style="width: 200px; min-width: 200px; height: 150px; object-fit: cover; border-radius: 0 .25rem .25rem 0;">
+              
+            </article>
+            </a>
+            <hr style="margin: 10px 0 0 0;">
+          </div>
+          
+          <div class="col-12 mb-4">
+            <a href="https://viccjiang.github.io/blog/hexschool_layout_week05/" class="card-link" style="text-decoration: none; color: inherit;">
+            <article class="card" style="cursor: pointer;">
+              <div class="card-body">
+                <span class="h5 d-block mb-3">六角學院切版直播班2020秋季Week5</span>
+                <div class="mb-3 post-meta">
+                  <span>By Jiang</span>
+                  
+                  <span class="border-bottom border-primary px-2 mx-1"></span>
+                  <span>20 November 2020</span>
+                  
+                  
+                  <span class="border-bottom border-primary px-2 mx-1"></span>
+                  <span class="text-primary">自我成長</span>
+                  
+                  <span class="border-bottom border-primary px-2 mx-1"></span>
+                  <span class="text-primary">六角學院</span>
+                  
+                </div>
+                <p class="card-text d-none d-md-block">Photo by Ben Kolde on Unsplash
+這週手刻了一個後台表單設計，真的好難啊，頭快要炸 …</p>
+              </div>
+              
+              <img src="https://viccjiang.github.io/images/post/post-05.jpg" alt="六角學院切版直播班2020秋季Week5" style="width: 200px; min-width: 200px; height: 150px; object-fit: cover; border-radius: 0 .25rem .25rem 0;">
+              
+            </article>
+            </a>
+            <hr style="margin: 10px 0 0 0;">
+          </div>
           
           <div class="col-12 mb-4">
             <a href="https://viccjiang.github.io/blog/hexschool_layout_week04/" class="card-link" style="text-decoration: none; color: inherit;">
@@ -359,61 +504,6 @@ Front end Developer &amp; Graphic Designer &amp; Dreamer</p>
             <hr style="margin: 10px 0 0 0;">
           </div>
           
-          <div class="col-12 mb-4">
-            <a href="https://viccjiang.github.io/blog/hexschool_layout_week01/" class="card-link" style="text-decoration: none; color: inherit;">
-            <article class="card" style="cursor: pointer;">
-              <div class="card-body">
-                <span class="h5 d-block mb-3">六角學院切版直播班2020秋季Week1</span>
-                <div class="mb-3 post-meta">
-                  <span>By Jiang</span>
-                  
-                  <span class="border-bottom border-primary px-2 mx-1"></span>
-                  <span>25 October 2020</span>
-                  
-                  
-                  <span class="border-bottom border-primary px-2 mx-1"></span>
-                  <span class="text-primary">自我成長</span>
-                  
-                  <span class="border-bottom border-primary px-2 mx-1"></span>
-                  <span class="text-primary">六角學院</span>
-                  
-                </div>
-                <p class="card-text d-none d-md-block">終於等到 六角學院-網頁切版直播班-秋季Week-1 網頁切版直播班 開課了，在還沒開課之前，已經有到坊間進修 …</p>
-              </div>
-              
-              <img src="https://viccjiang.github.io/images/post/post-01.jpg" alt="六角學院切版直播班2020秋季Week1" style="width: 200px; min-width: 200px; height: 150px; object-fit: cover; border-radius: 0 .25rem .25rem 0;">
-              
-            </article>
-            </a>
-            <hr style="margin: 10px 0 0 0;">
-          </div>
-          
-          <div class="col-12 mb-4">
-            <a href="https://viccjiang.github.io/blog/20200616_hugo_bloger/" class="card-link" style="text-decoration: none; color: inherit;">
-            <article class="card" style="cursor: pointer;">
-              <div class="card-body">
-                <span class="h5 d-block mb-3">後防疫時代，進修學習不間斷</span>
-                <div class="mb-3 post-meta">
-                  <span>By Jiang</span>
-                  
-                  <span class="border-bottom border-primary px-2 mx-1"></span>
-                  <span>16 June 2020</span>
-                  
-                  
-                  <span class="border-bottom border-primary px-2 mx-1"></span>
-                  <span class="text-primary">自我成長</span>
-                  
-                </div>
-                <p class="card-text d-none d-md-block">目前學會套用 Hugo 現有主題， 完成一個個人網站部落格並且更進階的運用在台大學到的前端相關知識， …</p>
-              </div>
-              
-              <img src="https://viccjiang.github.io/images/post/post-1.jpg" alt="後防疫時代，進修學習不間斷" style="width: 200px; min-width: 200px; height: 150px; object-fit: cover; border-radius: 0 .25rem .25rem 0;">
-              
-            </article>
-            </a>
-            <hr style="margin: 10px 0 0 0;">
-          </div>
-          
         </div>
       </div>
 
@@ -440,11 +530,14 @@ Front end Developer &amp; Graphic Designer &amp; Dreamer</p>
       <li class="page-item active">
         <a aria-current="page" aria-label="Page 4" class="page-link" role="button">4</a>
       </li>
-      <li class="page-item disabled">
-        <a aria-disabled="true" aria-label="Next" class="page-link" role="button" tabindex="-1"><span aria-hidden="true">&raquo;</span></a>
+      <li class="page-item">
+        <a href="/page/5/" aria-label="Page 5" class="page-link" role="button">5</a>
       </li>
-      <li class="page-item disabled">
-        <a aria-disabled="true" aria-label="Last" class="page-link" role="button" tabindex="-1"><span aria-hidden="true">&raquo;&raquo;</span></a>
+      <li class="page-item">
+        <a href="/page/5/" aria-label="Next" class="page-link" role="button"><span aria-hidden="true">&raquo;</span></a>
+      </li>
+      <li class="page-item">
+        <a href="/page/5/" aria-label="Last" class="page-link" role="button"><span aria-hidden="true">&raquo;&raquo;</span></a>
       </li>
     </ul>
       </div>
@@ -478,6 +571,9 @@ Front end Developer &amp; Graphic Designer &amp; Dreamer</p>
         <ul class="list-unstyled">
           <li class="mb-3"><a class="text-dark"
               href="/categories/%e5%85%ad%e8%a7%92%e5%ad%b8%e9%99%a2">六角學院</a>
+          </li>
+          <li class="mb-3"><a class="text-dark"
+              href="/categories/%e5%89%8d%e7%ab%af%e9%96%8b%e7%99%bc">前端開發</a>
           </li>
           <li class="mb-3"><a class="text-dark"
               href="/categories/%e8%87%aa%e6%88%91%e6%88%90%e9%95%b7">自我成長</a>
@@ -527,6 +623,28 @@ Front end Developer &amp; Graphic Designer &amp; Dreamer</p>
 
 <script>
   var indexURL = "https://viccjiang.github.io/index.json"
+</script>
+
+<script>
+  (function () {
+    var btn = document.getElementById('themeToggle');
+    if (!btn) return;
+    btn.addEventListener('click', function () {
+      var current = document.documentElement.getAttribute('data-theme') === 'dark' ? 'dark' : 'light';
+      var next = current === 'dark' ? 'light' : 'dark';
+      document.documentElement.setAttribute('data-theme', next);
+      try { localStorage.setItem('theme', next); } catch (e) {}
+    });
+    if (window.matchMedia) {
+      var mql = window.matchMedia('(prefers-color-scheme: dark)');
+      var handler = function (e) {
+        try { if (localStorage.getItem('theme')) return; } catch (err) {}
+        document.documentElement.setAttribute('data-theme', e.matches ? 'dark' : 'light');
+      };
+      if (mql.addEventListener) mql.addEventListener('change', handler);
+      else if (mql.addListener) mql.addListener(handler);
+    }
+  })();
 </script>
 
 <!-- JS Plugins -->

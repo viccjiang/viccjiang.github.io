@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>前端開發 on JIANGs Daily LAB</title>
+    <link>https://viccjiang.github.io/categories/%E5%89%8D%E7%AB%AF%E9%96%8B%E7%99%BC/</link>
+    <description>Recent content in 前端開發 on JIANGs Daily LAB</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 01 May 2026 18:00:00 +0800</lastBuildDate>
+    <atom:link href="https://viccjiang.github.io/categories/%E5%89%8D%E7%AB%AF%E9%96%8B%E7%99%BC/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>CSS :is() 是什麼？讓選擇器更簡潔的實用語法</title>
+      <link>https://viccjiang.github.io/blog/20260501_css_is_selector/</link>
+      <pubDate>Fri, 01 May 2026 18:00:00 +0800</pubDate>
+      <guid>https://viccjiang.github.io/blog/20260501_css_is_selector/</guid>
+      <description>CSS :is() 是什麼？讓選擇器更簡潔的實用語法 在寫 CSS 時，我們常常會遇到多個 selector 需要套用同一組樣式的情境。
+如果每個 selector 都分開寫，CSS 很容易變得冗長、重複，也不太好維護。</description>
+    </item>
+  </channel>
+</rss>
