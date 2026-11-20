@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>部署 on JIANGs Daily LAB</title>
+    <link>https://viccjiang.github.io/tags/%E9%83%A8%E7%BD%B2/</link>
+    <description>Recent content in 部署 on JIANGs Daily LAB</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 20 Nov 2026 10:00:00 +0800</lastBuildDate>
+    <atom:link href="https://viccjiang.github.io/tags/%E9%83%A8%E7%BD%B2/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>部署測試：robots.txt 上線</title>
+      <link>https://viccjiang.github.io/blog/20261120_deploy_test/</link>
+      <pubDate>Fri, 20 Nov 2026 10:00:00 +0800</pubDate>
+      <guid>https://viccjiang.github.io/blog/20261120_deploy_test/</guid>
+      <description>這是一篇部署測試文章，用來確認 exampleSite → deploy.sh → GitHub Pages 的流程正常運作。
+這次更新了什麼 新增 robots.</description>
+    </item>
+  </channel>
+</rss>

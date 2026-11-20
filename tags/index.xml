@@ -6,8 +6,22 @@
     <description>Recent content in Tags on JIANGs Daily LAB</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 01 May 2026 18:00:00 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 20 Nov 2026 10:00:00 +0800</lastBuildDate>
     <atom:link href="https://viccjiang.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hugo</title>
+      <link>https://viccjiang.github.io/tags/hugo/</link>
+      <pubDate>Fri, 20 Nov 2026 10:00:00 +0800</pubDate>
+      <guid>https://viccjiang.github.io/tags/hugo/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>部署</title>
+      <link>https://viccjiang.github.io/tags/%E9%83%A8%E7%BD%B2/</link>
+      <pubDate>Fri, 20 Nov 2026 10:00:00 +0800</pubDate>
+      <guid>https://viccjiang.github.io/tags/%E9%83%A8%E7%BD%B2/</guid>
+      <description></description>
+    </item>
     <item>
       <title>:is()</title>
       <link>https://viccjiang.github.io/tags/is/</link>
