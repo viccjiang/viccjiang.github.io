@@ -2,31 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://viccjiang.github.io/categories/</loc>
-    <lastmod>2026-11-20T10:00:00+08:00</lastmod>
-  </url><url>
-    <loc>https://viccjiang.github.io/tags/hugo/</loc>
-    <lastmod>2026-11-20T10:00:00+08:00</lastmod>
-  </url><url>
-    <loc>https://viccjiang.github.io/</loc>
-    <lastmod>2026-11-20T10:00:00+08:00</lastmod>
-  </url><url>
-    <loc>https://viccjiang.github.io/tags/</loc>
-    <lastmod>2026-11-20T10:00:00+08:00</lastmod>
-  </url><url>
-    <loc>https://viccjiang.github.io/tags/%E9%83%A8%E7%BD%B2/</loc>
-    <lastmod>2026-11-20T10:00:00+08:00</lastmod>
-  </url><url>
-    <loc>https://viccjiang.github.io/blog/20261120_deploy_test/</loc>
-    <lastmod>2026-11-20T10:00:00+08:00</lastmod>
-  </url><url>
-    <loc>https://viccjiang.github.io/categories/%E9%96%8B%E7%99%BC%E5%B7%A5%E5%85%B7/</loc>
-    <lastmod>2026-11-20T10:00:00+08:00</lastmod>
-  </url><url>
     <loc>https://viccjiang.github.io/tags/is/</loc>
     <lastmod>2026-05-01T18:00:00+08:00</lastmod>
   </url><url>
     <loc>https://viccjiang.github.io/tags/where/</loc>
+    <lastmod>2026-05-01T18:00:00+08:00</lastmod>
+  </url><url>
+    <loc>https://viccjiang.github.io/categories/</loc>
     <lastmod>2026-05-01T18:00:00+08:00</lastmod>
   </url><url>
     <loc>https://viccjiang.github.io/tags/css/</loc>
@@ -35,7 +17,13 @@
     <loc>https://viccjiang.github.io/blog/20260501_css_is_selector/</loc>
     <lastmod>2026-05-01T18:00:00+08:00</lastmod>
   </url><url>
+    <loc>https://viccjiang.github.io/</loc>
+    <lastmod>2026-05-01T18:00:00+08:00</lastmod>
+  </url><url>
     <loc>https://viccjiang.github.io/tags/selector/</loc>
+    <lastmod>2026-05-01T18:00:00+08:00</lastmod>
+  </url><url>
+    <loc>https://viccjiang.github.io/tags/</loc>
     <lastmod>2026-05-01T18:00:00+08:00</lastmod>
   </url><url>
     <loc>https://viccjiang.github.io/categories/%E5%89%8D%E7%AB%AF%E9%96%8B%E7%99%BC/</loc>
@@ -54,6 +42,9 @@
     <lastmod>2026-04-09T18:00:00+08:00</lastmod>
   </url><url>
     <loc>https://viccjiang.github.io/tags/%E8%BF%BD%E8%B9%A4/</loc>
+    <lastmod>2026-04-09T18:00:00+08:00</lastmod>
+  </url><url>
+    <loc>https://viccjiang.github.io/categories/%E9%96%8B%E7%99%BC%E5%B7%A5%E5%85%B7/</loc>
     <lastmod>2026-04-09T18:00:00+08:00</lastmod>
   </url><url>
     <loc>https://viccjiang.github.io/tags/ai-%E5%B7%A5%E5%85%B7/</loc>

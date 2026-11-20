@@ -6,16 +6,8 @@
     <description>Recent content in 開發工具 on JIANGs Daily LAB</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 20 Nov 2026 10:00:00 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 09 Apr 2026 18:00:00 +0800</lastBuildDate>
     <atom:link href="https://viccjiang.github.io/categories/%E9%96%8B%E7%99%BC%E5%B7%A5%E5%85%B7/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>部署測試：robots.txt 上線</title>
-      <link>https://viccjiang.github.io/blog/20261120_deploy_test/</link>
-      <pubDate>Fri, 20 Nov 2026 10:00:00 +0800</pubDate>
-      <guid>https://viccjiang.github.io/blog/20261120_deploy_test/</guid>
-      <description>這是一篇部署測試文章，用來確認 exampleSite → deploy.sh → GitHub Pages 的流程正常運作。
-這次更新了什麼 新增 robots.</description>
-    </item>
     <item>
       <title>GTM &#43; GA4 事件追蹤設定</title>
       <link>https://viccjiang.github.io/blog/20260409_gtm_ga_setup/</link>
