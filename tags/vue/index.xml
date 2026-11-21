@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Vue on JIANGs Daily LAB</title>
+    <link>https://viccjiang.github.io/tags/vue/</link>
+    <description>Recent content in Vue on JIANGs Daily LAB</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-Hant-TW</language>
+    <lastBuildDate>Wed, 09 Mar 2022 20:46:07 +0800</lastBuildDate>
+    <atom:link href="https://viccjiang.github.io/tags/vue/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Vue 作品實戰班 - 2022 春季</title>
+      <link>https://viccjiang.github.io/blog/20220309_vue_project_class_2022/</link>
+      <pubDate>Wed, 09 Mar 2022 20:46:07 +0800</pubDate>
+      <guid>https://viccjiang.github.io/blog/20220309_vue_project_class_2022/</guid>
+      <description>這是 2022 年第一季的學習檢視
+先前已經參加六角學院的幾個直播班、體驗營，也結交到不少正在努力轉職的朋友( 雖然都是網友沒見過面，但大家都在朝一樣的路前進 )，再加上很喜歡直播班的上課氣氛還有社群的各種討論，加上每週的任務練習，對新手轉職有非常大的幫助，在上課的過程中可以不斷的提問各種問題，因為你的問題也會是別人的問題，社群裡的老師、助教跟學員們都很熱心地回覆，這次的直播班氣氛討論度更加熱絡，不少問題也在這種討論過程中，解決不少課程中遇到的學習雷點。
+2022 第一季來學 Vue，之前有學了一些基礎 ( 沒認真學好 QQ )，但這次還是卡在元件傳遞 ( 唉，尤其是在 props emits emitter … 傳來傳去的頭都昏了，好多指令學不完，但至少比第一次學習 Vue 時來的快，重點是要多練習、多打 code、加深肌肉記憶還要印在腦海裡，印象比較深刻的是第六週開始用 Vue Cli 起專案，要從 web 轉到 Vue cli 一開始也是有點卡不習慣，元件也拆分出來，檔案變越來越多，然後元件又傳來傳去的更複雜了，但是開發速度是變快滿多的，開發環境的話，因電腦先前已經裝了 node 16 ，老師說支援度較高的是 node 14，但若是裝了 16 就不要卸載了，若真的要卸載，要記得卸載乾淨，但我選擇不卸載，想說先順利度過這次直播班，之後要卸載再來卸吧。</description>
+    </item>
+    <item>
+      <title>Vue 作品實戰直播班 心得分享</title>
+      <link>https://viccjiang.github.io/blog/20210707_vue_live_class/</link>
+      <pubDate>Wed, 07 Jul 2021 12:48:23 +0800</pubDate>
+      <guid>https://viccjiang.github.io/blog/20210707_vue_live_class/</guid>
+      <description>分享這八週的上課心得，只要你不放棄你自己，六角就會在線上幫助你。
+時間過得太快，這九週課程竟然結束了，中間一度真的很想放棄，一直在聽不懂老師在公殺毀的輪迴下懷疑自己真的適合繼續學習下去嗎？還一直想快點結束課程，因為聽不懂真的很挫折、自我懷疑加劇，但，這門課我還是有撐到最後唷，每堂課都沒有登出、也沒有缺席，反倒是更加努力一直複習老師上課的內容，每堂課影音至少都多聽三遍，作業到現在也交到第六週、邁向第七週了，正準備著手最終作品，心裡也有個大概的雛形！
+以下心得不會有任何技術程式碼，純粹是個人學習上的心得感想，可安心觀看 ：）
+當初為什麼報名這堂課 學習不是一個人的事情，你需要找人來幫你！
+有鑒於去年底的 切版直播班 讓我的學習成長有大幅度提升，於是就在切版直播班結束後，跟著六角學院感謝祭的優惠活動一口氣買下JS直播班 與Vue 的課程（是說兩個一起買比較便宜啦，更何況自己目前還是初心者在新手村接任務，想說先 run 過一遍所有直播課程，勢必先經歷一番挑戰，才有辦法勇者鬥惡龍），也好險去年底決定投資自己在前端學習上，也擬定了自己的進修計畫，因為在年後開始覺得公司比起往年的狀況差～很～多～，公司終於在今年4月，疫情爆發前，公司宣布我這個部門要收攤惹！！！登愣～～～ 員工遭到資遣，當然也包括我，也只能姑且先帶著這筆資遣費開始認真學習吧！前端轉職之路又再度正式展開了 … 怕豹.</description>
+    </item>
+  </channel>
+</rss>

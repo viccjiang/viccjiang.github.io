@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>JavaScript直播班 on JIANGs Daily LAB</title>
+    <link>https://viccjiang.github.io/tags/javascript%E7%9B%B4%E6%92%AD%E7%8F%AD/</link>
+    <description>Recent content in JavaScript直播班 on JIANGs Daily LAB</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-Hant-TW</language>
+    <lastBuildDate>Thu, 23 Dec 2021 14:32:29 +0800</lastBuildDate>
+    <atom:link href="https://viccjiang.github.io/tags/javascript%E7%9B%B4%E6%92%AD%E7%8F%AD/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>這疫年，閉關修煉的那些日子</title>
+      <link>https://viccjiang.github.io/blog/20211223_pandemic_year_review/</link>
+      <pubDate>Thu, 23 Dec 2021 14:32:29 +0800</pubDate>
+      <guid>https://viccjiang.github.io/blog/20211223_pandemic_year_review/</guid>
+      <description>此篇為 JS 直播班心得，著重在學習歷程與心態調適。
+前情提要 2021年應該算是一個的轉捩點，三月時公司宣布要縮編，部分員工被裁員，講到這裡不免感到有點感慨，因為裁的員也包括我 ( 淚奔 ~ 但其實在去年底切版直播班結束之後，就已經在抱著打算年後可能會離職然後全心投入學習的打算，只是沒想到來的如此快，所以當下聽到公司的縮編政策時，老實說心情有點哭笑不得，老天爺算是眷顧我嗎，讓我有一筆經費可以在待業時全心投入學習，所以四月就開始跟前同事開始研究失業補助的部分，接著剛好遇上嚴重的五月疫情大爆發大家都不太出門了，六角學院也開了一系列的免費課程跟付費直播班課程讓大家在家學習，加上當時疫情期間求職滿困難的，索性就決定都待在家，開始馬不停蹄的持續學習直到現在，當然在家都是獨自在線上自學，身邊也鮮少有懂程式的朋友，所以了解到這是一條孤獨且陌生的路，但漸漸的發現六角學院社群力量的強大，不管是在 slack 還是 Discord 都讓獨自學習的人，有人可以問，有助教可以協助，有老師 24 小時的支援，是一個很大的心理支持系統！</description>
+    </item>
+    <item>
+      <title>JavaScript 直播班 課前note #4</title>
+      <link>https://viccjiang.github.io/blog/20210208_js_note_04/</link>
+      <pubDate>Mon, 08 Feb 2021 12:09:02 +0800</pubDate>
+      <guid>https://viccjiang.github.io/blog/20210208_js_note_04/</guid>
+      <description>比較運算子、邏輯運算子
+比較運算子 codepen
+&amp;lt; &amp;gt;= &amp;lt;= == !=
+比較運算子，利用變數來比較 codepen</description>
+    </item>
+    <item>
+      <title>JavaScript 直播班 課前note #3</title>
+      <link>https://viccjiang.github.io/blog/20210208_js_note_03/</link>
+      <pubDate>Mon, 08 Feb 2021 11:09:03 +0800</pubDate>
+      <guid>https://viccjiang.github.io/blog/20210208_js_note_03/</guid>
+      <description>變數：布林、undefined、null
+布林 Boolean 介紹 codepen
+boolean 的兩種值 true false
+undefined 介紹 codepen</description>
+    </item>
+    <item>
+      <title>JavaScript 直播班 課前note #2</title>
+      <link>https://viccjiang.github.io/blog/20210208_js_note_02/</link>
+      <pubDate>Mon, 08 Feb 2021 10:57:44 +0800</pubDate>
+      <guid>https://viccjiang.github.io/blog/20210208_js_note_02/</guid>
+      <description>課前作業四：鍛鍊拆解任務流程與設定變數
+第一題codepen
+「阿貓與阿狗玩棒球，要記錄比分」
+流程一：第一回合，阿貓得 3 分，阿狗得 2 分
+流程二：第二回合，阿貓得 20 分，阿狗得 3 分</description>
+    </item>
+  </channel>
+</rss>

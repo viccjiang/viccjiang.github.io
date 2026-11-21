@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>程式設計 on JIANGs Daily LAB</title>
+    <link>https://viccjiang.github.io/tags/%E7%A8%8B%E5%BC%8F%E8%A8%AD%E8%A8%88/</link>
+    <description>Recent content in 程式設計 on JIANGs Daily LAB</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-Hant-TW</language>
+    <lastBuildDate>Wed, 02 Jun 2021 09:54:09 +0800</lastBuildDate>
+    <atom:link href="https://viccjiang.github.io/tags/%E7%A8%8B%E5%BC%8F%E8%A8%AD%E8%A8%88/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>疫情下的生活，重新找回節奏</title>
+      <link>https://viccjiang.github.io/blog/20210602_life_in_pandemic/</link>
+      <pubDate>Wed, 02 Jun 2021 09:54:09 +0800</pubDate>
+      <guid>https://viccjiang.github.io/blog/20210602_life_in_pandemic/</guid>
+      <description>被迫按下暫停鍵，在此刻停下腳步，認真思考下一步
+五月一樣延續著四月剛養成的好習慣，持續早睡早起、每日學習、每日閱讀，每週六日下午繼續去上台大網頁設計進階班，這是我二刷這堂課了，因為去年上的那次根本聽不懂，所以跟不上進度，半途就直接放棄，最後還是有硬著頭皮有上完，但就是聽不懂… 今年這次去上，至少有 75% 聽得懂，也跟得上，覺得有事先上過六角學院 JS 直播班真的有進步，以下是台大的課綱，基本上六角學院 JS 直播班都有教到，會想去台大上課是因為實體臨場感以及需要鞭策，另外也報名了台大實體 Figma 的課，但因為疫情因素現在全面改為線上課程，然後台大線上課程的系統做的也算不錯，也滿好操作的，只是改為線上課程讓我的惰性又萌發了…</description>
+    </item>
+  </channel>
+</rss>

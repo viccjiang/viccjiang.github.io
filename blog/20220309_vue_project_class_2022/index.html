@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW"><head>
+  <meta charset="utf-8">
+  <title>Vue 作品實戰班 - 2022 春季 | JIANGs Daily LAB</title>
+<meta name="description" content="這是 2022 年第一季的學習檢視">
+<link rel="canonical" href="https://viccjiang.github.io/blog/20220309_vue_project_class_2022/">
+
+<meta property="og:site_name" content="JIANGs Daily LAB">
+<meta property="og:locale" content="zh_TW">
+<meta property="og:title" content="Vue 作品實戰班 - 2022 春季">
+<meta property="og:description" content="這是 2022 年第一季的學習檢視">
+<meta property="og:url" content="https://viccjiang.github.io/blog/20220309_vue_project_class_2022/">
+<meta property="og:image" content="https://viccjiang.github.io/images/post/medium/20220309_vue_project_class_2022-01.jpg">
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="2022-03-09T20:46:07&#43;08:00">
+<meta property="article:modified_time" content="2022-03-09T20:46:07&#43;08:00">
+<meta property="article:section" content="自我成長">
+<meta property="article:section" content="學習筆記">
+<meta property="article:tag" content="Vue">
+<meta property="article:tag" content="六角學院">
+<meta property="article:tag" content="前端">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Vue 作品實戰班 - 2022 春季">
+<meta name="twitter:description" content="這是 2022 年第一季的學習檢視">
+<meta name="twitter:image" content="https://viccjiang.github.io/images/post/medium/20220309_vue_project_class_2022-01.jpg">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","articleSection":"自我成長","author":{"@type":"Person","image":"https://viccjiang.github.io/images/author.jpg","name":"Jiang","sameAs":["https://github.com/viccjiang","https://jiangsdesign.medium.com/"],"url":"https://viccjiang.github.io/about/"},"dateModified":"2022-03-09T20:46:07+08:00","datePublished":"2022-03-09T20:46:07+08:00","description":"這是 2022 年第一季的學習檢視","headline":"Vue 作品實戰班 - 2022 春季","image":["https://viccjiang.github.io/images/post/medium/20220309_vue_project_class_2022-01.jpg"],"inLanguage":"zh-Hant-TW","keywords":"Vue, 六角學院, 前端","mainEntityOfPage":{"@id":"https://viccjiang.github.io/blog/20220309_vue_project_class_2022/","@type":"WebPage"},"publisher":{"@type":"Person","image":"https://viccjiang.github.io/images/author.jpg","name":"Jiang","sameAs":["https://github.com/viccjiang","https://jiangsdesign.medium.com/"],"url":"https://viccjiang.github.io/about/"},"url":"https://viccjiang.github.io/blog/20220309_vue_project_class_2022/"}</script>
+
+
+  <!-- Theme (dark mode) — 必須儘早執行，避免閃爍 -->
+  <script>
+    (function () {
+      try {
+        var stored = localStorage.getItem('theme');
+        var prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+        var theme = stored || (prefersDark ? 'dark' : 'light');
+        document.documentElement.setAttribute('data-theme', theme);
+      } catch (e) {}
+    })();
+  </script>
+
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <meta name="author" content="Jiang">
+
+
+  <meta name="generator" content="Hugo 0.120.4">
+
+  <!-- plugins -->
+  
+  <link rel="stylesheet" href="https://viccjiang.github.io/plugins/bootstrap/bootstrap.min.css ">
+  
+  <link rel="stylesheet" href="https://viccjiang.github.io/plugins/slick/slick.css ">
+  
+  <link rel="stylesheet" href="https://viccjiang.github.io/plugins/themify-icons/themify-icons.css ">
+  
+  <link rel="stylesheet" href="https://viccjiang.github.io/plugins/venobox/venobox.css ">
+  
+
+  <!-- Main Stylesheet -->
+  
+  <link rel="stylesheet" href="https://viccjiang.github.io/scss/style.min.css" media="screen">
+
+  <!--Favicon-->
+  <link rel="shortcut icon" href="https://viccjiang.github.io/images/favicon.png " type="image/x-icon">
+  <link rel="icon" href="https://viccjiang.github.io/images/favicon.png " type="image/x-icon">
+
+  
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-JMV8187M77"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-JMV8187M77');
+</script>
+
+</head><body>
+<!-- preloader start -->
+<div class="preloader">
+  
+</div>
+<!-- preloader end -->
+<!-- navigation -->
+<header class="navigation">
+  <div class="container">
+    
+    <nav class="navbar navbar-expand-lg navbar-white bg-transparent border-bottom pl-0">
+      <a class="navbar-brand mobile-view" href="https://viccjiang.github.io/"><img class="img-fluid"
+          src="https://viccjiang.github.io/images/logo.png" alt="JIANGs Daily LAB"></a>
+      <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="開啟選單">
+        <i class="ti-menu h3"></i>
+      </button>
+
+      <div class="collapse navbar-collapse text-center" id="navigation">
+        <div class="desktop-view">
+          <ul class="navbar-nav mr-auto">
+            
+            <li class="nav-item">
+              <a class="nav-link" href="https://github.com/viccjiang" target="_blank" rel="noopener" title="github" aria-label="github"><i class="ti-github"></i></a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link" href="https://www.pinkoi.com/store/zhexiemao" target="_blank" rel="noopener" title="Pinkoi" aria-label="Pinkoi"><i class="ti-link"></i></a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link" href="https://jiangsdesign.medium.com/" target="_blank" rel="noopener" title="Medium" aria-label="Medium"><i class="ti-pencil-alt"></i></a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link" href="https://www.linkedin.com/in/wen-qing-jiang-351a04131" target="_blank" rel="noopener" title="LinkedIn" aria-label="LinkedIn"><i class="ti-linkedin"></i></a>
+            </li>
+            
+          </ul>
+        </div>
+
+        <a class="navbar-brand mx-auto desktop-view" href="https://viccjiang.github.io/"><img class="img-fluid"
+            src="https://viccjiang.github.io/images/logo.png" alt="JIANGs Daily LAB"></a>
+
+        <ul class="navbar-nav">
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://viccjiang.github.io/blog">所有文章</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://viccjiang.github.io/tags">標籤</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://viccjiang.github.io/about">關於我</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://viccjiang.github.io/contact">聯絡我</a>
+          </li>
+          
+          
+        </ul>
+
+        
+        <!-- search -->
+        <div class="search pl-lg-4">
+          <button id="searchOpen" class="search-btn"><i class="ti-search"></i></button>
+        </div>
+        
+
+        <!-- theme toggle -->
+        <button id="themeToggle" class="theme-toggle" type="button" aria-label="切換深色模式" title="切換深色 / 淺色模式">
+          <!-- moon (light 模式時顯示) -->
+          <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+          <!-- sun (dark 模式時顯示) -->
+          <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="4"></circle>
+            <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"></path>
+          </svg>
+        </button>
+
+        
+      </div>
+    </nav>
+  </div>
+</header>
+<!-- /navigation --><main id="main">
+
+<section class="section-sm">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 mx-auto">
+        
+        <a href="/categories/%e8%87%aa%e6%88%91%e6%88%90%e9%95%b7"
+          class="text-primary">自我成長</a>
+        
+        <a href="/categories/%e5%ad%b8%e7%bf%92%e7%ad%86%e8%a8%98"
+          class="text-primary">學習筆記</a>
+        
+        <h1 class="h2 font-weight-bold">Vue 作品實戰班 - 2022 春季</h1>
+        <div class="mb-3 post-meta">
+          <span>By Jiang</span>
+          
+          <span class="border-bottom border-primary px-2 mx-1"></span>
+          <span>09 March 2022</span>
+          
+        </div>
+        
+        <img src="https://viccjiang.github.io/images/post/medium/20220309_vue_project_class_2022-01.jpg" class="img-fluid w-100 mb-4" alt="Vue 作品實戰班 - 2022 春季">
+        
+        <div class="content mb-5">
+          <p>這是 2022 年第一季的學習檢視</p>
+<p>先前已經參加六角學院的幾個直播班、體驗營，也結交到不少正在努力轉職的朋友( 雖然都是網友沒見過面，但大家都在朝一樣的路前進 )，再加上很喜歡直播班的上課氣氛還有社群的各種討論，加上每週的任務練習，對新手轉職有非常大的幫助，在上課的過程中可以不斷的提問各種問題，因為你的問題也會是別人的問題，社群裡的老師、助教跟學員們都很熱心地回覆，這次的直播班氣氛討論度更加熱絡，不少問題也在這種討論過程中，解決不少課程中遇到的學習雷點。</p>
+<hr>
+<p>2022 第一季來學 Vue，之前有學了一些基礎 ( 沒認真學好 QQ )，但這次還是卡在元件傳遞 ( 唉，尤其是在 props emits emitter … 傳來傳去的頭都昏了，好多指令學不完，但至少比第一次學習 Vue 時來的快，重點是要多練習、多打 code、加深肌肉記憶還要印在腦海裡，印象比較深刻的是第六週開始用 Vue Cli 起專案，要從 web 轉到 Vue cli 一開始也是有點卡不習慣，元件也拆分出來，檔案變越來越多，然後元件又傳來傳去的更複雜了，但是開發速度是變快滿多的，開發環境的話，因電腦先前已經裝了 node 16 ，老師說支援度較高的是 node 14，但若是裝了 16 就不要卸載了，若真的要卸載，要記得卸載乾淨，但我選擇不卸載，想說先順利度過這次直播班，之後要卸載再來卸吧。</p>
+<hr>
+<p><strong>我的開發環境：</strong></p>
+<p><code>node v16.13.1</code></p>
+<p><code>vue/cli 4.5.15</code></p>
+<p><code>npm 8.1.2</code></p>
+<hr>
+<p>在這學習的過程中，記錄了很多遇到的困難點，光是想要參考助教的 github code 就 run 不起來，因為 node 16 已經改為 dart-sass，不同的 node 版本需要安裝不同的 node-sass ，而且 16 版本 node-sass 已廢棄，改使用 Dart Sasst，而 Dart Sass在 npm 中名稱就是 sass ，目前解法參考了 <a href="https://www.796t.com/article.php?id=468502">這篇文章</a> 簡單來說就是</p>
+<p><strong>1. 解除安裝原有的node-sass與sass-loader</strong></p>
+<p><code>npm uninstall node-sass sass-loader</code></p>
+<p><strong>2. 升級專案所有安裝的依賴</strong></p>
+<p><code>npm update</code></p>
+<p><strong>3. 安裝 sass-loader（10.x版本）與 sass ( webpack 版本是 5.10.0 )</strong></p>
+<p><code>npm install -D sass-loader@^10 sass</code></p>
+<p><strong>4. 再次</strong><code>npm run serve</code></p>
+<p>然後就順利開啟了 ( 耶~ 灑花啦</p>
+<p>更新<code>node-sass</code>另外還查到別的方式 <code>npm install node-sass@npm:sass</code> 但不太確定是用在什麼情況，反正我都嘗試過了，檔案 run 的起來就好 !!!</p>
+<hr>
+<p>關於 <strong>Vue 的樣式 bootstrap 客製化</strong>可以這樣做，要客製化，必須引入以下幾個東西，順序不可以更動，一定要這樣</p>
+<pre tabindex="0"><code>
+引用 Ray 助教的比喻，真的比較好懂
+
+要客製化，必須引入以下幾個東西，順序不可以更動，一定要這樣
+
+1. Bootstrap 工廠 =&gt; 
+@import &#34;../node_modules/bootstrap/scss/functions&#34;;
+
+2. Bootstrap 電力、要產出的產品、需求 =&gt; 
+@import &#34;../node_modules/bootstrap/scss/variables&#34;;
+
+3. Bootstrap 設備 =&gt; 
+@import &#34;../node_modules/bootstrap/scss/bootstrap&#34;;
+    
+而設備可以依據需求自己引入，例如 Card 、Download 等等等等，在此一率直接引入  Bootstrap 整包 @import &#34;../node_modules/bootstrap/scss/bootstrap&#34;;
+    
+因此 1.2 是必備引入，沒有任何原因以及為什麼，這就是順序，你沒有工廠，先有電力產品也沒用 ~
+</code></pre><hr>
+<p>再來覺得最有趣的是 Vue Cli ，但也採了很多雷 XD 尤其是 eslint ( 噴錯噴好噴滿 ~</p>
+<pre tabindex="0"><code>Vue Cli 使用 npm 安裝
+</code></pre><ol>
+<li>安裝 Node.js <a href="https://nodejs.org/en/">https://nodejs.org/en/</a></li>
+<li>Node js 版本 node -v</li>
+<li>npm 版本 npm -v</li>
+<li><a href="https://cli.vuejs.org/zh/guide/installation.html">https://cli.vuejs.org/zh/guide/installation.html</a></li>
+<li>npm install -g @vue/cli</li>
+<li>vue -V （這裡要注意是大寫Ｖ）</li>
+<li>能看到 Vue 版本就是 Vue Cli 安裝完成</li>
+<li>接著進入資料夾路徑 cd 資料夾路徑也可以直接拉資料夾進去</li>
+<li>若要停止行為，可以 ctrl + c 來停止終端機</li>
+<li>创建一个项目 vue create 輸入資料夾名稱 <a href="https://cli.vuejs.org/zh/guide/creating-a-project.html#vue-create">https://cli.vuejs.org/zh/guide/creating-a-project.html#vue-create</a></li>
+<li>建立項目後，會進入這個專案 Vue Cli 的設定</li>
+<li>選擇 manually select features 手動建立環境</li>
+<li>選擇 Choose vue version / Babel / Router / CSS Pre-processors / Linter</li>
+<li>選擇 Vue 3.x 版本</li>
+<li>選擇 Router 要選 n</li>
+<li>node16 選擇 Sass 套件需選擇 “Sass/SCSS (with dart-sass)” 方可運作</li>
+<li>node14 選擇 Sass/SCSS (with node-sass)</li>
+<li>ESLint + Airbnb（高） 或是 Stardard (低)</li>
+<li>Lint on save</li>
+<li>In dedicated config files</li>
+<li>save preset 選擇 N</li>
+</ol>
+<pre tabindex="0"><code>Vue Cli 運行方式
+</code></pre><ol>
+<li>接下來就會開始安裝</li>
+<li>安裝完用 vscode 開啟 create 的那個專案資料夾</li>
+<li>打開終端機 ctrl 加 、（反引號）</li>
+<li>輸入 npm run serve 環境運行</li>
+<li>運行成功</li>
+<li>運行成功後，先務必進行建立環境變數設定 .env 檔案</li>
+</ol>
+<p><img src="/images/post/medium/20220309_vue_project_class_2022-02.png" alt=""></p>
+<pre tabindex="0"><code>Vue Cli 安裝成功後，能開起來就滿滿的成就感了阿 RRR ~ ( 容易滿足的孩只 ) 
+</code></pre><hr>
+<p><img src="/images/post/medium/20220309_vue_project_class_2022-03.png" alt="各檔案代表的意義"></p>
+<hr>
+<p>再來是 Github Page 部署的問題，老實說如果在這階段之前沒學過 git 的同學，可能真的比較吃力，因為可能會噴一堆奇怪的錯 ，初學者光看到噴一堆錯就會很緊張，這次直播班比較常犯的錯大概就是 main 跟 master 打錯了或是遠端設定 https / ssh 沒搞清楚，之前上切版班時我就是屬於超緊張的人，而且那時候還遇到 Github 改版問題要改用申請 token 金鑰才能用 ( 我沒用 SSH )，也好險之前經過切版班的上傳部署洗禮，了解 Github Pages 如何部署，以及部屬流程運作，像是之前沒學過一鍵部署，這次除了老師有錄影片教學之外， Ray 助教也有 <a href="https://israynotarray.com/vue/20200214/1055437216/">文章教學</a>，覺得真的好佛心呀，Ray 助教的部落格滿滿的寶藏，可以慢慢挖</p>
+<p>一鍵部署指令：sh deploy.sh</p>
+<ol>
+<li><code>cd</code><strong>進入專案資料夾</strong></li>
+<li><strong>用 cli 建立新專案</strong><code>vue create + 專案名稱</code></li>
+<li><code>cd</code><strong>進入新建的資料夾</strong></li>
+<li><strong>建立完成</strong><code>code .</code><strong>開啟 vscode</strong></li>
+<li><strong>將專案跑起來</strong><code>npm run serve</code></li>
+<li><strong>到 github 新增專案 repo ( 複製儲存庫名稱 )</strong></li>
+<li><strong>回到 vscode</strong></li>
+</ol>
+<ul>
+<li>新增 vue.config.js 資料夾，在 <code>vue.config.js</code> 中設置正确的 <code>publicPath</code></li>
+</ul>
+<pre tabindex="0"><code>module.exports = {  publicPath: process.env.NODE_ENV === &#39;production&#39;? &#39;/github repo 儲存庫名稱/&#39;     : &#39;/&#39; }
+</code></pre><ul>
+<li>本地端程式碼，先部屬到儲存庫用網頁上第二個框來執行</li>
+<li>另外要要改成用 master (先看自己的終端機顯示什麼 main 或 master )</li>
+</ul>
+<pre tabindex="0"><code>// 要用 HTTPS 的形式
+git remote add origin [儲存庫網址]
+
+// master 
+git push -u origin master
+
+// 執行完可以先到 repo 看專案有沒有上傳成功
+</code></pre><p><strong>8. 先回到專案資料夾根部</strong></p>
+<ul>
+<li>在專案裡新增一個資料夾 deploy.sh</li>
+</ul>
+<pre tabindex="0"><code>#!/usr/bin/env sh
+
+# 当发生错误时中止脚本
+set -e
+
+# 构建
+npm run build
+
+# cd 到构建输出的目录下
+cd dist
+
+# 部署到自定义域域名
+# echo &#39;www.example.com&#39; &gt; CNAME
+
+git init
+git add -A
+git commit -m &#39;deploy&#39;
+
+# 部署到 https://&lt;USERNAME&gt;.github.io/&lt;REPO&gt;
+git push -f &lt;https://github.com/[帳號]/[儲存庫名稱].git&gt; master:gh-pages
+
+cd -
+</code></pre><p><strong>9. 設完就可以執行 指令為</strong><code>sh deploy.sh</code></p>
+<p><strong>10. 若有更新，要上傳怎麼辦?</strong></p>
+<pre tabindex="0"><code>git add .
+git commit -m &#34;update / fix something&#34;
+git push
+sh deploy.sh
+</code></pre><hr>
+<p>然後 API 的 CRUD 是重複最多次的學習動作，GET / POST / PUT /DELETE，需要注意的是 axios 的字眼會被改為<strong>this.$http.方法</strong>的這種形式來串 API，犯最多錯誤的大概就是方法打錯、沒加斜線、路徑錯誤之類的 &hellip;</p>
+<hr>
+<p>這次學習過程裡，花最多時間的大概就是一直在除錯吧，除了 ESLint 會一直報錯之外，路徑常打錯也是問題之一，印象最深刻的除錯就是某天心血來潮改了個檔名，結果之後的每個檔案都打不開了，明明前一天都還好好的，隔天就全壞，我不相信，所以一整個下午一直在找錯誤，npm run serve 之後出現 ERROR 主要提示文字是</p>
+<pre tabindex="0"><code>WebpackOptionsValidationError: Invalid configuration object. Webpack has been initialised using a configuration object that does not match the API schema.
+</code></pre><p>這段字查了超久，一開始還以為是啥 webpack 配置問題，就往這個方向去查，結果重點在更後面的警告文字</p>
+<pre tabindex="0"><code>contains exclamation mark (!) which is not allowed because it&#39;s reserved for loader syntax
+</code></pre><p>debug 3~4 小時，終於找到答案，結果是檔案路經中不能有驚嘆號 … 我哭阿 ~ 然後我應該早點把那「整段」警告丟到翻譯去看，就不會花這麼多時間惹 QQ</p>
+<p><img src="/images/post/medium/20220309_vue_project_class_2022-04.png" alt=""></p>
+<hr>
+<p>噢，忘了提到最重要的一點，六角的助教服務真的好到沒話說，通常我都是先嘗試自己找答案，超過一定時間沒解開時就會提問，這次直播班我也是極盡所能的善用助教服務，只要卡到陰，不對，是卡程式碼，大概超過 30 分鐘，就會開始焦慮，就會思考要不要提問，但有時候我寫完敘述問題點要提問時，就又解開了 ( 這真的是謎團 ~ 發現都是自己犯了個小錯誤導致，像是 http method 打錯或是 帶錯參數 之類的這種小錯誤</p>
+<blockquote>
+<p>助教服務，是一個很大的支持系統，不用怕笨問題，只怕你不問。</p>
+</blockquote>
+<hr>
+<p>這次最棒的是學員間的所有討論都不再是使用 slack 啦，因為 slack 都不能保留同學討論的資訊，課程結束後會隨著時間消失，而這次直播班開始導入 Discord ，所以資訊終於都有被保留下來，這些討論串也幫助了我很多時刻，像是部署的這個大關卡就很多人卡關發問，我也間接在其中獲得資訊，在部署時就順利許多，還有各種的作業問題，大部分都可以在討論串獲得解答。</p>
+<p><img src="/images/post/medium/20220309_vue_project_class_2022-05.png" alt=""></p>
+<p>再來是這次直播班我比較在意的是大家每天在頻道上面提問的問題，經過先前幾次直播班的經驗，通常大家提問的問題都是我接下來會碰到的問題，所以，大概第四週之後我就開始每天在頻道上面蒐集問題，只要有人提問 Discord 就跳通知，我就會立刻看問題，比較像是在蒐集情報吧，掌握資料越多，之後遇到問題時解題的方向就會較明確 ~</p>
+<p>其實真的滿建議大家要看頻道上討論的話題，可以學到相當多新的知識點 !!!</p>
+<p><img src="/images/post/medium/20220309_vue_project_class_2022-06.png" alt=""></p>
+<hr>
+<p>沒想到 8 週就這樣結束了 ? 沒了 ? 也過太快啦，Vue 燒腦的程度也真的很誇張，在進入 Vue 框架前，真的要把 JavaScript 學好再來，不然中間會一直卡一直查，好險老師加碼了很多場作業直播、助教也每週在加碼補充，這次也算是學得比較扎實了，至少看得懂 (參考) 別人的程式碼 ，然後優化自己的程式碼！</p>
+<p>跟以往不同的是，這次直播班，我的筆記量變多了 ，之前根本沒在做筆記(懶~)，所以上過一次就忘掉，所以我不相信自己的腦袋，所以還是稍微做點筆記加深一下自己印象會比較妥當，還是建議同學有時間可以稍微做點學習上的紀錄！</p>
+<p><img src="/images/post/medium/20220309_vue_project_class_2022-07.png" alt=""></p>
+<hr>
+<p><strong>這次在課程中真的學到很多，滿出來的知識點 ( 吐 ~~~ 真的太滿</strong></p>
+<p><strong>第一週</strong>：關注點分離、Vue 初始化、JS 核心觀念與 ES6 語法</p>
+<p>**第二週：**Axios / 非同步 與 API 說明 / This</p>
+<p>**第三週：**物件傳參考 / Vue 指令</p>
+<p>**第四週：**建立元件 / 資料傳遞 / 生命週期 / props / emit</p>
+<p><strong>第五週：</strong>$refs / watch / mitt / loading / VeeValidation</p>
+<p>**第六週：**Vue Cli、Vue Router</p>
+<p>**第七週：**俊儀老師講解設計概念</p>
+<p>**第八週：**Bootstrap Sass / 變數運用 /Bootstrap icon / 套版技巧</p>
+<p><strong>最終作品也正在努力中，希望在期限內可以順利繳交 RRRRRR ~~~</strong></p>
+<p><img src="/images/post/medium/20220309_vue_project_class_2022-08.jpg" alt=""></p>
+<hr>
+<p><em>封面圖片：Photo by Daniel Chekalov on Unsplash</em></p>
+<p><em>本文原發佈於 <a href="https://jiangsdesign.medium.com/p/b23a53bcfaf1">Medium</a></em></p>
+
+        </div>
+
+        
+        <div id="disqus_thread"></div>
+<script type="application/javascript">
+    window.disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "jiangs" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+        </main>
+
+<footer style="margin-top: 50px;">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center mb-5">
+        <a href="https://viccjiang.github.io/"><img src="https://viccjiang.github.io/images/logo.png" alt="JIANGs Daily LAB"></a>
+      </div>
+      <div class="col-lg-4 col-sm-6 mb-5">
+        <h6 class="mb-4">社群連結</h6>
+        <ul class="list-unstyled">
+          
+          <li class="mb-3"><a class="text-dark" href="https://github.com/viccjiang" target="_blank" rel="noopener">github</a></li>
+          
+          <li class="mb-3"><a class="text-dark" href="https://www.pinkoi.com/store/zhexiemao" target="_blank" rel="noopener">Pinkoi</a></li>
+          
+          <li class="mb-3"><a class="text-dark" href="https://jiangsdesign.medium.com/" target="_blank" rel="noopener">Medium</a></li>
+          
+          <li class="mb-3"><a class="text-dark" href="https://www.linkedin.com/in/wen-qing-jiang-351a04131" target="_blank" rel="noopener">LinkedIn</a></li>
+          
+        </ul>
+      </div>
+      <div class="col-lg-4 col-sm-6 mb-5">
+        <h6 class="mb-4">文章分類</h6>
+        <ul class="list-unstyled">
+          <li class="mb-3"><a class="text-dark"
+              href="/categories/%e5%89%8d%e7%ab%af%e9%96%8b%e7%99%bc">前端開發</a>
+          </li>
+          <li class="mb-3"><a class="text-dark"
+              href="/categories/%e5%ad%b8%e7%bf%92%e7%ad%86%e8%a8%98">學習筆記</a>
+          </li>
+          <li class="mb-3"><a class="text-dark"
+              href="/categories/%e5%b7%a5%e4%bd%9c%e6%97%a5%e5%b8%b8">工作日常</a>
+          </li>
+          <li class="mb-3"><a class="text-dark"
+              href="/categories/%e8%87%aa%e6%88%91%e6%88%90%e9%95%b7">自我成長</a>
+          </li>
+          <li class="mb-3"><a class="text-dark"
+              href="/categories/%e8%ae%80%e6%9b%b8%e5%bf%83%e5%be%97">讀書心得</a>
+          </li>
+          <li class="mb-3"><a class="text-dark"
+              href="/categories/%e9%96%8b%e7%99%bc%e5%b7%a5%e5%85%b7">開發工具</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-lg-4 col-sm-6 mb-5">
+        <h6 class="mb-4">網站地圖</h6>
+        <ul class="list-unstyled">
+          
+          <li class="mb-3"><a class="text-dark" href="https://viccjiang.github.io/about">about</a></li>
+          
+          <li class="mb-3"><a class="text-dark" href="https://viccjiang.github.io/blog">blog</a></li>
+          
+          <li class="mb-3"><a class="text-dark" href="https://viccjiang.github.io/contact">contact</a></li>
+          
+        </ul>
+      </div>
+      <div class="col-12 border-top py-4 text-center">
+        | copyright © 2020 <a href="https://viccjiang.github.io/">JIANGs</a> All Rights Reserved |
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+<!-- search overlay -->
+<div id="search-overlay" class="search-overlay">
+  <div class="search-overlay-inner">
+    <button id="searchClose" class="search-overlay-close"><i class="ti-close"></i></button>
+    <div class="search-overlay-header">
+      <div class="search-input-wrapper">
+        <i class="ti-search search-input-icon"></i>
+        <input id="search-query" type="text" placeholder="搜尋文章..." autocomplete="off">
+      </div>
+    </div>
+    <div class="search-overlay-results" id="search-results"></div>
+  </div>
+</div>
+
+
+<script>
+  var indexURL = "https://viccjiang.github.io/index.json"
+</script>
+
+<script>
+  (function () {
+    var btn = document.getElementById('themeToggle');
+    if (!btn) return;
+    btn.addEventListener('click', function () {
+      var current = document.documentElement.getAttribute('data-theme') === 'dark' ? 'dark' : 'light';
+      var next = current === 'dark' ? 'light' : 'dark';
+      document.documentElement.setAttribute('data-theme', next);
+      try { localStorage.setItem('theme', next); } catch (e) {}
+    });
+    if (window.matchMedia) {
+      var mql = window.matchMedia('(prefers-color-scheme: dark)');
+      var handler = function (e) {
+        try { if (localStorage.getItem('theme')) return; } catch (err) {}
+        document.documentElement.setAttribute('data-theme', e.matches ? 'dark' : 'light');
+      };
+      if (mql.addEventListener) mql.addEventListener('change', handler);
+      else if (mql.addListener) mql.addListener(handler);
+    }
+  })();
+</script>
+
+<!-- JS Plugins -->
+
+<script src="https://viccjiang.github.io/plugins/jQuery/jquery.min.js"></script>
+
+<script src="https://viccjiang.github.io/plugins/bootstrap/bootstrap.bundle.min.js"></script>
+
+<script src="https://viccjiang.github.io/plugins/slick/slick.min.js"></script>
+
+<script src="https://viccjiang.github.io/plugins/venobox/venobox.min.js"></script>
+
+<script src="https://viccjiang.github.io/plugins/search/fuse.min.js"></script>
+
+<script src="https://viccjiang.github.io/plugins/search/mark.js"></script>
+
+<script src="https://viccjiang.github.io/plugins/search/search.js"></script>
+
+<!-- Main Script -->
+
+<script src="https://viccjiang.github.io/js/script.min.js"></script>
+<!-- google analitycs -->
+<script>
+  (function (i, s, o, g, r, a, m) {
+    i['GoogleAnalyticsObject'] = r;
+    i[r] = i[r] || function () {
+      (i[r].q = i[r].q || []).push(arguments)
+    }, i[r].l = 1 * new Date();
+    a = s.createElement(o),
+      m = s.getElementsByTagName(o)[0];
+    a.async = 1;
+    a.src = g;
+    m.parentNode.insertBefore(a, m)
+  })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+  ga('create', '', 'auto');
+  ga('send', 'pageview');
+</script></body>
+</html>

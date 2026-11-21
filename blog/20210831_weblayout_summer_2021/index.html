@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW"><head>
+  <meta charset="utf-8">
+  <title>2021年夏季【網頁切版直播班】前端實戰心得 | JIANGs Daily LAB</title>
+<meta name="description" content="前端學習經驗分享">
+<link rel="canonical" href="https://viccjiang.github.io/blog/20210831_weblayout_summer_2021/">
+
+<meta property="og:site_name" content="JIANGs Daily LAB">
+<meta property="og:locale" content="zh_TW">
+<meta property="og:title" content="2021年夏季【網頁切版直播班】前端實戰心得">
+<meta property="og:description" content="前端學習經驗分享">
+<meta property="og:url" content="https://viccjiang.github.io/blog/20210831_weblayout_summer_2021/">
+<meta property="og:image" content="https://viccjiang.github.io/images/author.jpg">
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="2021-08-31T10:41:32&#43;08:00">
+<meta property="article:modified_time" content="2021-08-31T10:41:32&#43;08:00">
+<meta property="article:section" content="自我成長">
+<meta property="article:section" content="學習筆記">
+<meta property="article:tag" content="六角學院">
+<meta property="article:tag" content="切版直播班">
+<meta property="article:tag" content="前端">
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="2021年夏季【網頁切版直播班】前端實戰心得">
+<meta name="twitter:description" content="前端學習經驗分享">
+<meta name="twitter:image" content="https://viccjiang.github.io/images/author.jpg">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","articleSection":"自我成長","author":{"@type":"Person","image":"https://viccjiang.github.io/images/author.jpg","name":"Jiang","sameAs":["https://github.com/viccjiang","https://jiangsdesign.medium.com/"],"url":"https://viccjiang.github.io/about/"},"dateModified":"2021-08-31T10:41:32+08:00","datePublished":"2021-08-31T10:41:32+08:00","description":"前端學習經驗分享","headline":"2021年夏季【網頁切版直播班】前端實戰心得","inLanguage":"zh-Hant-TW","keywords":"六角學院, 切版直播班, 前端","mainEntityOfPage":{"@id":"https://viccjiang.github.io/blog/20210831_weblayout_summer_2021/","@type":"WebPage"},"publisher":{"@type":"Person","image":"https://viccjiang.github.io/images/author.jpg","name":"Jiang","sameAs":["https://github.com/viccjiang","https://jiangsdesign.medium.com/"],"url":"https://viccjiang.github.io/about/"},"url":"https://viccjiang.github.io/blog/20210831_weblayout_summer_2021/"}</script>
+
+
+  <!-- Theme (dark mode) — 必須儘早執行，避免閃爍 -->
+  <script>
+    (function () {
+      try {
+        var stored = localStorage.getItem('theme');
+        var prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+        var theme = stored || (prefersDark ? 'dark' : 'light');
+        document.documentElement.setAttribute('data-theme', theme);
+      } catch (e) {}
+    })();
+  </script>
+
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <meta name="author" content="Jiang">
+
+
+  <meta name="generator" content="Hugo 0.120.4">
+
+  <!-- plugins -->
+  
+  <link rel="stylesheet" href="https://viccjiang.github.io/plugins/bootstrap/bootstrap.min.css ">
+  
+  <link rel="stylesheet" href="https://viccjiang.github.io/plugins/slick/slick.css ">
+  
+  <link rel="stylesheet" href="https://viccjiang.github.io/plugins/themify-icons/themify-icons.css ">
+  
+  <link rel="stylesheet" href="https://viccjiang.github.io/plugins/venobox/venobox.css ">
+  
+
+  <!-- Main Stylesheet -->
+  
+  <link rel="stylesheet" href="https://viccjiang.github.io/scss/style.min.css" media="screen">
+
+  <!--Favicon-->
+  <link rel="shortcut icon" href="https://viccjiang.github.io/images/favicon.png " type="image/x-icon">
+  <link rel="icon" href="https://viccjiang.github.io/images/favicon.png " type="image/x-icon">
+
+  
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-JMV8187M77"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-JMV8187M77');
+</script>
+
+</head><body>
+<!-- preloader start -->
+<div class="preloader">
+  
+</div>
+<!-- preloader end -->
+<!-- navigation -->
+<header class="navigation">
+  <div class="container">
+    
+    <nav class="navbar navbar-expand-lg navbar-white bg-transparent border-bottom pl-0">
+      <a class="navbar-brand mobile-view" href="https://viccjiang.github.io/"><img class="img-fluid"
+          src="https://viccjiang.github.io/images/logo.png" alt="JIANGs Daily LAB"></a>
+      <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="開啟選單">
+        <i class="ti-menu h3"></i>
+      </button>
+
+      <div class="collapse navbar-collapse text-center" id="navigation">
+        <div class="desktop-view">
+          <ul class="navbar-nav mr-auto">
+            
+            <li class="nav-item">
+              <a class="nav-link" href="https://github.com/viccjiang" target="_blank" rel="noopener" title="github" aria-label="github"><i class="ti-github"></i></a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link" href="https://www.pinkoi.com/store/zhexiemao" target="_blank" rel="noopener" title="Pinkoi" aria-label="Pinkoi"><i class="ti-link"></i></a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link" href="https://jiangsdesign.medium.com/" target="_blank" rel="noopener" title="Medium" aria-label="Medium"><i class="ti-pencil-alt"></i></a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link" href="https://www.linkedin.com/in/wen-qing-jiang-351a04131" target="_blank" rel="noopener" title="LinkedIn" aria-label="LinkedIn"><i class="ti-linkedin"></i></a>
+            </li>
+            
+          </ul>
+        </div>
+
+        <a class="navbar-brand mx-auto desktop-view" href="https://viccjiang.github.io/"><img class="img-fluid"
+            src="https://viccjiang.github.io/images/logo.png" alt="JIANGs Daily LAB"></a>
+
+        <ul class="navbar-nav">
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://viccjiang.github.io/blog">所有文章</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://viccjiang.github.io/tags">標籤</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://viccjiang.github.io/about">關於我</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://viccjiang.github.io/contact">聯絡我</a>
+          </li>
+          
+          
+        </ul>
+
+        
+        <!-- search -->
+        <div class="search pl-lg-4">
+          <button id="searchOpen" class="search-btn"><i class="ti-search"></i></button>
+        </div>
+        
+
+        <!-- theme toggle -->
+        <button id="themeToggle" class="theme-toggle" type="button" aria-label="切換深色模式" title="切換深色 / 淺色模式">
+          <!-- moon (light 模式時顯示) -->
+          <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+          <!-- sun (dark 模式時顯示) -->
+          <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="4"></circle>
+            <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"></path>
+          </svg>
+        </button>
+
+        
+      </div>
+    </nav>
+  </div>
+</header>
+<!-- /navigation --><main id="main">
+
+<section class="section-sm">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 mx-auto">
+        
+        <a href="/categories/%e8%87%aa%e6%88%91%e6%88%90%e9%95%b7"
+          class="text-primary">自我成長</a>
+        
+        <a href="/categories/%e5%ad%b8%e7%bf%92%e7%ad%86%e8%a8%98"
+          class="text-primary">學習筆記</a>
+        
+        <h1 class="h2 font-weight-bold">2021年夏季【網頁切版直播班】前端實戰心得</h1>
+        <div class="mb-3 post-meta">
+          <span>By Jiang</span>
+          
+          <span class="border-bottom border-primary px-2 mx-1"></span>
+          <span>31 August 2021</span>
+          
+        </div>
+        
+        <div class="content mb-5">
+          <p>前端學習經驗分享</p>
+<blockquote>
+<p><em><strong>學習不是一個人的事情，你需要找人來幫你！<br>
+你需要 mentor 來指引前方的路怎麼走！</strong></em></p>
+</blockquote>
+<p><img src="/images/post/medium/20210831_weblayout_summer_2021-01.jpg" alt="Photo by AltumCode on Unsplash"></p>
+<p>前端是一個博大精深的領域，更何況是一個門外漢要闖進這裡，肯定會在這裡迷路，這個時候就需要地圖來指引你，前端要學的東西太多太多了，往往會學了這個又學那個，學了這個結果忘了那個，常常會在這種知識焦慮中輪迴，我，大概就是屬於這類人吧！所以我了解自己很需要一張<a href="https://www.hexschool.com/#learnMap-frontend">前端地圖</a>往明確的目標前進！</p>
+<h3 id="讓社群的力量push-自己努力前進">讓社群的力量，push 自己努力前進！</h3>
+<p>2021年真是進修精實的一年，五月參加 <a href="https://hackmd.io/@YmcMgo-NSKOqgTGAjl_5tg/ryar-vGOd/%2FNdGKchTeRBqbkTMiQ2HSmw">BS5實戰營</a> ，接著六月結束 <a href="/2021-%E7%A8%8B%E5%BC%8F%E9%AB%94%E9%A9%97%E7%87%9F-%E5%AF%A6%E6%88%B0%E5%BF%83%E5%BE%97-5668bd4c7e4d">程式體驗營</a> 之後，立刻緊接著繼續投入七月 <a href="https://www.hexschool.com/courses/web-layout-training-1st.html">切版直播班</a> <strong>地獄級修煉</strong> 的行列！</p>
+<p><img src="/images/post/medium/20210831_weblayout_summer_2021-02.jpg" alt=""></p>
+<p>老實說，這次切版直播班已是二刷了，去年也寫過一次 <a href="/%E5%85%AD%E8%A7%92%E5%AD%B8%E9%99%A2%E7%B6%B2%E9%A0%81%E5%88%87%E7%89%88%E7%9B%B4%E6%92%AD%E7%8F%AD%E5%BF%83%E5%BE%97-2020%E5%B9%B4%E7%A7%8B%E5%AD%A3%E7%8F%AD-9ad6743422ba">學習心得</a>，現在回去看看之前寫的，這次心境跟去年已完全不同，去年的我是在職上班的狀態非常<strong>佛系地進修</strong>，在今年四月離職後，開始<strong>高強度全職學習</strong>，另一方面，也經營著自己的皮革副業 (讓自己在全力拼轉職時還是有個微薄收入，降低焦慮感)，從去年12月開始就已經規劃好今年的進修計畫，也有跟校長討論過，結論是：本身是設計背景，適合先投入網頁設計師，但如果對於 VUE 了解的話，會更吃香，所以今年初開始就馬不停蹄的上了 <a href="/%E5%85%AD%E8%A7%92%E5%AD%B8%E9%99%A2-javascript-%E7%9B%B4%E6%92%AD%E7%8F%AD-js%E5%AD%B8%E5%BE%92%E5%9C%98%E7%B7%B4%E6%89%93%E6%80%AA%E7%AF%87-f92e9f63e04">JS直播班</a>、<a href="/vue-%E4%BD%9C%E5%93%81%E5%AF%A6%E6%88%B0%E7%9B%B4%E6%92%AD%E7%8F%AD-%E5%BF%83%E5%BE%97%E5%88%86%E4%BA%AB-50077176b8b">Vue直播班</a>、BS5實戰營、程式體驗營，一開始就是打算當海綿先跟著老師 run 過一次直播課程，先吸收必要養分後，自己學習時會比較順，很慶幸自己在去年決定加入六角的學習環境，校長常說：「<strong>這裡不缺學習資源，只怕你不學啊！</strong>」，老師說的句句屬實，付費課程先不說，但免費資源真的超級多啊，免費課程就讓你上好上滿！</p>
+<p>在直播班的社群中，每天都有300人都在跟你一起努力交作業，slack 也很多同學們在討論作業，此時還有什麼理由偷懶呢，當然就是作業要交好交滿 ~ 交到最後一刻 ~</p>
+<p><img src="/images/post/medium/20210831_weblayout_summer_2021-03.jpg" alt=""></p>
+<h3 id="啊啊啊離題了啦為什麼要再次二刷呢">啊啊啊離題了啦，為什麼要再次二刷呢？</h3>
+<blockquote>
+<p><em>再次把握學習的機會</em></p>
+</blockquote>
+<p>去年的我雖然有點認真上課但又很佛系學習，因為在職狀態下沒有足夠的時間去打磨一個完整作品，然後作業從第一到第八週的佛系提交等級 Level 也都只能在Lv1~Lv2，沒有很大的突破，code的品質也很差，整體架構很糟，資料夾超亂，對 SCSS 完全不理解，更別說 Gulp 了，去年學到這裡呈現半放棄，整個大卡關，直到第六週才克服這個障礙，再來是 Git ， 去年對於 Git 這個東西，一直處於很抗拒的狀態，因為完全不熟悉 commend line 很害怕使用終端機，每次打指令都不知道自己打的對不對，只要跑出紅字錯誤就非常緊張，再加上自己使用兩臺電腦交替使用，常常 win 跟 mac 的 指令搞混，再來是 Github Pages 上傳，因為害怕終端機，幾乎都是使用 Github Desktop 上傳檔案，去年課程結束後很怨恨自己沒有好好把握學習的機會，決心這次既然都已經全職在家學習了，那就要認真把這些東西補起來認真把切版切好！</p>
+<blockquote>
+<p><em>昔日戰友一起闖關</em></p>
+</blockquote>
+<p>另外，再加上這次是跟著五月程式體驗營的同學一起走過來，已經產生革命情感，還有小組會議的默契，真的覺得學習路上有同伴一起努力的氛圍很棒！能在這個小組的學習環境與大家一起努力完成每週任務，真的很有成就感，也這樣大家一起堅持一起走到第八週，每週最歡樂的時光就是每周日在線上與大家相會討論進度講幹話的時光，尤其感謝 Sz 從程式體驗營開始就打造了一起努力奮鬥氛圍，而且超級無敵 carry 大家，為大家解決的很多 Git、Gulp 環境建立問題，組員 Summer 每天要通勤三小時的心靈雞湯始終激勵著我，全職學習待在家的我還有什麼理由不努力呢，還有 Xing 也是從程式體驗營就一起走到現在，也是手刻派的超級拼命三郎，趕緊把傷養好啊 !!! 還有馬西、小蔡、月亮 … 其他組員們每周提供的眾多學習資源，感謝大家的養分，但這八週真的很不夠，資訊量吸收不完 !</p>
+<h3 id="刻意練習的這八週">刻意練習的這八週</h3>
+<blockquote>
+<p>*先分享這八週對我最有用的一句話：*<em><strong>不與他人比較，跟過去的自己比較就好！</strong></em></p>
+</blockquote>
+<p>因為在這八週的學習過程裡，你會發現這個社群裡會有很多很多強者，而且他們發問的問題我通常都看不太懂，有時候會有點挫折，但老師說過，每個人的學習歷程不同，所以無須與他人比較，先專注在自己理解的部分就好了，今天的自己都要比昨天的自己更進步一點點，即使只有進步 1%，但也是進步了啊！</p>
+<blockquote>
+<p><em>好啦，以下是我這八週的前端學習血淚史</em></p>
+</blockquote>
+<h3 id="第一週1-px-也不差的版型控制術">第一週：1 px 也不差的版型控制術</h3>
+<p>學習重點：container + margin/padding + 結構 + 標籤使用是否符合語意</p>
+<p>困難程度：⭐</p>
+<p>七月終於開課了！這週開始是新的開始，直播班開始 run 起來了，這是我第 2 次參加了，距離上一次參加已經是 2020 年 10 月的事情了，當時還是有工作在職的狀況下，去參與這場直播課，三個月下來真的是累到炸裂，作業品質其實也好不到哪裡去，在那次的經驗可以悟出，這次一定要好好把握機會，不能錯過每次學習的機會！</p>
+<p><strong>工程師升等必練 1px也不差</strong><a href="https://g.co/kgs/enoVfE"><strong>Code Kata</strong></a>：練習、刻意練習、除錯能力提升</p>
+<p><img src="/images/post/medium/20210831_weblayout_summer_2021-04.jpg" alt="校長新推出的 kata 練習"></p>
+<p>去年是用 win10 環境的電腦在學習，所以一切都非常的順順利利，但這次只有 win7，所以一開始就經歷了<a href="https://www.pianshen.com/article/84891569819/">win7 無法更新 vscode</a>，然後黑頻開不起來，花了很多時間去搜尋資料找答案，後來有順利開啟，這週開始培養自己耐心找答案的能力！</p>
+<h3 id="第二週flexbox-網頁排版術">第二週：Flexbox 網頁排版術</h3>
+<p>學習重點：學習 flex + background-image</p>
+<h4 id="part-1flexbox">Part 1：Flexbox</h4>
+<p>困難程度：⭐</p>
+<p>第二週的難度還不算難，flexbox 在上梯切版班以及程式體驗營的學習經驗裡，已經有足夠印象完成作業，但會感受到這週難度開始慢慢爬升囉，老師每週直播課前都提供相當多的預習資源，可以在每週直播課程前先看過一遍，週五再聽一次老師講解會更加有印象，也可以在課堂直接發問，這樣的上課效果我覺得是最棒的，吸收效果也很好！這週的小組任務很可愛，要玩兩個flex的遊戲 <a href="https://hexschool.github.io/flexbox-pirate/index.html#/">Flex pirate</a> 還有 <a href="https://flexboxfroggy.com/#zh-tw">Flex 青蛙</a>，玩到後面真的有點小困難，需要思考一下才有辦法過關！另外組員也提供了動畫版 flexbox：<a href="https://codepen.io/osublake/pen/dMLQJr">Animated Flexbox Playground</a></p>
+<h4 id="part-2gulpgithub-pages">Part 2：Gulp、Github Pages</h4>
+<p>困難程度：⭐⭐⭐⭐⭐ (開始學 Gulp、部屬 Github Pages，陣痛期開始)</p>
+<p>老師這次超前部署，在第二週小組作業中就讓大家先討論 Gulp 影音章節(建議準備 1.5~2 小時)，並且在第四週前完成 GitHub Pages 部署網站流程，本13組真的太優秀，感謝組長大大協助組員們除蟲，大家在第二週第三週就已經都順利完成這個艱困任務！( 去年的我 Gulp 就卡關卡到第六週，這次真的進步很多 )</p>
+<p><img src="/images/post/medium/20210831_weblayout_summer_2021-05.png" alt=""></p>
+<h3 id="第三週伸縮自如的-rwd-手機網頁排版術">第三週：伸縮自如的 RWD 手機網頁排版術</h3>
+<p>學習重點：RWD + 表單使用，懂 input label 對應和基本 type</p>
+<p>困難程度：⭐⭐⭐</p>
+<blockquote>
+<p><em>RWD 網頁不能出現 x 軸，小心被釘在牆上<br>
+先看權重，再看先後</em></p>
+</blockquote>
+<p>終於開始進入 RWD 魔王地獄了，好險這週看了穎旻助教加碼的直播，又打通了一些RWD的迷思，看設計稿要記得開格線，了解到 container 還要算進左右的 gutter，這個完全沒想到，所以這週助教直播含金量真的很高，一定要看。另外回想起去年參加切版直播班的狀況，回去看之前的作業，發現我去年作業質量真的很差很差很差，真的不知道在寫什麼，都是拼拼湊湊的完成作業，今年全職學習後，多了很多時間可以學習，也多了很多時間可以修改作業，也可以把每週五上課沒有打通的觀念再次複習，像是 github pages 在之前都不常用很不熟悉，所以每天都會再複習更新上傳的流程 ，把當天寫的作業更新 git push 上傳。於是就把過程記錄下來 <a href="https://hackmd.io/g_IJrs7GQxKLR2ftL119TQ?view">Gulp + scss + github pages 部署</a>，也多了一些時間認真思考第三週、第四週主線任務 scss 拆分細節，也把之前買的 <a href="https://www.hexschool.com/courses/sass.html">SCSS課程</a> 拿出來複習，然後再實際運用在作業上！</p>
+<h3 id="第四週多頁式網頁設計">第四週：多頁式網頁設計</h3>
+<p>學習重點：RWD + SCSS + gulp + 拆出 layout</p>
+<p>困難程度：⭐⭐⭐</p>
+<p><a href="https://viccjiang.github.io/2021layout_week4_glassshop/">主線任務</a></p>
+<p>這週開始資訊量真的很大，老師都有錄製補充當週知識的影片，可以把握時間先預習，因為接下來多頁式的網頁 code 開始變多，所以要用 SCSS 來撰寫管理，現階段對於SCSS還是懵懵懂懂的，但也好險每週都有小組開會可以討論自己卡關的問題，組長組員也都會熱心協助除錯，真心覺得小組很棒，然後開始看的懂強者們寫的 SCSS code 了，真的是從此刻開始覺得自己有在進步，從看不懂到看得懂，這個差別真的很大，也可以建立自己的自信，除了看得懂別人的 code 之外，也要了解為什麼這段 code 要這樣寫，這才是真正的學會！ 至於為什麼想快點看懂(參考)別人的 code，是因為卡關卡太久啦，想要快點解任務啦 XD 以前參考別人 code 都半抄半寫，現在可以看完一遍之後自己寫了，真為自己進步的幅度感動落淚 ~ ( 錢錢沒有白花</p>
+<p>然後，老師宣布真正好康的來囉，第五週開放每日助教服務，只要卡關就讓大家瘋狂問到飽！老師當下宣布這個服務時，我就決定每天要找一個問題來釐清！要問爆！(從第五週開始我也真的每天都有再問問題，就算普攏共的問題我也都問，因為不要害怕問問題，要學習問問題，在問問題的過程中，學會描述問題本身，以及想獲得什麼結果或效果，有時候會不小心就自己解答了)</p>
+<p><img src="/images/post/medium/20210831_weblayout_summer_2021-06.jpg" alt=""></p>
+<h3 id="第五週後台表單設計">第五週：後台表單設計</h3>
+<p>學習重點：熟悉 Bootstrap 元件 + 表單使用 懂 disabled readonly value 使用</p>
+<p>困難程度：⭐⭐</p>
+<p><a href="https://viccjiang.github.io/2021layout_week5_dashboard/#">主線任務</a></p>
+<p>這個禮拜真的很痛苦，因為星期一就去打 AZ 疫苗，接下來就是歷經三天疫苗痛苦期，副作用讓我動彈不得，斷斷續續發高燒加上肌肉痠痛好幾天，作業整個大大大落後，再加上對BS還不是很熟悉，連 @import 的順序都還沒搞清楚，好險有助教服務可以多多善用，當天的提問大部分都可以獲得解答，雖然沒有當週把作業交出去，但至少也可以完成 80%，但從第五周的作業開始作業的問題就開始變多，因為難度越來越陡峭了，老師也為了鼓勵大家，加碼獎品啦，額外加碼彩蛋課程 + 版型發表會！先不管這麼多了，作業先交就對了！</p>
+<p><img src="/images/post/medium/20210831_weblayout_summer_2021-07.jpg" alt=""></p>
+<h3 id="第六週導入網頁規範設計流程">第六週：導入網頁規範設計流程</h3>
+<p>學習重點：會使用 Bootstrap class + 自己改顏色變數 + 使用格線系統</p>
+<p>困難程度：⭐⭐⭐⭐</p>
+<p><a href="https://viccjiang.github.io/2021layout_week6_exhibinection/">主線任務</a></p>
+<p>這週作業要學會通靈啊，設計稿只有手機板跟PC版啊，pad要自己生出來，這是業界的提前體驗嗎 xddd 這週有一個很大的重點：不要去修改 node_modules/bootstrap 裡面的 SCSS，因為別人接手你 code 時，會自行使用 npm install 安裝套件，此時裡面模組就都重新下載了，所以可以先把 node_module 的 variable 複製一份出來到本地，就可以蓋過 node_module 然後自己修改一些變數之類的！這週開始去了解 npm 的原理，這次直播班總算理解一點 node_modules 是什麼東西了，去年根本還沒摸到這個領域啊，越來越多東西要塞進腦袋了，但先專注眼前可以理解跟控制的事情就好，不要太知識焦慮！求職作業建議可以先做好眼鏡電商 ＋ 第6週 + 第8週，這幾週先掌握起來！</p>
+<p>我也是偶爾會私訊問老師一堆問題，老師也都很快速的回覆，而且都會很詳細的解說</p>
+<p><img src="/images/post/medium/20210831_weblayout_summer_2021-08.jpg" alt=""></p>
+<h3 id="第七週視差滾動">第七週：視差滾動</h3>
+<p>學習重點：學習 aos + animate</p>
+<p>困難程度：⭐</p>
+<p>這週真的是最歡樂的一週，一方面是要讓我們有足夠時間去輸出第六週的作業以及一方面在CSS動畫也有所收穫，覺得六角學院這樣的學習路徑規畫的很好，不會一直都在高強度以至於放棄，有足夠的時間輸出對於新手來說真的很重要，也比較可以覺察自己的問題點！</p>
+<p>由於，Github 安全性問題，我在七月底收到 GitHub 的警告信 ，標題為 <a href="https://hackmd.io/zeTEzHkbQaa2trdmfZaEYw?view">GitHub Deprecation Notice</a>，簡言之就是 GitHub 將在 2021 年 8 月 13 日禁止所有基於帳密的驗證機制，以提升帳密的安全性。我在睡前收到，然後一個超級ㄚˋ雜，然後就開始熬夜設定一堆有的沒有的流程，隔天總算是設定完成，因為不太確定自己設定是否正確，就先分享給組員，大家一起設定看看，看流程是否有問題一起除錯！</p>
+<p>然後大概八月中災情就開始了，老師也補錄了好幾部影片讓大家安心設定</p>
+<p><img src="/images/post/medium/20210831_weblayout_summer_2021-09.jpg" alt=""></p>
+<h3 id="第八週css-模組化管理">第八週：CSS 模組化管理</h3>
+<p>學習重點：會改元件 CSS + 了解設計模式 + 命名，綜合八週知識</p>
+<p>困難程度：⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐ ( 爆星 )</p>
+<p><a href="https://viccjiang.github.io/2021layout_week8_doyoga/">主線任務</a></p>
+<p>學會改Bootstrap之後，SCSS 結構可以繼續優化，嘗試將容器與模組的分離，元件化、抽象命名、拋棄語意，擁抱元件(以功能外觀去命名)，在<a href="https://www.youtube.com/watch?v=0K-HHsC7rS8&amp;t=237s">這部影片中</a> 可以學到BS5的通用類別的修改，除了可新增修改 class 、key、value 之外，也可以把 responsive 功能開啟，老師給的資源真的都很充足，如果課堂上找不到答案，你在slack 中也一定可以找到答案，大家的討論串也都很精彩！因為第八週作業真的很龐大，設計稿超多頁的啊，真的很難在一週內就給他拼出來，大家就跟老師許願了，只要有許願就會成真，真的很佛，延長繳交作業的時間，真的是太感人啦 ~ 充足的兩週時間可以認真的把版切出來！</p>
+<p><img src="/images/post/medium/20210831_weblayout_summer_2021-10.jpg" alt="趁著提早做完第八週作業，感謝洧杰校長提供親自協助檢視 code的服務"></p>
+<p><img src="/images/post/medium/20210831_weblayout_summer_2021-11.jpg" alt=""></p>
+<p>另外，因為Bootstrap 真的要搞懂也需要滿多時間，我也是看了老師錄製的 <a href="https://www.youtube.com/playlist?list=PLYrA-SsMvTPOJnF6MUxd_X_5ixYSPSj0I">這系列</a>，才補足了一些進階知識！再來就是大量的觀看 slack 討論串，真的可以獲得很多意想不到的知識！</p>
+<p><img src="/images/post/medium/20210831_weblayout_summer_2021-12.jpg" alt=""></p>
+<h3 id="學習的習慣讓進步的幅度非常有感">學習的習慣讓進步的幅度非常有感</h3>
+<p>這八週無形中的獲得，我想大概就是讓自己的前端技能大幅提升了，比較了自己去年的 code 還有今年的 code ，真的成長太多啦，尤其是在 scss 跟 Bootstrap 的部分，懂的東西更精更深了，sass map、 map-get 、 @each 、@for… 這幾個東西，在 Bootstrap 裡面扮演很大的角色，總算給他了解一點了，然後設計模式OOCSS 也懂得如何運用，最重要的是，在這個直播班社群裡有著無限大的動力，它將會一直將自己推向前，除了自己的學習心態要正確，再來是自律的重要性，老師一直強調刻意練習、刻意練習、刻意練習，除了一開始練的 kata 之外，每日任務就是刻意練習的一部分，每天就算是練習個 5–10 分鐘也好，絕不要讓學習中斷，一旦中斷，就又很難回到學習的狀態！</p>
+<p><strong>這次學習的更扎實</strong></p>
+<ol>
+<li>Git ：版本控制</li>
+<li>Gulp ：任務流程工具</li>
+<li>Github Pages ：上傳空間</li>
+<li>Bootstrap ：框架運用、客製化</li>
+<li>SCSS ：CSS預處理</li>
+<li>AOS 動畫：動畫設計</li>
+<li>EJS樣板語言：Layout 觀念</li>
+</ol>
+<p>另外，這次學習感到較為可惜的點一樣還是 slack 舊訊息會被洗掉，覺得真的很可惜，slack的討論串含金量很高的，雖然有些是不重要的訊息，但對於需要的同學卻是很重要且實用的資訊，真希望我有另一顆腦袋可以把大家所有踩到的雷點都記錄下來！</p>
+<p>ps. 趁 slack 紀錄還沒被洗掉，已經把自己需要的知識點記錄下來</p>
+<h3 id="學習最重要的事時間管理">學習最重要的事：時間管理</h3>
+<p>有一句話我忘記在哪邊看到的，但重點大概是：「時間管哩，不是選擇什麼事都做，而是選擇什麼事不做！」這句話也真的點醒了我，也幫我做了滿多決定！</p>
+<p>其實我今年是有參加 Vue直播班，而在參加切版班的同時，剛好就是要交 Vue最終作業的時候了，雖然有把作業雛型交出去，但知道自己能力沒辦法在繳交期限內把作業修改完成，最後也不算完成任務，也沒有修改助教第一次給的建議，是覺得滿可惜的，但後來是意識到，自己可以在切版這個階段，把切版任務做到更好，切版能力也要先練起來，才有辦法再繼續投入到更進階的階段，就直接果斷放棄八月最後一次繳交Vue最終作業的機會，讓自己全力在切版班衝刺！</p>
+<blockquote>
+<p>真正的強者是了解自己的人，不是聰明的人！</p>
+</blockquote>
+<p><img src="/images/post/medium/20210831_weblayout_summer_2021-13.jpg" alt="常在軟體工程師求職特訓班看到老師的金句良言，覺得很受用！都會截圖下來警惕自己！"></p>
+<h3 id="最後感謝的話">最後，感謝的話</h3>
+<p>感謝老師這段時間的精實教學 and 穎旻助教的加碼直播(含金量破表)，還有很多助教每天爆肝批改作業，最後超感謝 slack 的每日助教每天都回覆我各種問題，也陪伴我一起解決每天遇到的新挑戰！</p>
+<p>謝謝第13小組無私的分享各種筆記、我的組長、我的組員，你們都超棒，一起堅持到最後一次小組討論！</p>
+<p><img src="/images/post/medium/20210831_weblayout_summer_2021-14.png" alt=""></p>
+<hr>
+<p><em>本文原發佈於 <a href="https://jiangsdesign.medium.com/p/fa092e0bb3d6">Medium</a></em></p>
+
+        </div>
+
+        
+        <div id="disqus_thread"></div>
+<script type="application/javascript">
+    window.disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "jiangs" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+        </main>
+
+<footer style="margin-top: 50px;">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center mb-5">
+        <a href="https://viccjiang.github.io/"><img src="https://viccjiang.github.io/images/logo.png" alt="JIANGs Daily LAB"></a>
+      </div>
+      <div class="col-lg-4 col-sm-6 mb-5">
+        <h6 class="mb-4">社群連結</h6>
+        <ul class="list-unstyled">
+          
+          <li class="mb-3"><a class="text-dark" href="https://github.com/viccjiang" target="_blank" rel="noopener">github</a></li>
+          
+          <li class="mb-3"><a class="text-dark" href="https://www.pinkoi.com/store/zhexiemao" target="_blank" rel="noopener">Pinkoi</a></li>
+          
+          <li class="mb-3"><a class="text-dark" href="https://jiangsdesign.medium.com/" target="_blank" rel="noopener">Medium</a></li>
+          
+          <li class="mb-3"><a class="text-dark" href="https://www.linkedin.com/in/wen-qing-jiang-351a04131" target="_blank" rel="noopener">LinkedIn</a></li>
+          
+        </ul>
+      </div>
+      <div class="col-lg-4 col-sm-6 mb-5">
+        <h6 class="mb-4">文章分類</h6>
+        <ul class="list-unstyled">
+          <li class="mb-3"><a class="text-dark"
+              href="/categories/%e5%89%8d%e7%ab%af%e9%96%8b%e7%99%bc">前端開發</a>
+          </li>
+          <li class="mb-3"><a class="text-dark"
+              href="/categories/%e5%ad%b8%e7%bf%92%e7%ad%86%e8%a8%98">學習筆記</a>
+          </li>
+          <li class="mb-3"><a class="text-dark"
+              href="/categories/%e5%b7%a5%e4%bd%9c%e6%97%a5%e5%b8%b8">工作日常</a>
+          </li>
+          <li class="mb-3"><a class="text-dark"
+              href="/categories/%e8%87%aa%e6%88%91%e6%88%90%e9%95%b7">自我成長</a>
+          </li>
+          <li class="mb-3"><a class="text-dark"
+              href="/categories/%e8%ae%80%e6%9b%b8%e5%bf%83%e5%be%97">讀書心得</a>
+          </li>
+          <li class="mb-3"><a class="text-dark"
+              href="/categories/%e9%96%8b%e7%99%bc%e5%b7%a5%e5%85%b7">開發工具</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-lg-4 col-sm-6 mb-5">
+        <h6 class="mb-4">網站地圖</h6>
+        <ul class="list-unstyled">
+          
+          <li class="mb-3"><a class="text-dark" href="https://viccjiang.github.io/about">about</a></li>
+          
+          <li class="mb-3"><a class="text-dark" href="https://viccjiang.github.io/blog">blog</a></li>
+          
+          <li class="mb-3"><a class="text-dark" href="https://viccjiang.github.io/contact">contact</a></li>
+          
+        </ul>
+      </div>
+      <div class="col-12 border-top py-4 text-center">
+        | copyright © 2020 <a href="https://viccjiang.github.io/">JIANGs</a> All Rights Reserved |
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+<!-- search overlay -->
+<div id="search-overlay" class="search-overlay">
+  <div class="search-overlay-inner">
+    <button id="searchClose" class="search-overlay-close"><i class="ti-close"></i></button>
+    <div class="search-overlay-header">
+      <div class="search-input-wrapper">
+        <i class="ti-search search-input-icon"></i>
+        <input id="search-query" type="text" placeholder="搜尋文章..." autocomplete="off">
+      </div>
+    </div>
+    <div class="search-overlay-results" id="search-results"></div>
+  </div>
+</div>
+
+
+<script>
+  var indexURL = "https://viccjiang.github.io/index.json"
+</script>
+
+<script>
+  (function () {
+    var btn = document.getElementById('themeToggle');
+    if (!btn) return;
+    btn.addEventListener('click', function () {
+      var current = document.documentElement.getAttribute('data-theme') === 'dark' ? 'dark' : 'light';
+      var next = current === 'dark' ? 'light' : 'dark';
+      document.documentElement.setAttribute('data-theme', next);
+      try { localStorage.setItem('theme', next); } catch (e) {}
+    });
+    if (window.matchMedia) {
+      var mql = window.matchMedia('(prefers-color-scheme: dark)');
+      var handler = function (e) {
+        try { if (localStorage.getItem('theme')) return; } catch (err) {}
+        document.documentElement.setAttribute('data-theme', e.matches ? 'dark' : 'light');
+      };
+      if (mql.addEventListener) mql.addEventListener('change', handler);
+      else if (mql.addListener) mql.addListener(handler);
+    }
+  })();
+</script>
+
+<!-- JS Plugins -->
+
+<script src="https://viccjiang.github.io/plugins/jQuery/jquery.min.js"></script>
+
+<script src="https://viccjiang.github.io/plugins/bootstrap/bootstrap.bundle.min.js"></script>
+
+<script src="https://viccjiang.github.io/plugins/slick/slick.min.js"></script>
+
+<script src="https://viccjiang.github.io/plugins/venobox/venobox.min.js"></script>
+
+<script src="https://viccjiang.github.io/plugins/search/fuse.min.js"></script>
+
+<script src="https://viccjiang.github.io/plugins/search/mark.js"></script>
+
+<script src="https://viccjiang.github.io/plugins/search/search.js"></script>
+
+<!-- Main Script -->
+
+<script src="https://viccjiang.github.io/js/script.min.js"></script>
+<!-- google analitycs -->
+<script>
+  (function (i, s, o, g, r, a, m) {
+    i['GoogleAnalyticsObject'] = r;
+    i[r] = i[r] || function () {
+      (i[r].q = i[r].q || []).push(arguments)
+    }, i[r].l = 1 * new Date();
+    a = s.createElement(o),
+      m = s.getElementsByTagName(o)[0];
+    a.async = 1;
+    a.src = g;
+    m.parentNode.insertBefore(a, m)
+  })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+  ga('create', '', 'auto');
+  ga('send', 'pageview');
+</script></body>
+</html>

@@ -5,9 +5,17 @@
     <link>https://viccjiang.github.io/tags/claude-code/</link>
     <description>Recent content in Claude Code on JIANGs Daily LAB</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Fri, 03 Apr 2026 18:00:00 +0800</lastBuildDate>
+    <language>zh-Hant-TW</language>
+    <lastBuildDate>Sun, 05 Apr 2026 12:28:34 +0800</lastBuildDate>
     <atom:link href="https://viccjiang.github.io/tags/claude-code/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Claude Code Statusline 實作筆記</title>
+      <link>https://viccjiang.github.io/blog/20260405_claude_code_statusline/</link>
+      <pubDate>Sun, 05 Apr 2026 12:28:34 +0800</pubDate>
+      <guid>https://viccjiang.github.io/blog/20260405_claude_code_statusline/</guid>
+      <description>實作紀錄 Statusline 狀態列 + 附加番外篇之隱藏彩蛋 /buddy
+在這個客製化狀態列出現之前我一直都是切換 /usage 監測我當下使用量，怕一個 token 不夠，心驚膽顫的，還剩多少 token 撐得過今天這個 issue MR 嗎…</description>
+    </item>
     <item>
       <title>Claude Code 設定與 Statusline 實作紀錄</title>
       <link>https://viccjiang.github.io/blog/20260403_claude_code_setup/</link>

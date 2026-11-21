@@ -1,7 +1,22 @@
 <!DOCTYPE html>
-<html lang="en-us"><head>
+<html lang="zh-Hant-TW"><head>
   <meta charset="utf-8">
-  <title>JIANGs Daily LAB</title>
+  <title>所有文章 | JIANGs Daily LAB</title>
+<meta name="description" content="JIANGs Daily LAB 的所有文章：前端開發、課程學習筆記、開發工具與自我成長紀錄。">
+
+<meta property="og:site_name" content="JIANGs Daily LAB">
+<meta property="og:locale" content="zh_TW">
+<meta property="og:title" content="所有文章">
+<meta property="og:description" content="JIANGs Daily LAB 的所有文章：前端開發、課程學習筆記、開發工具與自我成長紀錄。">
+<meta property="og:url" content="https://viccjiang.github.io/blog/">
+<meta property="og:image" content="https://viccjiang.github.io/images/author.jpg">
+<meta property="og:type" content="website">
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="所有文章">
+<meta name="twitter:description" content="JIANGs Daily LAB 的所有文章：前端開發、課程學習筆記、開發工具與自我成長紀錄。">
+<meta name="twitter:image" content="https://viccjiang.github.io/images/author.jpg">
+
 
   <!-- Theme (dark mode) — 必須儘早執行，避免閃爍 -->
   <script>
@@ -16,9 +31,7 @@
   </script>
 
   <!-- mobile responsive meta -->
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description"
-    content="this is meta description">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
   <meta name="author" content="Jiang">
@@ -70,7 +83,7 @@
     <nav class="navbar navbar-expand-lg navbar-white bg-transparent border-bottom pl-0">
       <a class="navbar-brand mobile-view" href="https://viccjiang.github.io/"><img class="img-fluid"
           src="https://viccjiang.github.io/images/logo.png" alt="JIANGs Daily LAB"></a>
-      <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation">
+      <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="開啟選單">
         <i class="ti-menu h3"></i>
       </button>
 
@@ -79,15 +92,19 @@
           <ul class="navbar-nav mr-auto">
             
             <li class="nav-item">
-              <a class="nav-link" href="https://github.com/viccjiang"><i class="ti-github"></i></a>
+              <a class="nav-link" href="https://github.com/viccjiang" target="_blank" rel="noopener" title="github" aria-label="github"><i class="ti-github"></i></a>
             </li>
             
             <li class="nav-item">
-              <a class="nav-link" href="https://www.pinkoi.com/store/zhexiemao"><i class="ti-link"></i></a>
+              <a class="nav-link" href="https://www.pinkoi.com/store/zhexiemao" target="_blank" rel="noopener" title="Pinkoi" aria-label="Pinkoi"><i class="ti-link"></i></a>
             </li>
             
             <li class="nav-item">
-              <a class="nav-link" href="https://jiangsdesign.medium.com/"><i class="ti-pencil-alt"></i></a>
+              <a class="nav-link" href="https://jiangsdesign.medium.com/" target="_blank" rel="noopener" title="Medium" aria-label="Medium"><i class="ti-pencil-alt"></i></a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link" href="https://www.linkedin.com/in/wen-qing-jiang-351a04131" target="_blank" rel="noopener" title="LinkedIn" aria-label="LinkedIn"><i class="ti-linkedin"></i></a>
             </li>
             
           </ul>
@@ -101,6 +118,12 @@
           
           <li class="nav-item">
             <a class="nav-link" href="https://viccjiang.github.io/blog">所有文章</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://viccjiang.github.io/tags">標籤</a>
           </li>
           
           
@@ -143,7 +166,7 @@
     </nav>
   </div>
 </header>
-<!-- /navigation -->
+<!-- /navigation --><main id="main">
 
 
 <section class="section-sm">
@@ -173,13 +196,18 @@ Front end Developer &amp; Graphic Designer &amp; Dreamer</p>
     <h4 class="widget-title">Category</h4>
     <ul class="list-unstyled">
       <li>
-        <a href="/categories/%e5%85%ad%e8%a7%92%e5%ad%b8%e9%99%a2"
-          >六角學院</a
+        <a href="/categories/%e5%89%8d%e7%ab%af%e9%96%8b%e7%99%bc"
+          >前端開發</a
         >
       </li>
       <li>
-        <a href="/categories/%e5%89%8d%e7%ab%af%e9%96%8b%e7%99%bc"
-          >前端開發</a
+        <a href="/categories/%e5%ad%b8%e7%bf%92%e7%ad%86%e8%a8%98"
+          >學習筆記</a
+        >
+      </li>
+      <li>
+        <a href="/categories/%e5%b7%a5%e4%bd%9c%e6%97%a5%e5%b8%b8"
+          >工作日常</a
         >
       </li>
       <li>
@@ -201,151 +229,23 @@ Front end Developer &amp; Graphic Designer &amp; Dreamer</p>
   </div>
   
   <div class="widget">
-    <h4 class="widget-title">Tag</h4>
-    <ul class="list-inline">
-      <li class="list-inline-item">
-        <a
-          class="d-block p-2 bg-primary text-white"
-          href="/tags/ai-%e5%b7%a5%e5%85%b7"
-          >Ai 工具</a
-        >
-      </li>
-      <li class="list-inline-item">
-        <a
-          class="d-block p-2 bg-primary text-white"
-          href="/tags/claude-code"
-          >Claude code</a
-        >
-      </li>
-      <li class="list-inline-item">
-        <a
-          class="d-block p-2 bg-primary text-white"
-          href="/tags/css"
-          >Css</a
-        >
-      </li>
-      <li class="list-inline-item">
-        <a
-          class="d-block p-2 bg-primary text-white"
-          href="/tags/ga4"
-          >Ga4</a
-        >
-      </li>
-      <li class="list-inline-item">
-        <a
-          class="d-block p-2 bg-primary text-white"
-          href="/tags/google-analytics"
-          >Google analytics</a
-        >
-      </li>
-      <li class="list-inline-item">
-        <a
-          class="d-block p-2 bg-primary text-white"
-          href="/tags/gtm"
-          >Gtm</a
-        >
-      </li>
-      <li class="list-inline-item">
-        <a
-          class="d-block p-2 bg-primary text-white"
-          href="/tags/hahow"
-          >Hahow</a
-        >
-      </li>
-      <li class="list-inline-item">
-        <a
-          class="d-block p-2 bg-primary text-white"
-          href="/tags/hexschool"
-          >Hexschool</a
-        >
-      </li>
-      <li class="list-inline-item">
-        <a
-          class="d-block p-2 bg-primary text-white"
-          href="/tags/is"
-          >Is</a
-        >
-      </li>
-      <li class="list-inline-item">
-        <a
-          class="d-block p-2 bg-primary text-white"
-          href="/tags/selector"
-          >Selector</a
-        >
-      </li>
-      <li class="list-inline-item">
-        <a
-          class="d-block p-2 bg-primary text-white"
-          href="/tags/where"
-          >Where</a
-        >
-      </li>
-      <li class="list-inline-item">
-        <a
-          class="d-block p-2 bg-primary text-white"
-          href="/tags/%e5%85%ad%e8%a7%92%e5%ad%b8%e9%99%a2"
-          >六角學院</a
-        >
-      </li>
-      <li class="list-inline-item">
-        <a
-          class="d-block p-2 bg-primary text-white"
-          href="/tags/%e5%88%87%e7%89%88%e7%9b%b4%e6%92%ad%e7%8f%ad"
-          >切版直播班</a
-        >
-      </li>
-      <li class="list-inline-item">
-        <a
-          class="d-block p-2 bg-primary text-white"
-          href="/tags/%e5%89%8d%e7%ab%af%e5%ad%b8%e7%bf%92"
-          >前端學習</a
-        >
-      </li>
-      <li class="list-inline-item">
-        <a
-          class="d-block p-2 bg-primary text-white"
-          href="/tags/%e8%ae%80%e6%9b%b8%e5%bf%83%e5%be%97"
-          >讀書心得</a
-        >
-      </li>
-      <li class="list-inline-item">
-        <a
-          class="d-block p-2 bg-primary text-white"
-          href="/tags/%e8%bf%bd%e8%b9%a4"
-          >追蹤</a
-        >
-      </li>
-      <li class="list-inline-item">
-        <a
-          class="d-block p-2 bg-primary text-white"
-          href="/tags/%e9%80%b2%e4%bf%ae%e8%aa%b2%e7%a8%8b"
-          >進修課程</a
-        >
-      </li>
-      <li class="list-inline-item">
-        <a
-          class="d-block p-2 bg-primary text-white"
-          href="/tags/%e9%96%8b%e7%99%bc%e7%92%b0%e5%a2%83"
-          >開發環境</a
-        >
-      </li>
-    </ul>
-  </div>
-  
-  <div class="widget">
     <h4 class="widget-title">Social</h4>
     <ul class="list-inline social-links">
       
       <li class="list-inline-item">
-        <a href="https://github.com/viccjiang"><i class="ti-github"></i></a>
+        <a href="https://github.com/viccjiang" target="_blank" rel="noopener" title="github" aria-label="github"><i class="ti-github"></i></a>
       </li>
       
       <li class="list-inline-item">
-        <a href="https://www.pinkoi.com/store/zhexiemao"><i class="ti-link"></i></a>
+        <a href="https://www.pinkoi.com/store/zhexiemao" target="_blank" rel="noopener" title="Pinkoi" aria-label="Pinkoi"><i class="ti-link"></i></a>
       </li>
       
       <li class="list-inline-item">
-        <a href="https://jiangsdesign.medium.com/"><i class="ti-pencil-alt"></i></a>
+        <a href="https://jiangsdesign.medium.com/" target="_blank" rel="noopener" title="Medium" aria-label="Medium"><i class="ti-pencil-alt"></i></a>
+      </li>
+      
+      <li class="list-inline-item">
+        <a href="https://www.linkedin.com/in/wen-qing-jiang-351a04131" target="_blank" rel="noopener" title="LinkedIn" aria-label="LinkedIn"><i class="ti-linkedin"></i></a>
       </li>
       
     </ul>
@@ -356,32 +256,34 @@ Front end Developer &amp; Graphic Designer &amp; Dreamer</p>
 
       
       <div class="col-lg-8 mb-5 mb-lg-0">
+        <h1 class="sr-only">所有文章</h1>
         <div class="row">
           
           
           <div class="col-12 mb-4">
-    <a href="https://viccjiang.github.io/blog/weblayout_training_20210115/" class="card-link" style="text-decoration: none; color: inherit;">
+    <a href="https://viccjiang.github.io/blog/20210707_vue_live_class/" class="card-link" style="text-decoration: none; color: inherit;">
     <article class="card" style="cursor: pointer;">
         <div class="card-body">
-            <span class="h5 d-block mb-3">六角學院線上研討會2021年前端工程求職等級表</span>
+            <h2 class="h5 d-block mb-3">Vue 作品實戰直播班 心得分享</h2>
             <div class="mb-3 post-meta">
                 <span>By Jiang</span>
                 
                 <span class="border-bottom border-primary px-2 mx-1"></span>
-                <span>15 January 2021</span>
+                <span>07 July 2021</span>
                 
                 
                 <span class="border-bottom border-primary px-2 mx-1"></span>
                 <span class="text-primary">自我成長</span>
                 
                 <span class="border-bottom border-primary px-2 mx-1"></span>
-                <span class="text-primary">六角學院</span>
+                <span class="text-primary">學習筆記</span>
                 
             </div>
-            <p class="card-text d-none d-md-block">六角學院這門線上講座開的很是時候，因為年初了大家都開始在安排本年度的學習進度規劃、職涯方向、求職方法等，前陣子 …</p>
+            <p class="card-text d-none d-md-block">分享這八週的上課心得，只要你不放棄你自己，六角就會在線上幫助你。
+時間過得太快，這九週課程竟然結束了，中間一度 …</p>
         </div>
         
-        <img src="https://viccjiang.github.io/images/post/post-5.jpg" alt="六角學院線上研討會2021年前端工程求職等級表" style="width: 200px; min-width: 200px; height: 150px; object-fit: cover; border-radius: 0 .25rem .25rem 0;">
+        <img src="https://viccjiang.github.io/images/post/medium/20210707_vue_live_class-01.png" alt="Vue 作品實戰直播班 心得分享" style="width: 200px; min-width: 200px; height: 150px; object-fit: cover; border-radius: 0 .25rem .25rem 0;">
         
     </article>
     </a>
@@ -390,28 +292,29 @@ Front end Developer &amp; Graphic Designer &amp; Dreamer</p>
 
           
           <div class="col-12 mb-4">
-    <a href="https://viccjiang.github.io/blog/weblayout_training_20210109/" class="card-link" style="text-decoration: none; color: inherit;">
+    <a href="https://viccjiang.github.io/blog/20210628_coding_camp_2021/" class="card-link" style="text-decoration: none; color: inherit;">
     <article class="card" style="cursor: pointer;">
         <div class="card-body">
-            <span class="h5 d-block mb-3">2021年 零基礎邁向前端工程師</span>
+            <h2 class="h5 d-block mb-3">2021 程式體驗營 實戰心得</h2>
             <div class="mb-3 post-meta">
                 <span>By Jiang</span>
                 
                 <span class="border-bottom border-primary px-2 mx-1"></span>
-                <span>09 January 2021</span>
+                <span>28 June 2021</span>
                 
                 
                 <span class="border-bottom border-primary px-2 mx-1"></span>
                 <span class="text-primary">自我成長</span>
                 
                 <span class="border-bottom border-primary px-2 mx-1"></span>
-                <span class="text-primary">六角學院</span>
+                <span class="text-primary">學習筆記</span>
                 
             </div>
-            <p class="card-text d-none d-md-block">這是今年針對自己的前端轉職做的規劃（參考了六角學院的前端開發者地圖），在去年底經過切版直播班洗禮之後，瞬間點開 …</p>
+            <p class="card-text d-none d-md-block">這是六角學院發起的公益活動 — 勤奮在家學前端，戰勝疫情救台灣
+真心感謝六角學院，讓我搶到進入700人訓練營的 …</p>
         </div>
         
-        <img src="https://viccjiang.github.io/images/post/post-2.jpg" alt="2021年 零基礎邁向前端工程師" style="width: 200px; min-width: 200px; height: 150px; object-fit: cover; border-radius: 0 .25rem .25rem 0;">
+        <img src="https://viccjiang.github.io/images/post/medium/20210628_coding_camp_2021-01.png" alt="2021 程式體驗營 實戰心得" style="width: 200px; min-width: 200px; height: 150px; object-fit: cover; border-radius: 0 .25rem .25rem 0;">
         
     </article>
     </a>
@@ -420,28 +323,26 @@ Front end Developer &amp; Graphic Designer &amp; Dreamer</p>
 
           
           <div class="col-12 mb-4">
-    <a href="https://viccjiang.github.io/blog/hexschool_weblayout_training_2020/" class="card-link" style="text-decoration: none; color: inherit;">
+    <a href="https://viccjiang.github.io/blog/20210602_life_in_pandemic/" class="card-link" style="text-decoration: none; color: inherit;">
     <article class="card" style="cursor: pointer;">
         <div class="card-body">
-            <span class="h5 d-block mb-3">六角學院網頁切版直播班心得 - 2020年秋季班</span>
+            <h2 class="h5 d-block mb-3">疫情下的生活，重新找回節奏</h2>
             <div class="mb-3 post-meta">
                 <span>By Jiang</span>
                 
                 <span class="border-bottom border-primary px-2 mx-1"></span>
-                <span>26 December 2020</span>
+                <span>02 June 2021</span>
                 
                 
                 <span class="border-bottom border-primary px-2 mx-1"></span>
                 <span class="text-primary">自我成長</span>
                 
-                <span class="border-bottom border-primary px-2 mx-1"></span>
-                <span class="text-primary">六角學院</span>
-                
             </div>
-            <p class="card-text d-none d-md-block">先來個前言吧！ 時間真的過得好快，八週的切版直播班竟然就這樣結束喏（兩個月真的太短了啦），而且，再過幾天就就正 …</p>
+            <p class="card-text d-none d-md-block">被迫按下暫停鍵，在此刻停下腳步，認真思考下一步
+五月一樣延續著四月剛養成的好習慣，持續早睡早起、每日學習、每日 …</p>
         </div>
         
-        <img src="https://viccjiang.github.io/images/post/hexschool.jpg" alt="六角學院網頁切版直播班心得 - 2020年秋季班" style="width: 200px; min-width: 200px; height: 150px; object-fit: cover; border-radius: 0 .25rem .25rem 0;">
+        <img src="https://viccjiang.github.io/images/post/medium/20210602_life_in_pandemic-01.jpg" alt="疫情下的生活，重新找回節奏" style="width: 200px; min-width: 200px; height: 150px; object-fit: cover; border-radius: 0 .25rem .25rem 0;">
         
     </article>
     </a>
@@ -450,28 +351,26 @@ Front end Developer &amp; Graphic Designer &amp; Dreamer</p>
 
           
           <div class="col-12 mb-4">
-    <a href="https://viccjiang.github.io/blog/hexschool_layout_week08/" class="card-link" style="text-decoration: none; color: inherit;">
+    <a href="https://viccjiang.github.io/blog/20210505_self_value/" class="card-link" style="text-decoration: none; color: inherit;">
     <article class="card" style="cursor: pointer;">
         <div class="card-body">
-            <span class="h5 d-block mb-3">六角學院切版直播班2020秋季Week8</span>
+            <h2 class="h5 d-block mb-3">賦予自我價值的精神時光屋</h2>
             <div class="mb-3 post-meta">
                 <span>By Jiang</span>
                 
                 <span class="border-bottom border-primary px-2 mx-1"></span>
-                <span>16 December 2020</span>
+                <span>05 May 2021</span>
                 
                 
                 <span class="border-bottom border-primary px-2 mx-1"></span>
                 <span class="text-primary">自我成長</span>
                 
-                <span class="border-bottom border-primary px-2 mx-1"></span>
-                <span class="text-primary">六角學院</span>
-                
             </div>
-            <p class="card-text d-none d-md-block">最後一週啦，作業真的要衝刺了，上週看到老師在 slack 發的心得文，感到相當激勵，因為在這裡你會發現很多人跟 …</p>
+            <p class="card-text d-none d-md-block">確認自己是否要轉職前，先想想未來想過怎樣的生活？想成為什麼樣的人？
+在職學習時仍須全心投入 從2016年開始對 …</p>
         </div>
         
-        <img src="https://viccjiang.github.io/images/post/post-8.jpg" alt="六角學院切版直播班2020秋季Week8" style="width: 200px; min-width: 200px; height: 150px; object-fit: cover; border-radius: 0 .25rem .25rem 0;">
+        <img src="https://viccjiang.github.io/images/post/medium/20210505_self_value-01.jpg" alt="賦予自我價值的精神時光屋" style="width: 200px; min-width: 200px; height: 150px; object-fit: cover; border-radius: 0 .25rem .25rem 0;">
         
     </article>
     </a>
@@ -480,28 +379,29 @@ Front end Developer &amp; Graphic Designer &amp; Dreamer</p>
 
           
           <div class="col-12 mb-4">
-    <a href="https://viccjiang.github.io/blog/hexschool_layout_week07/" class="card-link" style="text-decoration: none; color: inherit;">
+    <a href="https://viccjiang.github.io/blog/20210421_2021_q1_review/" class="card-link" style="text-decoration: none; color: inherit;">
     <article class="card" style="cursor: pointer;">
         <div class="card-body">
-            <span class="h5 d-block mb-3">六角學院切版直播班2020秋季Week7</span>
+            <h2 class="h5 d-block mb-3">2021年第一季 Q1 前端學習檢視</h2>
             <div class="mb-3 post-meta">
                 <span>By Jiang</span>
                 
                 <span class="border-bottom border-primary px-2 mx-1"></span>
-                <span>02 December 2020</span>
+                <span>21 April 2021</span>
                 
                 
                 <span class="border-bottom border-primary px-2 mx-1"></span>
                 <span class="text-primary">自我成長</span>
                 
                 <span class="border-bottom border-primary px-2 mx-1"></span>
-                <span class="text-primary">六角學院</span>
+                <span class="text-primary">學習筆記</span>
                 
             </div>
-            <p class="card-text d-none d-md-block">跟著洧杰老師的腳步終於來到第七週了，這週課程也相對歡樂，相較於 RWD Bootstrap Gulp 是簡單多 …</p>
+            <p class="card-text d-none d-md-block">其實這裡都是寫給自己的心靈雞湯，隨時補充能量用，因為在朝前端努力的同時，正向思考很重要！
+2021年的第一 …</p>
         </div>
         
-        <img src="https://viccjiang.github.io/images/post/post-7.jpg" alt="六角學院切版直播班2020秋季Week7" style="width: 200px; min-width: 200px; height: 150px; object-fit: cover; border-radius: 0 .25rem .25rem 0;">
+        <img src="https://viccjiang.github.io/images/post/medium/20210421_2021_q1_review-01.jpg" alt="2021年第一季 Q1 前端學習檢視" style="width: 200px; min-width: 200px; height: 150px; object-fit: cover; border-radius: 0 .25rem .25rem 0;">
         
     </article>
     </a>
@@ -542,7 +442,7 @@ Front end Developer &amp; Graphic Designer &amp; Dreamer</p>
         <a href="/blog/page/4/" aria-label="Next" class="page-link" role="button"><span aria-hidden="true">&raquo;</span></a>
       </li>
       <li class="page-item">
-        <a href="/blog/page/5/" aria-label="Last" class="page-link" role="button"><span aria-hidden="true">&raquo;&raquo;</span></a>
+        <a href="/blog/page/9/" aria-label="Last" class="page-link" role="button"><span aria-hidden="true">&raquo;&raquo;</span></a>
       </li>
     </ul>
       </div>
@@ -552,6 +452,7 @@ Front end Developer &amp; Graphic Designer &amp; Dreamer</p>
 
 
 
+        </main>
 
 <footer style="margin-top: 50px;">
   <div class="container">
@@ -563,11 +464,13 @@ Front end Developer &amp; Graphic Designer &amp; Dreamer</p>
         <h6 class="mb-4">社群連結</h6>
         <ul class="list-unstyled">
           
-          <li class="mb-3"><a class="text-dark" href="https://github.com/viccjiang">github</a></li>
+          <li class="mb-3"><a class="text-dark" href="https://github.com/viccjiang" target="_blank" rel="noopener">github</a></li>
           
-          <li class="mb-3"><a class="text-dark" href="https://www.pinkoi.com/store/zhexiemao">Pinkoi</a></li>
+          <li class="mb-3"><a class="text-dark" href="https://www.pinkoi.com/store/zhexiemao" target="_blank" rel="noopener">Pinkoi</a></li>
           
-          <li class="mb-3"><a class="text-dark" href="https://jiangsdesign.medium.com/">Medium</a></li>
+          <li class="mb-3"><a class="text-dark" href="https://jiangsdesign.medium.com/" target="_blank" rel="noopener">Medium</a></li>
+          
+          <li class="mb-3"><a class="text-dark" href="https://www.linkedin.com/in/wen-qing-jiang-351a04131" target="_blank" rel="noopener">LinkedIn</a></li>
           
         </ul>
       </div>
@@ -575,10 +478,13 @@ Front end Developer &amp; Graphic Designer &amp; Dreamer</p>
         <h6 class="mb-4">文章分類</h6>
         <ul class="list-unstyled">
           <li class="mb-3"><a class="text-dark"
-              href="/categories/%e5%85%ad%e8%a7%92%e5%ad%b8%e9%99%a2">六角學院</a>
+              href="/categories/%e5%89%8d%e7%ab%af%e9%96%8b%e7%99%bc">前端開發</a>
           </li>
           <li class="mb-3"><a class="text-dark"
-              href="/categories/%e5%89%8d%e7%ab%af%e9%96%8b%e7%99%bc">前端開發</a>
+              href="/categories/%e5%ad%b8%e7%bf%92%e7%ad%86%e8%a8%98">學習筆記</a>
+          </li>
+          <li class="mb-3"><a class="text-dark"
+              href="/categories/%e5%b7%a5%e4%bd%9c%e6%97%a5%e5%b8%b8">工作日常</a>
           </li>
           <li class="mb-3"><a class="text-dark"
               href="/categories/%e8%87%aa%e6%88%91%e6%88%90%e9%95%b7">自我成長</a>
@@ -656,7 +562,7 @@ Front end Developer &amp; Graphic Designer &amp; Dreamer</p>
 
 <script src="https://viccjiang.github.io/plugins/jQuery/jquery.min.js"></script>
 
-<script src="https://viccjiang.github.io/plugins/bootstrap/bootstrap.min.js"></script>
+<script src="https://viccjiang.github.io/plugins/bootstrap/bootstrap.bundle.min.js"></script>
 
 <script src="https://viccjiang.github.io/plugins/slick/slick.min.js"></script>
 

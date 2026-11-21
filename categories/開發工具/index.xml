@@ -5,7 +5,7 @@
     <link>https://viccjiang.github.io/categories/%E9%96%8B%E7%99%BC%E5%B7%A5%E5%85%B7/</link>
     <description>Recent content in 開發工具 on JIANGs Daily LAB</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
+    <language>zh-Hant-TW</language>
     <lastBuildDate>Thu, 09 Apr 2026 18:00:00 +0800</lastBuildDate>
     <atom:link href="https://viccjiang.github.io/categories/%E9%96%8B%E7%99%BC%E5%B7%A5%E5%85%B7/index.xml" rel="self" type="application/rss+xml" />
     <item>
@@ -15,6 +15,14 @@
       <guid>https://viccjiang.github.io/blog/20260409_gtm_ga_setup/</guid>
       <description>GTM + GA4 事件追蹤設定流程 追蹤目標：區塊曝光（event_a）與項目點擊（event_b）
 背景說明 主要是因為工作上有串接過的經驗分享。 透過 Google Tag Manager（GTM） 搭配 Google Analytics 4（GA4），追蹤頁面特定區塊的曝光與互動行為。</description>
+    </item>
+    <item>
+      <title>Claude Code Statusline 實作筆記</title>
+      <link>https://viccjiang.github.io/blog/20260405_claude_code_statusline/</link>
+      <pubDate>Sun, 05 Apr 2026 12:28:34 +0800</pubDate>
+      <guid>https://viccjiang.github.io/blog/20260405_claude_code_statusline/</guid>
+      <description>實作紀錄 Statusline 狀態列 + 附加番外篇之隱藏彩蛋 /buddy
+在這個客製化狀態列出現之前我一直都是切換 /usage 監測我當下使用量，怕一個 token 不夠，心驚膽顫的，還剩多少 token 撐得過今天這個 issue MR 嗎…</description>
     </item>
     <item>
       <title>Claude Code 設定與 Statusline 實作紀錄</title>

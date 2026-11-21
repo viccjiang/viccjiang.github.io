@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW"><head>
+  <meta charset="utf-8">
+  <title>AJAX 從遠端讀取即時資料 | JIANGs Daily LAB</title>
+<meta name="description" content="GET 方法串接API 文件讀取資料 ( JSON )">
+<link rel="canonical" href="https://viccjiang.github.io/blog/20220424_ajax_remote_data/">
+
+<meta property="og:site_name" content="JIANGs Daily LAB">
+<meta property="og:locale" content="zh_TW">
+<meta property="og:title" content="AJAX 從遠端讀取即時資料">
+<meta property="og:description" content="GET 方法串接API 文件讀取資料 ( JSON )">
+<meta property="og:url" content="https://viccjiang.github.io/blog/20220424_ajax_remote_data/">
+<meta property="og:image" content="https://viccjiang.github.io/images/post/medium/20220424_ajax_remote_data-01.jpg">
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="2022-04-24T18:06:06&#43;08:00">
+<meta property="article:modified_time" content="2022-04-24T18:06:06&#43;08:00">
+<meta property="article:section" content="前端開發">
+<meta property="article:tag" content="JavaScript">
+<meta property="article:tag" content="AJAX">
+<meta property="article:tag" content="前端">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="AJAX 從遠端讀取即時資料">
+<meta name="twitter:description" content="GET 方法串接API 文件讀取資料 ( JSON )">
+<meta name="twitter:image" content="https://viccjiang.github.io/images/post/medium/20220424_ajax_remote_data-01.jpg">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","articleSection":"前端開發","author":{"@type":"Person","image":"https://viccjiang.github.io/images/author.jpg","name":"Jiang","sameAs":["https://github.com/viccjiang","https://jiangsdesign.medium.com/"],"url":"https://viccjiang.github.io/about/"},"dateModified":"2022-04-24T18:06:06+08:00","datePublished":"2022-04-24T18:06:06+08:00","description":"GET 方法串接API 文件讀取資料 ( JSON )","headline":"AJAX 從遠端讀取即時資料","image":["https://viccjiang.github.io/images/post/medium/20220424_ajax_remote_data-01.jpg"],"inLanguage":"zh-Hant-TW","keywords":"JavaScript, AJAX, 前端","mainEntityOfPage":{"@id":"https://viccjiang.github.io/blog/20220424_ajax_remote_data/","@type":"WebPage"},"publisher":{"@type":"Person","image":"https://viccjiang.github.io/images/author.jpg","name":"Jiang","sameAs":["https://github.com/viccjiang","https://jiangsdesign.medium.com/"],"url":"https://viccjiang.github.io/about/"},"url":"https://viccjiang.github.io/blog/20220424_ajax_remote_data/"}</script>
+
+
+  <!-- Theme (dark mode) — 必須儘早執行，避免閃爍 -->
+  <script>
+    (function () {
+      try {
+        var stored = localStorage.getItem('theme');
+        var prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+        var theme = stored || (prefersDark ? 'dark' : 'light');
+        document.documentElement.setAttribute('data-theme', theme);
+      } catch (e) {}
+    })();
+  </script>
+
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <meta name="author" content="Jiang">
+
+
+  <meta name="generator" content="Hugo 0.120.4">
+
+  <!-- plugins -->
+  
+  <link rel="stylesheet" href="https://viccjiang.github.io/plugins/bootstrap/bootstrap.min.css ">
+  
+  <link rel="stylesheet" href="https://viccjiang.github.io/plugins/slick/slick.css ">
+  
+  <link rel="stylesheet" href="https://viccjiang.github.io/plugins/themify-icons/themify-icons.css ">
+  
+  <link rel="stylesheet" href="https://viccjiang.github.io/plugins/venobox/venobox.css ">
+  
+
+  <!-- Main Stylesheet -->
+  
+  <link rel="stylesheet" href="https://viccjiang.github.io/scss/style.min.css" media="screen">
+
+  <!--Favicon-->
+  <link rel="shortcut icon" href="https://viccjiang.github.io/images/favicon.png " type="image/x-icon">
+  <link rel="icon" href="https://viccjiang.github.io/images/favicon.png " type="image/x-icon">
+
+  
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-JMV8187M77"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-JMV8187M77');
+</script>
+
+</head><body>
+<!-- preloader start -->
+<div class="preloader">
+  
+</div>
+<!-- preloader end -->
+<!-- navigation -->
+<header class="navigation">
+  <div class="container">
+    
+    <nav class="navbar navbar-expand-lg navbar-white bg-transparent border-bottom pl-0">
+      <a class="navbar-brand mobile-view" href="https://viccjiang.github.io/"><img class="img-fluid"
+          src="https://viccjiang.github.io/images/logo.png" alt="JIANGs Daily LAB"></a>
+      <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="開啟選單">
+        <i class="ti-menu h3"></i>
+      </button>
+
+      <div class="collapse navbar-collapse text-center" id="navigation">
+        <div class="desktop-view">
+          <ul class="navbar-nav mr-auto">
+            
+            <li class="nav-item">
+              <a class="nav-link" href="https://github.com/viccjiang" target="_blank" rel="noopener" title="github" aria-label="github"><i class="ti-github"></i></a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link" href="https://www.pinkoi.com/store/zhexiemao" target="_blank" rel="noopener" title="Pinkoi" aria-label="Pinkoi"><i class="ti-link"></i></a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link" href="https://jiangsdesign.medium.com/" target="_blank" rel="noopener" title="Medium" aria-label="Medium"><i class="ti-pencil-alt"></i></a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link" href="https://www.linkedin.com/in/wen-qing-jiang-351a04131" target="_blank" rel="noopener" title="LinkedIn" aria-label="LinkedIn"><i class="ti-linkedin"></i></a>
+            </li>
+            
+          </ul>
+        </div>
+
+        <a class="navbar-brand mx-auto desktop-view" href="https://viccjiang.github.io/"><img class="img-fluid"
+            src="https://viccjiang.github.io/images/logo.png" alt="JIANGs Daily LAB"></a>
+
+        <ul class="navbar-nav">
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://viccjiang.github.io/blog">所有文章</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://viccjiang.github.io/tags">標籤</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://viccjiang.github.io/about">關於我</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://viccjiang.github.io/contact">聯絡我</a>
+          </li>
+          
+          
+        </ul>
+
+        
+        <!-- search -->
+        <div class="search pl-lg-4">
+          <button id="searchOpen" class="search-btn"><i class="ti-search"></i></button>
+        </div>
+        
+
+        <!-- theme toggle -->
+        <button id="themeToggle" class="theme-toggle" type="button" aria-label="切換深色模式" title="切換深色 / 淺色模式">
+          <!-- moon (light 模式時顯示) -->
+          <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+          <!-- sun (dark 模式時顯示) -->
+          <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="4"></circle>
+            <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"></path>
+          </svg>
+        </button>
+
+        
+      </div>
+    </nav>
+  </div>
+</header>
+<!-- /navigation --><main id="main">
+
+<section class="section-sm">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 mx-auto">
+        
+        <a href="/categories/%e5%89%8d%e7%ab%af%e9%96%8b%e7%99%bc"
+          class="text-primary">前端開發</a>
+        
+        <h1 class="h2 font-weight-bold">AJAX 從遠端讀取即時資料</h1>
+        <div class="mb-3 post-meta">
+          <span>By Jiang</span>
+          
+          <span class="border-bottom border-primary px-2 mx-1"></span>
+          <span>24 April 2022</span>
+          
+        </div>
+        
+        <img src="https://viccjiang.github.io/images/post/medium/20220424_ajax_remote_data-01.jpg" class="img-fluid w-100 mb-4" alt="AJAX 從遠端讀取即時資料">
+        
+        <div class="content mb-5">
+          <p>GET 方法串接API 文件讀取資料 ( JSON )</p>
+<p>該怎麼接資料？四種 GET 寫法</p>
+<ul>
+<li>XMLHttpRequest</li>
+<li>Fetch</li>
+<li>Axios</li>
+<li>jQuery</li>
+</ul>
+<h3 id="什麼是-ajax-">什麼是 AJAX ？</h3>
+<p>AJAX 是 Asynchronous JavaScript and XML（非同步的 JavaScript 與 XML 技術）的縮寫，網頁不用重新整理即時地透過瀏覽器去跟伺服器溝通，並且讀取資料。伺服器對 AJAX 資料請求回應，最常與 Javascript 做搭配的就是 JSON。</p>
+<h3 id="使用政府資料開放平台的-api-做串接">使用政府資料開放平台的 API 做串接</h3>
+<p>這次是使用 <a href="https://data.gov.tw/">政府資料開放平台</a> 取得 JSON 格式的 API 來作示範</p>
+<p><a href="https://tcgbusfs.blob.core.windows.net/dotapp/youbike/v2/youbike_immediate.json">YouBike2.0臺北市公共自行車即時資訊</a></p>
+<h3 id="xmlhttprequest"><strong>XMLHttpRequest</strong></h3>
+<p>程式碼 <a href="https://codesandbox.io/s/xmlhttprequest-8b360w?file=/all.js:139-153">XMLHttpRequest</a></p>
+<p><code>xhr.open (&quot;GET&quot;, dataUrl, true );</code></p>
+<ul>
+<li><code>true</code> 非同步：預設值，程式碼不會等資料回傳就往下執行程式碼</li>
+<li><code>false</code> 同步：資料回傳完畢才會往下執行程式碼</li>
+<li>使用預設值 true 非同步的原因：避免尚未撈取資料就直接卡住，導致後面都動不了</li>
+</ul>
+<p><code>JSON.parse</code></p>
+<ul>
+<li>撈回來的資料型別是陣列 [ ] 內包物件 { }</li>
+<li>JSON 傳輸時會被轉換成 string ( 字串 )</li>
+<li>使用 JSON.parse 將資料轉換回原本的格式陣列 [ ] 內包物件 { }</li>
+</ul>
+<pre tabindex="0"><code>// 1.把 API 的 URL 用變數先存起來，等待取用
+let dataUrl =
+  &#34;&lt;https://tcgbusfs.blob.core.windows.net/dotapp/youbike/v2/youbike_immediate.json&gt;&#34;;
+
+// 2.new 出一個 XMLHttpRequest 物件 (進行資料請求)
+let xhr = new XMLHttpRequest();
+
+// 3.GET 方法，送出一個請求
+// open(&#39;Method&#39;,API 的 URL,預設值為 true 非同步進行)
+xhr.open(&#34;GET&#34;, dataUrl, true);
+
+// 4.送出請求 (若為 GET 參數則不填，其他則是 null) 
+xhr.send();
+
+// 5 直接用 onload =&gt; 資料接收/送出成功後執行的 function
+// XMLHttpRequest 有各種狀態碼 readyState，能夠知道當前進行到什麼狀態
+// 0 = 執行前：已經產生 XMLHttpRequest    1 = open() 讀取中：還沒傳送資料過去   2 = send() 已讀取  3 = 資訊 loading 交換中  4 = 撈回資料，完成
+// status(HTTP狀態碼):200 正常完成
+xhr.onload = function () {
+  // 如果 readyState = 4 且 HTTP 狀態碼 status = 200)
+  if (this.readyState === 4 &amp;&amp; this.status === 200) {
+    // 將撈回來的資料存到變數 data
+    // xhr.responseText 獲得字串形式的資料 
+    // JSON.parse 是 string 轉 object, 方便撈取資料
+    let data = JSON.parse(this.responseText);
+    // console.log(&#39;查看data: &#39;,data);
+    let str = &#34;&#34;;
+    data.forEach(function (item) {
+      str += `&lt;div class=&#34;card border-dark mb-3&#34;&gt;
+      &lt;div class=&#34;card-header&#34;&gt;${item.sarea}&lt;/div&gt;
+      &lt;div class=&#34;card-body text-dark&#34;&gt;
+        &lt;p class=&#34;card-text&#34;&gt;${item.sna}&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;`;
+    });
+    // 選取 DOM
+    const list = document.querySelector(&#34;.list&#34;);
+    // 渲染至網頁
+		list.innerHTML = str;
+  } else {
+    console.log(&#34;沒有取得資料&#34;);
+  }
+};
+</code></pre><h3 id="fetch"><strong>Fetch</strong></h3>
+<p>程式碼 <a href="https://codesandbox.io/s/fetch-nwp80e?file=/all.js">Fetch</a></p>
+<ul>
+<li><code>fetch</code>後方會接 <code>then()</code>，這是 Promise base，資料取得後在 then 進行接收。</li>
+<li><code>return response.json();</code> 的資料則會傳到下一個 <code>then()</code></li>
+<li><code>catch</code> 作為錯誤回應 (404, 500…)</li>
+<li>回傳的為 <code>ReadableStream</code> 物件，需要使用對應方法取得資料物件</li>
+<li>arrayBuffer()</li>
+<li>blob()</li>
+<li>formData()</li>
+<li>json()</li>
+<li>text()</li>
+</ul>
+<pre tabindex="0"><code>// 1.把API的URL用變數先存起來，等待取用
+let dataUrl =
+  &#34;&lt;https://tcgbusfs.blob.core.windows.net/dotapp/youbike/v2/youbike_immediate.json&gt;&#34;;
+// 2.使用 Fetch  
+fetch(dataUrl, {})
+  .then((response) =&gt; {
+    // 取到一個 ReadableStream 的物件
+    console.log(response);
+    // 透過 blob(), json(), text() 轉成可用的資訊
+    return response.json();
+  })
+  .then((jsonData) =&gt; {
+    let data = jsonData;
+    console.log(&#34;查看data: &#34;, data);
+    let str = &#34;&#34;;
+    data.forEach(function (item) {
+      str += `&lt;div class=&#34;card border-dark mb-3&#34;&gt;
+      &lt;div class=&#34;card-header&#34;&gt;${item.sarea}&lt;/div&gt;
+      &lt;div class=&#34;card-body text-dark&#34;&gt;
+        &lt;p class=&#34;card-text&#34;&gt;${item.sna}&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;`;
+    });
+    //選取 DOM，並渲染至網頁
+    const list = document.querySelector(&#34;.list&#34;);
+    list.innerHTML = str;
+  })
+  .catch((err) =&gt; {
+    console.log(&#34;錯誤:&#34;, err);
+  });
+</code></pre><h3 id="axios">Axios</h3>
+<p>程式碼 <a href="https://codepen.io/viccjiang/pen/wvpbMYN">Axios</a></p>
+<ul>
+<li>promise base</li>
+<li><code>.then</code> 接收成功資訊</li>
+<li><code>.catch</code> 接收失敗資訊</li>
+</ul>
+<pre tabindex="0"><code>// html 引入 cdn
+&lt;script src=&#34;&lt;https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js&gt;&#34;&gt;&lt;/script&gt;
+
+// 取得遠端資料
+axios.get(&#39;&lt;https://randomuser.me/api/&gt;&#39;)
+  .then(res =&gt; {
+  // res 可以取出多筆資料
+    console.log(res.data.results);  
+  })
+  .catch(err =&gt; {
+    console.log(err.response); // 可以用 console.dir 查看  
+  })
+
+&lt;!-- 引入axios --&gt;
+&lt;script src=&#34;&lt;https://unpkg.com/axios/dist/axios.min.js&gt;&#34;&gt;&lt;/script&gt;
+
+// 把 API 的 URL 用變數先存起來，等待取用
+const dataUrl =
+  &#34;&lt;https://tcgbusfs.blob.core.windows.net/dotapp/youbike/v2/youbike_immediate.json&gt;&#34;;
+
+let data = [];
+axios
+  .get(dataUrl)
+  .then((res) =&gt; {
+    // console.log(res.data);
+    data = res.data;
+    console.log(&#39;查看data: &#39;,data);
+    let str = &#34;&#34;;
+    data.forEach(function (item) {
+      str += `&lt;div class=&#34;card border-dark mb-3&#34;&gt;
+      &lt;div class=&#34;card-header&#34;&gt;${item.sarea}&lt;/div&gt;
+      &lt;div class=&#34;card-body text-dark&#34;&gt;
+        &lt;p class=&#34;card-text&#34;&gt;${item.sna}&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;`;
+    });
+    //選取 DOM，並渲染至網頁
+    const list = document.querySelector(&#34;.list&#34;);
+    list.innerHTML = str;
+  })
+  .catch((err) =&gt; {
+    console.log(err);
+  });
+</code></pre><h3 id="jquery">jQuery</h3>
+<p>程式碼 <a href="https://codepen.io/viccjiang/pen/RwxmrdJ">jQuery AJAX</a></p>
+<pre tabindex="0"><code>&lt;!-- 需先安裝jQuery ,引入CDN 引入 jQ --&gt;
+&lt;script src=&#39;&lt;https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js&gt;&#39;&gt;&lt;/script&gt;
+
+// 把API的URL用變數先存起來，等待取用
+const dataUrl =
+  &#34;&lt;https://tcgbusfs.blob.core.windows.net/dotapp/youbike/v2/youbike_immediate.json&gt;&#34;;
+
+$.ajax({
+  method: &#39;GET&#39;, // 請求方法
+  url: dataUrl, // API 的 URL 
+  dataType: &#39;json&#39;, // API 的 格式
+    success: res =&gt;{ // 成功的話執行
+      console.log(res)
+      let data = res;
+      console.log(&#39;查看data: &#39;,data);
+      let str = &#34;&#34;;
+      data.forEach(function (item) {
+        str += `&lt;div class=&#34;card border-dark mb-3&#34;&gt;
+        &lt;div class=&#34;card-header&#34;&gt;${item.sarea}&lt;/div&gt;
+        &lt;div class=&#34;card-body text-dark&#34;&gt;
+          &lt;p class=&#34;card-text&#34;&gt;${item.sna}&lt;/p&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;`;
+      });
+      //選取 DOM，並渲染至網頁
+      const list = document.querySelector(&#34;.list&#34;);
+      list.innerHTML = str;
+        },
+    error: err =&gt;{ // 失敗的話執行
+      console.log(err)
+      },
+});
+</code></pre><h3 id="什麼是-cors">什麼是 CORS？</h3>
+<p>今天再接資料的時候，發現好多都不能接而來是這個 CORS 的關係，CORS 是 Cross-Origin Resource Sharing 的縮寫，開發者開了 CORS 權限，其他開發者才能跨網域撈取資料。想知道某 API 或 JSON 有沒有開 CROS，可以在 <a href="http://www.test-cors.org/">test-cros.org</a> 查詢。</p>
+<p><strong>以上如有寫錯請指教，謝謝 ~</strong></p>
+<p><strong>參考資料</strong></p>
+<ul>
+<li><a href="https://developer.mozilla.org/zh-TW/docs/Web/Guide/AJAX">Ajax</a></li>
+<li><a href="https://developer.mozilla.org/zh-TW/docs/Web/API/XMLHttpRequest">MDN-XMLHttpRequest</a></li>
+<li><a href="https://github.com/axios/axios">axios</a></li>
+<li><a href="https://www.casper.tw/javascript/2017/12/28/javascript-fetch/">fetch</a></li>
+<li><a href="https://eyesofkids.gitbooks.io/javascript-start-from-es6/content/part4/ajax_fetch.html#jquery">jQuery AJAX</a></li>
+<li><a href="https://data.gov.tw/">政府資料開放平台</a></li>
+</ul>
+<hr>
+<p><em>封面圖片：Photo by Drew Dizzy Graham on Unsplash</em></p>
+<p><em>本文原發佈於 <a href="https://jiangsdesign.medium.com/p/ecee71dcb374">Medium</a></em></p>
+
+        </div>
+
+        
+        <div id="disqus_thread"></div>
+<script type="application/javascript">
+    window.disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "jiangs" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+        </main>
+
+<footer style="margin-top: 50px;">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center mb-5">
+        <a href="https://viccjiang.github.io/"><img src="https://viccjiang.github.io/images/logo.png" alt="JIANGs Daily LAB"></a>
+      </div>
+      <div class="col-lg-4 col-sm-6 mb-5">
+        <h6 class="mb-4">社群連結</h6>
+        <ul class="list-unstyled">
+          
+          <li class="mb-3"><a class="text-dark" href="https://github.com/viccjiang" target="_blank" rel="noopener">github</a></li>
+          
+          <li class="mb-3"><a class="text-dark" href="https://www.pinkoi.com/store/zhexiemao" target="_blank" rel="noopener">Pinkoi</a></li>
+          
+          <li class="mb-3"><a class="text-dark" href="https://jiangsdesign.medium.com/" target="_blank" rel="noopener">Medium</a></li>
+          
+          <li class="mb-3"><a class="text-dark" href="https://www.linkedin.com/in/wen-qing-jiang-351a04131" target="_blank" rel="noopener">LinkedIn</a></li>
+          
+        </ul>
+      </div>
+      <div class="col-lg-4 col-sm-6 mb-5">
+        <h6 class="mb-4">文章分類</h6>
+        <ul class="list-unstyled">
+          <li class="mb-3"><a class="text-dark"
+              href="/categories/%e5%89%8d%e7%ab%af%e9%96%8b%e7%99%bc">前端開發</a>
+          </li>
+          <li class="mb-3"><a class="text-dark"
+              href="/categories/%e5%ad%b8%e7%bf%92%e7%ad%86%e8%a8%98">學習筆記</a>
+          </li>
+          <li class="mb-3"><a class="text-dark"
+              href="/categories/%e5%b7%a5%e4%bd%9c%e6%97%a5%e5%b8%b8">工作日常</a>
+          </li>
+          <li class="mb-3"><a class="text-dark"
+              href="/categories/%e8%87%aa%e6%88%91%e6%88%90%e9%95%b7">自我成長</a>
+          </li>
+          <li class="mb-3"><a class="text-dark"
+              href="/categories/%e8%ae%80%e6%9b%b8%e5%bf%83%e5%be%97">讀書心得</a>
+          </li>
+          <li class="mb-3"><a class="text-dark"
+              href="/categories/%e9%96%8b%e7%99%bc%e5%b7%a5%e5%85%b7">開發工具</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-lg-4 col-sm-6 mb-5">
+        <h6 class="mb-4">網站地圖</h6>
+        <ul class="list-unstyled">
+          
+          <li class="mb-3"><a class="text-dark" href="https://viccjiang.github.io/about">about</a></li>
+          
+          <li class="mb-3"><a class="text-dark" href="https://viccjiang.github.io/blog">blog</a></li>
+          
+          <li class="mb-3"><a class="text-dark" href="https://viccjiang.github.io/contact">contact</a></li>
+          
+        </ul>
+      </div>
+      <div class="col-12 border-top py-4 text-center">
+        | copyright © 2020 <a href="https://viccjiang.github.io/">JIANGs</a> All Rights Reserved |
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+<!-- search overlay -->
+<div id="search-overlay" class="search-overlay">
+  <div class="search-overlay-inner">
+    <button id="searchClose" class="search-overlay-close"><i class="ti-close"></i></button>
+    <div class="search-overlay-header">
+      <div class="search-input-wrapper">
+        <i class="ti-search search-input-icon"></i>
+        <input id="search-query" type="text" placeholder="搜尋文章..." autocomplete="off">
+      </div>
+    </div>
+    <div class="search-overlay-results" id="search-results"></div>
+  </div>
+</div>
+
+
+<script>
+  var indexURL = "https://viccjiang.github.io/index.json"
+</script>
+
+<script>
+  (function () {
+    var btn = document.getElementById('themeToggle');
+    if (!btn) return;
+    btn.addEventListener('click', function () {
+      var current = document.documentElement.getAttribute('data-theme') === 'dark' ? 'dark' : 'light';
+      var next = current === 'dark' ? 'light' : 'dark';
+      document.documentElement.setAttribute('data-theme', next);
+      try { localStorage.setItem('theme', next); } catch (e) {}
+    });
+    if (window.matchMedia) {
+      var mql = window.matchMedia('(prefers-color-scheme: dark)');
+      var handler = function (e) {
+        try { if (localStorage.getItem('theme')) return; } catch (err) {}
+        document.documentElement.setAttribute('data-theme', e.matches ? 'dark' : 'light');
+      };
+      if (mql.addEventListener) mql.addEventListener('change', handler);
+      else if (mql.addListener) mql.addListener(handler);
+    }
+  })();
+</script>
+
+<!-- JS Plugins -->
+
+<script src="https://viccjiang.github.io/plugins/jQuery/jquery.min.js"></script>
+
+<script src="https://viccjiang.github.io/plugins/bootstrap/bootstrap.bundle.min.js"></script>
+
+<script src="https://viccjiang.github.io/plugins/slick/slick.min.js"></script>
+
+<script src="https://viccjiang.github.io/plugins/venobox/venobox.min.js"></script>
+
+<script src="https://viccjiang.github.io/plugins/search/fuse.min.js"></script>
+
+<script src="https://viccjiang.github.io/plugins/search/mark.js"></script>
+
+<script src="https://viccjiang.github.io/plugins/search/search.js"></script>
+
+<!-- Main Script -->
+
+<script src="https://viccjiang.github.io/js/script.min.js"></script>
+<!-- google analitycs -->
+<script>
+  (function (i, s, o, g, r, a, m) {
+    i['GoogleAnalyticsObject'] = r;
+    i[r] = i[r] || function () {
+      (i[r].q = i[r].q || []).push(arguments)
+    }, i[r].l = 1 * new Date();
+    a = s.createElement(o),
+      m = s.getElementsByTagName(o)[0];
+    a.async = 1;
+    a.src = g;
+    m.parentNode.insertBefore(a, m)
+  })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+  ga('create', '', 'auto');
+  ga('send', 'pageview');
+</script></body>
+</html>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>學習 on JIANGs Daily LAB</title>
+    <link>https://viccjiang.github.io/tags/%E5%AD%B8%E7%BF%92/</link>
+    <description>Recent content in 學習 on JIANGs Daily LAB</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-Hant-TW</language>
+    <lastBuildDate>Wed, 07 Jul 2021 12:48:23 +0800</lastBuildDate>
+    <atom:link href="https://viccjiang.github.io/tags/%E5%AD%B8%E7%BF%92/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Vue 作品實戰直播班 心得分享</title>
+      <link>https://viccjiang.github.io/blog/20210707_vue_live_class/</link>
+      <pubDate>Wed, 07 Jul 2021 12:48:23 +0800</pubDate>
+      <guid>https://viccjiang.github.io/blog/20210707_vue_live_class/</guid>
+      <description>分享這八週的上課心得，只要你不放棄你自己，六角就會在線上幫助你。
+時間過得太快，這九週課程竟然結束了，中間一度真的很想放棄，一直在聽不懂老師在公殺毀的輪迴下懷疑自己真的適合繼續學習下去嗎？還一直想快點結束課程，因為聽不懂真的很挫折、自我懷疑加劇，但，這門課我還是有撐到最後唷，每堂課都沒有登出、也沒有缺席，反倒是更加努力一直複習老師上課的內容，每堂課影音至少都多聽三遍，作業到現在也交到第六週、邁向第七週了，正準備著手最終作品，心裡也有個大概的雛形！
+以下心得不會有任何技術程式碼，純粹是個人學習上的心得感想，可安心觀看 ：）
+當初為什麼報名這堂課 學習不是一個人的事情，你需要找人來幫你！
+有鑒於去年底的 切版直播班 讓我的學習成長有大幅度提升，於是就在切版直播班結束後，跟著六角學院感謝祭的優惠活動一口氣買下JS直播班 與Vue 的課程（是說兩個一起買比較便宜啦，更何況自己目前還是初心者在新手村接任務，想說先 run 過一遍所有直播課程，勢必先經歷一番挑戰，才有辦法勇者鬥惡龍），也好險去年底決定投資自己在前端學習上，也擬定了自己的進修計畫，因為在年後開始覺得公司比起往年的狀況差～很～多～，公司終於在今年4月，疫情爆發前，公司宣布我這個部門要收攤惹！！！登愣～～～ 員工遭到資遣，當然也包括我，也只能姑且先帶著這筆資遣費開始認真學習吧！前端轉職之路又再度正式展開了 … 怕豹.</description>
+    </item>
+    <item>
+      <title>疫情下的生活，重新找回節奏</title>
+      <link>https://viccjiang.github.io/blog/20210602_life_in_pandemic/</link>
+      <pubDate>Wed, 02 Jun 2021 09:54:09 +0800</pubDate>
+      <guid>https://viccjiang.github.io/blog/20210602_life_in_pandemic/</guid>
+      <description>被迫按下暫停鍵，在此刻停下腳步，認真思考下一步
+五月一樣延續著四月剛養成的好習慣，持續早睡早起、每日學習、每日閱讀，每週六日下午繼續去上台大網頁設計進階班，這是我二刷這堂課了，因為去年上的那次根本聽不懂，所以跟不上進度，半途就直接放棄，最後還是有硬著頭皮有上完，但就是聽不懂… 今年這次去上，至少有 75% 聽得懂，也跟得上，覺得有事先上過六角學院 JS 直播班真的有進步，以下是台大的課綱，基本上六角學院 JS 直播班都有教到，會想去台大上課是因為實體臨場感以及需要鞭策，另外也報名了台大實體 Figma 的課，但因為疫情因素現在全面改為線上課程，然後台大線上課程的系統做的也算不錯，也滿好操作的，只是改為線上課程讓我的惰性又萌發了…</description>
+    </item>
+    <item>
+      <title>2021年第一季 Q1 前端學習檢視</title>
+      <link>https://viccjiang.github.io/blog/20210421_2021_q1_review/</link>
+      <pubDate>Wed, 21 Apr 2021 16:40:59 +0800</pubDate>
+      <guid>https://viccjiang.github.io/blog/20210421_2021_q1_review/</guid>
+      <description>其實這裡都是寫給自己的心靈雞湯，隨時補充能量用，因為在朝前端努力的同時，正向思考很重要！
+2021年的第一季Ｑ1已經結束了，拖到現在才寫好這篇，也快要四月底了，過沒幾天要再寫一篇來檢視成果，從二月開始學習JS到現在，一開始完全看不懂JS程式碼與邏輯，現在看懂更多了，覺得滿有成就感，回顧跟著助教的每日任務，累計到現在學到這些東西真的不少，雖然有些還不是很熟，但基本上都有一定的認識，接下來就是要再次複習，多看幾次直播影片還有老師的加碼補充影片，對於自己這個月來的學習狀況來講，對於物件取值、陣列取值這個部份真的很吃力，影片就是大概要看10次以上才會突然理解，目前課程已經告一段落，現在還在拼最終作業還有心得文章，目前的進度都是先看同學的邏輯再自己寫一次，實在還沒辦法自己完整的從無到有的寫一遍，以下是三月的每日任務學習清單，每天都有一點點的進步，就會真的有感覺到自己的進步！
+有效學習的關鍵在於：
+穩定、持續地投入學習 來自專業的回饋，有動力持續學習 每日任務學習清單
+02/22 (一) 賦值 02/23 (二) 型別判斷、賦值 02/25 (四) Whimsical 使用教學 03/01 (一) 陣列長度、取值、新增 03/02 (二) 新增物件、設定屬性 03/03 (三) 物件內新增、修改、取得屬性 03/04 (四) 判斷式 03/05 (五) 陣列物件判斷 03/08 (一) addEventListener() 教學 03/09 (二) 陣列方法 forEach 簡介 03/10 (三) 陣列方法 filter() 介紹 03/11 (四) 陣列方法 map() 介紹 03/12 (五) function 觀念總複習 03/15 (一) querySelector 觀念複習 03/16 (二) textContent 觀念複習 03/17 (三) innerHTML 觀念複習 03/18 (四) getAttribute, setAttribute 應用 03/19 (五) 表單取值 — .</description>
+    </item>
+    <item>
+      <title>設計未來</title>
+      <link>https://viccjiang.github.io/blog/20191219_design_future/</link>
+      <pubDate>Thu, 19 Dec 2019 13:02:27 +0800</pubDate>
+      <guid>https://viccjiang.github.io/blog/20191219_design_future/</guid>
+      <description>今天在上班前看了一篇
+▊【全球設計師調查】https://bit.ly/36NEpS5
+我也立即盤點了自己目前的技能，感覺上是必須要更精進了！
+所有設計師勢必也要往動態設計學習新技能了，
+若有想要轉職的朋友們，這份重點整理可以給你一些想法！
+▊ 2020 未來新技能必學
+動態設計、商業知識、溝通技巧，插畫能力。
+我個人認為這幾項設計軟體是設計師未來基本功，</description>
+    </item>
+  </channel>
+</rss>

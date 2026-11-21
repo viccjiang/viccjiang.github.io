@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>JavaScript on JIANGs Daily LAB</title>
+    <link>https://viccjiang.github.io/tags/javascript/</link>
+    <description>Recent content in JavaScript on JIANGs Daily LAB</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-Hant-TW</language>
+    <lastBuildDate>Sun, 24 Apr 2022 18:06:06 +0800</lastBuildDate>
+    <atom:link href="https://viccjiang.github.io/tags/javascript/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AJAX 從遠端讀取即時資料</title>
+      <link>https://viccjiang.github.io/blog/20220424_ajax_remote_data/</link>
+      <pubDate>Sun, 24 Apr 2022 18:06:06 +0800</pubDate>
+      <guid>https://viccjiang.github.io/blog/20220424_ajax_remote_data/</guid>
+      <description>GET 方法串接API 文件讀取資料 ( JSON )
+該怎麼接資料？四種 GET 寫法
+XMLHttpRequest Fetch Axios jQuery 什麼是 AJAX ？ AJAX 是 Asynchronous JavaScript and XML（非同步的 JavaScript 與 XML 技術）的縮寫，網頁不用重新整理即時地透過瀏覽器去跟伺服器溝通，並且讀取資料。伺服器對 AJAX 資料請求回應，最常與 Javascript 做搭配的就是 JSON。</description>
+    </item>
+    <item>
+      <title>這疫年，閉關修煉的那些日子</title>
+      <link>https://viccjiang.github.io/blog/20211223_pandemic_year_review/</link>
+      <pubDate>Thu, 23 Dec 2021 14:32:29 +0800</pubDate>
+      <guid>https://viccjiang.github.io/blog/20211223_pandemic_year_review/</guid>
+      <description>此篇為 JS 直播班心得，著重在學習歷程與心態調適。
+前情提要 2021年應該算是一個的轉捩點，三月時公司宣布要縮編，部分員工被裁員，講到這裡不免感到有點感慨，因為裁的員也包括我 ( 淚奔 ~ 但其實在去年底切版直播班結束之後，就已經在抱著打算年後可能會離職然後全心投入學習的打算，只是沒想到來的如此快，所以當下聽到公司的縮編政策時，老實說心情有點哭笑不得，老天爺算是眷顧我嗎，讓我有一筆經費可以在待業時全心投入學習，所以四月就開始跟前同事開始研究失業補助的部分，接著剛好遇上嚴重的五月疫情大爆發大家都不太出門了，六角學院也開了一系列的免費課程跟付費直播班課程讓大家在家學習，加上當時疫情期間求職滿困難的，索性就決定都待在家，開始馬不停蹄的持續學習直到現在，當然在家都是獨自在線上自學，身邊也鮮少有懂程式的朋友，所以了解到這是一條孤獨且陌生的路，但漸漸的發現六角學院社群力量的強大，不管是在 slack 還是 Discord 都讓獨自學習的人，有人可以問，有助教可以協助，有老師 24 小時的支援，是一個很大的心理支持系統！</description>
+    </item>
+  </channel>
+</rss>
