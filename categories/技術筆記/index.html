@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW"><head>
+  <meta charset="utf-8">
+  <title>分類：技術筆記 | JIANGs Daily LAB</title>
+<meta name="description" content="分類「技術筆記」的所有文章，共 6 篇。">
+
+<meta property="og:site_name" content="JIANGs Daily LAB">
+<meta property="og:locale" content="zh_TW">
+<meta property="og:title" content="分類：技術筆記">
+<meta property="og:description" content="分類「技術筆記」的所有文章，共 6 篇。">
+<meta property="og:url" content="https://viccjiang.github.io/categories/%E6%8A%80%E8%A1%93%E7%AD%86%E8%A8%98/">
+<meta property="og:image" content="https://viccjiang.github.io/images/author.jpg">
+<meta property="og:type" content="website">
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="分類：技術筆記">
+<meta name="twitter:description" content="分類「技術筆記」的所有文章，共 6 篇。">
+<meta name="twitter:image" content="https://viccjiang.github.io/images/author.jpg">
+
+
+  <!-- Theme (dark mode) — 必須儘早執行，避免閃爍 -->
+  <script>
+    (function () {
+      try {
+        var stored = localStorage.getItem('theme');
+        var prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+        var theme = stored || (prefersDark ? 'dark' : 'light');
+        document.documentElement.setAttribute('data-theme', theme);
+      } catch (e) {}
+    })();
+  </script>
+
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <meta name="author" content="Jiang">
+
+
+  <meta name="generator" content="Hugo 0.120.4">
+
+  <!-- plugins -->
+  
+  <link rel="stylesheet" href="https://viccjiang.github.io/plugins/bootstrap/bootstrap.min.css">
+  
+  <link rel="stylesheet" href="https://viccjiang.github.io/plugins/themify-icons/themify-icons.css">
+  
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="/scss/style.min.92b6a4387a51855fb7b9707585d734085a655e4c290d27f9d8d27b69ec2ee772.css" integrity="sha256-krakOHpRhV&#43;3uXB1hdc0CFplXkwpDSf52NJ7aewu53I=" media="screen">
+
+  <!--Favicon-->
+  <link rel="icon" href="https://viccjiang.github.io/images/favicon.png" type="image/png" sizes="16x16">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-JMV8187M77"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-JMV8187M77');
+  </script>
+  
+
+</head><body><!-- navigation -->
+<header class="navigation">
+  <div class="container">
+    
+    <nav class="navbar navbar-expand-lg navbar-white bg-transparent border-bottom pl-0">
+      <a class="navbar-brand mobile-view" href="https://viccjiang.github.io/"><img class="img-fluid"
+          src="https://viccjiang.github.io/images/logo.png" alt="JIANGs Daily LAB" width="65" height="39"></a>
+      <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="開啟選單">
+        <i class="ti-menu h3"></i>
+      </button>
+
+      <div class="collapse navbar-collapse text-center" id="navigation">
+        <div class="desktop-view">
+          <ul class="navbar-nav mr-auto">
+            
+            <li class="nav-item">
+              <a class="nav-link" href="https://github.com/viccjiang" target="_blank" rel="noopener" title="GitHub" aria-label="GitHub"><i class="ti-github"></i></a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link" href="https://www.pinkoi.com/store/zhexiemao" target="_blank" rel="noopener" title="Pinkoi" aria-label="Pinkoi"><i class="ti-link"></i></a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link" href="https://jiangsdesign.medium.com/" target="_blank" rel="noopener" title="Medium" aria-label="Medium"><i class="ti-pencil-alt"></i></a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link" href="https://www.linkedin.com/in/wen-qing-jiang-351a04131" target="_blank" rel="noopener" title="LinkedIn" aria-label="LinkedIn"><i class="ti-linkedin"></i></a>
+            </li>
+            
+          </ul>
+        </div>
+
+        <a class="navbar-brand mx-auto desktop-view" href="https://viccjiang.github.io/"><img class="img-fluid"
+            src="https://viccjiang.github.io/images/logo.png" alt="JIANGs Daily LAB" width="65" height="39"></a>
+
+        <ul class="navbar-nav">
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://viccjiang.github.io/blog">所有文章</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://viccjiang.github.io/tags">標籤</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://viccjiang.github.io/about">關於我</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://viccjiang.github.io/contact">聯絡我</a>
+          </li>
+          
+          
+        </ul>
+
+        
+        <!-- search -->
+        <div class="search pl-lg-4">
+          <button id="searchOpen" class="search-btn"><i class="ti-search"></i></button>
+        </div>
+        
+
+        <!-- theme toggle -->
+        <button id="themeToggle" class="theme-toggle" type="button" aria-label="切換深色模式" title="切換深色 / 淺色模式">
+          <!-- moon (light 模式時顯示) -->
+          <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+          <!-- sun (dark 模式時顯示) -->
+          <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="4"></circle>
+            <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"></path>
+          </svg>
+        </button>
+
+        
+      </div>
+    </nav>
+  </div>
+</header>
+<!-- /navigation --><main id="main">
+
+
+<section class="section-sm">
+
+  <div class="container">
+    <div class="row">
+      
+      <div class="col-lg-4">
+  
+  <div class="widget">
+    
+    <h4 class="widget-title">關於我</h4>
+    
+    <img
+      src="https://viccjiang.github.io/images/author.jpg"
+      alt=""
+      width="720" height="720"
+      class="img-fluid author-thumb-sm d-block mx-auto rounded-circle mb-4"
+    />
+    
+    <p>Hey，我是 Jiang V ，
+Front end Developer &amp; Graphic Designer &amp; Dreamer</p>
+    <a href="https://viccjiang.github.io/about/" class="btn btn-outline-primary">了解更多</a>
+    
+  </div>
+  
+  <div class="widget">
+    <h4 class="widget-title">文章分類</h4>
+    <ul class="list-unstyled">
+      <li>
+        <a href="/categories/%e6%8a%80%e8%a1%93%e7%ad%86%e8%a8%98"
+          >技術筆記</a
+        >
+      </li>
+      <li>
+        <a href="/categories/%e7%94%9f%e6%b4%bb%e8%88%87%e9%96%b1%e8%ae%80"
+          >生活與閱讀</a
+        >
+      </li>
+      <li>
+        <a href="/categories/%e8%aa%b2%e7%a8%8b%e5%bf%83%e5%be%97"
+          >課程心得</a
+        >
+      </li>
+      <li>
+        <a href="/categories/%e8%bd%89%e8%81%b7%e4%b9%8b%e8%b7%af"
+          >轉職之路</a
+        >
+      </li>
+      <li>
+        <a href="/categories/%e9%96%8b%e7%99%bc%e5%b7%a5%e5%85%b7"
+          >開發工具</a
+        >
+      </li>
+    </ul>
+  </div>
+  
+  <div class="widget">
+    <h4 class="widget-title">社群連結</h4>
+    <ul class="list-inline social-links">
+      
+      <li class="list-inline-item">
+        <a href="https://github.com/viccjiang" target="_blank" rel="noopener" title="GitHub" aria-label="GitHub"><i class="ti-github"></i></a>
+      </li>
+      
+      <li class="list-inline-item">
+        <a href="https://www.pinkoi.com/store/zhexiemao" target="_blank" rel="noopener" title="Pinkoi" aria-label="Pinkoi"><i class="ti-link"></i></a>
+      </li>
+      
+      <li class="list-inline-item">
+        <a href="https://jiangsdesign.medium.com/" target="_blank" rel="noopener" title="Medium" aria-label="Medium"><i class="ti-pencil-alt"></i></a>
+      </li>
+      
+      <li class="list-inline-item">
+        <a href="https://www.linkedin.com/in/wen-qing-jiang-351a04131" target="_blank" rel="noopener" title="LinkedIn" aria-label="LinkedIn"><i class="ti-linkedin"></i></a>
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+      
+      <div class="col-lg-8 mb-5 mb-lg-0">
+        <h1 class="sr-only">分類：技術筆記</h1>
+        <div class="row">
+          
+          
+          <div class="col-12 mb-4">
+    <a href="https://viccjiang.github.io/blog/20260501_css_is_selector/" class="card-link" style="text-decoration: none; color: inherit;">
+    <article class="card" style="cursor: pointer;">
+        <div class="card-body">
+            <h2 class="h5 d-block mb-3">CSS :is() 是什麼？讓選擇器更簡潔的實用語法</h2>
+            <div class="mb-3 post-meta">
+                <span>Jiang</span>
+                
+                <span class="border-bottom border-primary px-2 mx-1"></span>
+                <time datetime="2026-05-01">2026 年 5 月 1 日</time>
+                
+                
+                <span class="border-bottom border-primary px-2 mx-1"></span>
+                <span class="text-primary">技術筆記</span>
+                
+            </div>
+            <p class="card-text d-none d-md-block">在寫 CSS 時，我們常常會遇到多個 selector 需要套用同一組樣式的情境。
+如果每個 selector …</p>
+        </div>
+        
+        <img src="https://viccjiang.github.io/images/post/post-20260501.jpg" alt="CSS :is() 是什麼？讓選擇器更簡潔的實用語法" width="200" height="150" loading="lazy" decoding="async" style="width: 200px; min-width: 200px; height: 150px; object-fit: cover; border-radius: 0 .25rem .25rem 0;">
+        
+    </article>
+    </a>
+    <hr style="margin: 10px 0 0 0;">
+</div>
+
+          
+          <div class="col-12 mb-4">
+    <a href="https://viccjiang.github.io/blog/20220424_ajax_remote_data/" class="card-link" style="text-decoration: none; color: inherit;">
+    <article class="card" style="cursor: pointer;">
+        <div class="card-body">
+            <h2 class="h5 d-block mb-3">AJAX 從遠端讀取即時資料</h2>
+            <div class="mb-3 post-meta">
+                <span>Jiang</span>
+                
+                <span class="border-bottom border-primary px-2 mx-1"></span>
+                <time datetime="2022-04-24">2022 年 4 月 24 日</time>
+                
+                
+                <span class="border-bottom border-primary px-2 mx-1"></span>
+                <span class="text-primary">技術筆記</span>
+                
+            </div>
+            <p class="card-text d-none d-md-block">GET 方法串接API 文件讀取資料 ( JSON )
+該怎麼接資料？四種 GET …</p>
+        </div>
+        
+        <img src="https://viccjiang.github.io/images/post/medium/20220424_ajax_remote_data-01.jpg" alt="AJAX 從遠端讀取即時資料" width="200" height="150" loading="lazy" decoding="async" style="width: 200px; min-width: 200px; height: 150px; object-fit: cover; border-radius: 0 .25rem .25rem 0;">
+        
+    </article>
+    </a>
+    <hr style="margin: 10px 0 0 0;">
+</div>
+
+          
+          <div class="col-12 mb-4">
+    <a href="https://viccjiang.github.io/blog/20210208_js_note_04/" class="card-link" style="text-decoration: none; color: inherit;">
+    <article class="card" style="cursor: pointer;">
+        <div class="card-body">
+            <h2 class="h5 d-block mb-3">JavaScript 直播班 課前note #4</h2>
+            <div class="mb-3 post-meta">
+                <span>Jiang</span>
+                
+                <span class="border-bottom border-primary px-2 mx-1"></span>
+                <time datetime="2021-02-08">2021 年 2 月 8 日</time>
+                
+                
+                <span class="border-bottom border-primary px-2 mx-1"></span>
+                <span class="text-primary">技術筆記</span>
+                
+            </div>
+            <p class="card-text d-none d-md-block">比較運算子、邏輯運算子
+比較運算子 codepen
+&amp;lt; &amp;gt;= &amp;lt;= == !=
+比較運算子， …</p>
+        </div>
+        
+        <img src="https://viccjiang.github.io/images/post/medium/20210208_js_note_04-01.jpg" alt="JavaScript 直播班 課前note #4" width="200" height="150" loading="lazy" decoding="async" style="width: 200px; min-width: 200px; height: 150px; object-fit: cover; border-radius: 0 .25rem .25rem 0;">
+        
+    </article>
+    </a>
+    <hr style="margin: 10px 0 0 0;">
+</div>
+
+          
+          <div class="col-12 mb-4">
+    <a href="https://viccjiang.github.io/blog/20210208_js_note_03/" class="card-link" style="text-decoration: none; color: inherit;">
+    <article class="card" style="cursor: pointer;">
+        <div class="card-body">
+            <h2 class="h5 d-block mb-3">JavaScript 直播班 課前note #3</h2>
+            <div class="mb-3 post-meta">
+                <span>Jiang</span>
+                
+                <span class="border-bottom border-primary px-2 mx-1"></span>
+                <time datetime="2021-02-08">2021 年 2 月 8 日</time>
+                
+                
+                <span class="border-bottom border-primary px-2 mx-1"></span>
+                <span class="text-primary">技術筆記</span>
+                
+            </div>
+            <p class="card-text d-none d-md-block">變數：布林、undefined、null
+布林 Boolean 介紹 codepen
+boolean …</p>
+        </div>
+        
+        <img src="https://viccjiang.github.io/images/post/medium/20210208_js_note_03-01.jpg" alt="JavaScript 直播班 課前note #3" width="200" height="150" loading="lazy" decoding="async" style="width: 200px; min-width: 200px; height: 150px; object-fit: cover; border-radius: 0 .25rem .25rem 0;">
+        
+    </article>
+    </a>
+    <hr style="margin: 10px 0 0 0;">
+</div>
+
+          
+          <div class="col-12 mb-4">
+    <a href="https://viccjiang.github.io/blog/20210208_js_note_02/" class="card-link" style="text-decoration: none; color: inherit;">
+    <article class="card" style="cursor: pointer;">
+        <div class="card-body">
+            <h2 class="h5 d-block mb-3">JavaScript 直播班 課前note #2</h2>
+            <div class="mb-3 post-meta">
+                <span>Jiang</span>
+                
+                <span class="border-bottom border-primary px-2 mx-1"></span>
+                <time datetime="2021-02-08">2021 年 2 月 8 日</time>
+                
+                
+                <span class="border-bottom border-primary px-2 mx-1"></span>
+                <span class="text-primary">技術筆記</span>
+                
+            </div>
+            <p class="card-text d-none d-md-block">課前作業四：鍛鍊拆解任務流程與設定變數
+第一題codepen
+「阿貓與阿狗玩棒球，要記錄比分」
+流程一：第一回 …</p>
+        </div>
+        
+        <img src="https://viccjiang.github.io/images/post/medium/20210208_js_note_02-01.jpg" alt="JavaScript 直播班 課前note #2" width="200" height="150" loading="lazy" decoding="async" style="width: 200px; min-width: 200px; height: 150px; object-fit: cover; border-radius: 0 .25rem .25rem 0;">
+        
+    </article>
+    </a>
+    <hr style="margin: 10px 0 0 0;">
+</div>
+
+          
+        </div>
+      </div>
+
+
+      
+      <div class="col-12 mt-5">
+        
+    <ul class="pagination pagination-default">
+      <li class="page-item disabled">
+        <a aria-disabled="true" aria-label="First" class="page-link" role="button" tabindex="-1"><span aria-hidden="true">&laquo;&laquo;</span></a>
+      </li>
+      <li class="page-item disabled">
+        <a aria-disabled="true" aria-label="Previous" class="page-link" role="button" tabindex="-1"><span aria-hidden="true">&laquo;</span></a>
+      </li>
+      <li class="page-item active">
+        <a aria-current="page" aria-label="Page 1" class="page-link" role="button">1</a>
+      </li>
+      <li class="page-item">
+        <a href="/categories/%E6%8A%80%E8%A1%93%E7%AD%86%E8%A8%98/page/2/" aria-label="Page 2" class="page-link" role="button">2</a>
+      </li>
+      <li class="page-item">
+        <a href="/categories/%E6%8A%80%E8%A1%93%E7%AD%86%E8%A8%98/page/2/" aria-label="Next" class="page-link" role="button"><span aria-hidden="true">&raquo;</span></a>
+      </li>
+      <li class="page-item">
+        <a href="/categories/%E6%8A%80%E8%A1%93%E7%AD%86%E8%A8%98/page/2/" aria-label="Last" class="page-link" role="button"><span aria-hidden="true">&raquo;&raquo;</span></a>
+      </li>
+    </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+        </main>
+
+<footer style="margin-top: 50px;">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center mb-5">
+        <a href="https://viccjiang.github.io/"><img src="https://viccjiang.github.io/images/logo.png" alt="JIANGs Daily LAB" width="65" height="39" loading="lazy" decoding="async"></a>
+      </div>
+      <div class="col-lg-4 col-sm-6 mb-5">
+        <h6 class="mb-4">社群連結</h6>
+        <ul class="list-unstyled">
+          
+          <li class="mb-3"><a class="text-dark" href="https://github.com/viccjiang" target="_blank" rel="noopener">GitHub</a></li>
+          
+          <li class="mb-3"><a class="text-dark" href="https://www.pinkoi.com/store/zhexiemao" target="_blank" rel="noopener">Pinkoi</a></li>
+          
+          <li class="mb-3"><a class="text-dark" href="https://jiangsdesign.medium.com/" target="_blank" rel="noopener">Medium</a></li>
+          
+          <li class="mb-3"><a class="text-dark" href="https://www.linkedin.com/in/wen-qing-jiang-351a04131" target="_blank" rel="noopener">LinkedIn</a></li>
+          
+        </ul>
+      </div>
+      <div class="col-lg-4 col-sm-6 mb-5">
+        <h6 class="mb-4">文章分類</h6>
+        <ul class="list-unstyled">
+          <li class="mb-3"><a class="text-dark"
+              href="/categories/%e6%8a%80%e8%a1%93%e7%ad%86%e8%a8%98">技術筆記</a>
+          </li>
+          <li class="mb-3"><a class="text-dark"
+              href="/categories/%e7%94%9f%e6%b4%bb%e8%88%87%e9%96%b1%e8%ae%80">生活與閱讀</a>
+          </li>
+          <li class="mb-3"><a class="text-dark"
+              href="/categories/%e8%aa%b2%e7%a8%8b%e5%bf%83%e5%be%97">課程心得</a>
+          </li>
+          <li class="mb-3"><a class="text-dark"
+              href="/categories/%e8%bd%89%e8%81%b7%e4%b9%8b%e8%b7%af">轉職之路</a>
+          </li>
+          <li class="mb-3"><a class="text-dark"
+              href="/categories/%e9%96%8b%e7%99%bc%e5%b7%a5%e5%85%b7">開發工具</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-lg-4 col-sm-6 mb-5">
+        <h6 class="mb-4">網站地圖</h6>
+        <ul class="list-unstyled">
+          
+          <li class="mb-3"><a class="text-dark" href="https://viccjiang.github.io/about">關於我</a></li>
+          
+          <li class="mb-3"><a class="text-dark" href="https://viccjiang.github.io/blog">所有文章</a></li>
+          
+          <li class="mb-3"><a class="text-dark" href="https://viccjiang.github.io/contact">聯絡我</a></li>
+          
+        </ul>
+      </div>
+      <div class="col-12 border-top py-4 text-center">
+        © 2020–2026 <a href="https://viccjiang.github.io/">JIANGs</a> 版權所有
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+<!-- search overlay -->
+<div id="search-overlay" class="search-overlay">
+  <div class="search-overlay-inner">
+    <button id="searchClose" class="search-overlay-close"><i class="ti-close"></i></button>
+    <div class="search-overlay-header">
+      <div class="search-input-wrapper">
+        <i class="ti-search search-input-icon"></i>
+        <input id="search-query" type="text" placeholder="搜尋文章..." autocomplete="off">
+      </div>
+    </div>
+    <div class="search-overlay-results" id="search-results"></div>
+  </div>
+</div>
+
+
+<script>
+  var indexURL = "https://viccjiang.github.io/index.json"
+</script>
+
+<script>
+  (function () {
+    var btn = document.getElementById('themeToggle');
+    if (!btn) return;
+    btn.addEventListener('click', function () {
+      var current = document.documentElement.getAttribute('data-theme') === 'dark' ? 'dark' : 'light';
+      var next = current === 'dark' ? 'light' : 'dark';
+      document.documentElement.setAttribute('data-theme', next);
+      try { localStorage.setItem('theme', next); } catch (e) {}
+    });
+    if (window.matchMedia) {
+      var mql = window.matchMedia('(prefers-color-scheme: dark)');
+      var handler = function (e) {
+        try { if (localStorage.getItem('theme')) return; } catch (err) {}
+        document.documentElement.setAttribute('data-theme', e.matches ? 'dark' : 'light');
+      };
+      if (mql.addEventListener) mql.addEventListener('change', handler);
+      else if (mql.addListener) mql.addListener(handler);
+    }
+  })();
+</script>
+
+<!-- JS Plugins -->
+
+<script src="https://viccjiang.github.io/plugins/jQuery/jquery.min.js"></script>
+
+<script src="https://viccjiang.github.io/plugins/bootstrap/bootstrap.bundle.min.js"></script>
+
+<script src="https://viccjiang.github.io/plugins/search/fuse.min.js"></script>
+
+<script src="https://viccjiang.github.io/plugins/search/mark.js"></script>
+
+<script src="https://viccjiang.github.io/plugins/search/search.js"></script>
+
+<!-- Main Script -->
+
+<script src="/js/script.min.bea5da44f9af7dbea94e00382907b5a31788440320164f5caa0711f0ba861210.js" integrity="sha256-vqXaRPmvfb6pTgA4KQe1oxeIRAMgFk9cqgcR8LqGEhA="></script></body>
+</html>

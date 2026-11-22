@@ -17,6 +17,17 @@
 前情提要 2021年應該算是一個的轉捩點，三月時公司宣布要縮編，部分員工被裁員，講到這裡不免感到有點感慨，因為裁的員也包括我 ( 淚奔 ~ 但其實在去年底切版直播班結束之後，就已經在抱著打算年後可能會離職然後全心投入學習的打算，只是沒想到來的如此快，所以當下聽到公司的縮編政策時，老實說心情有點哭笑不得，老天爺算是眷顧我嗎，讓我有一筆經費可以在待業時全心投入學習，所以四月就開始跟前同事開始研究失業補助的部分，接著剛好遇上嚴重的五月疫情大爆發大家都不太出門了，六角學院也開了一系列的免費課程跟付費直播班課程讓大家在家學習，加上當時疫情期間求職滿困難的，索性就決定都待在家，開始馬不停蹄的持續學習直到現在，當然在家都是獨自在線上自學，身邊也鮮少有懂程式的朋友，所以了解到這是一條孤獨且陌生的路，但漸漸的發現六角學院社群力量的強大，不管是在 slack 還是 Discord 都讓獨自學習的人，有人可以問，有助教可以協助，有老師 24 小時的支援，是一個很大的心理支持系統！</description>
     </item>
     <item>
+      <title>六角學院 JavaScript 直播班 2021 春季 - JS學徒打怪團練</title>
+      <link>https://viccjiang.github.io/blog/weblayout_training_javascript_20210421/</link>
+      <pubDate>Wed, 21 Apr 2021 09:07:47 +0800</pubDate>
+      <guid>https://viccjiang.github.io/blog/weblayout_training_javascript_20210421/</guid>
+      <description>學習前端技術，不停的挑戰與修煉。
+自從去年初 COVID-19 疫情開始後，扣除上班的時間，待在家的時間變多變長了，思考人生的機會變多了，某天也是突然有種危機意識感「如果在這種時機轉職，會是怎樣呢？」這個人生申論題時常在我的生活中出現，因為我有一顆不安於現狀的心，時常在想如果某件事有變化會怎樣，雖然有時候是庸人自擾，但也許也是一種未雨綢繆，就因為自己這種個性吧，嘗試過很多事情很多工作，但你永遠不可能依賴著工作過生活，所以人生必須要有別的選項，而不是只有工作！
+這篇記錄著進入JS絕望峽谷產生的各種心情起伏 ～
+為什麼說是越級打怪呢？因為雖然已經有上過切版班的一些些基礎，卻又很迫切地想要學更進階，大概就像是還沒站穩就想要跑的感覺，然後現在都上完了JS直播班，有些事情還沒頓悟！？
+原來我也正踏入了JS的絕望峽谷呀 ～</description>
+    </item>
+    <item>
       <title>JavaScript 直播班 課前note #4</title>
       <link>https://viccjiang.github.io/blog/20210208_js_note_04/</link>
       <pubDate>Mon, 08 Feb 2021 12:09:02 +0800</pubDate>
@@ -46,6 +57,14 @@ undefined 介紹 codepen</description>
 「阿貓與阿狗玩棒球，要記錄比分」
 流程一：第一回合，阿貓得 3 分，阿狗得 2 分
 流程二：第二回合，阿貓得 20 分，阿狗得 3 分</description>
+    </item>
+    <item>
+      <title>六角學院 JavaScript 直播班 課前筆記#1</title>
+      <link>https://viccjiang.github.io/blog/weblayout_training_javascript_20210128/</link>
+      <pubDate>Thu, 28 Jan 2021 09:07:47 +0800</pubDate>
+      <guid>https://viccjiang.github.io/blog/weblayout_training_javascript_20210128/</guid>
+      <description>基礎觀念：學程式 = 任務拆解 ( 拆解成小任務 )
+變數(Variable)與值(Value) 宣告變數的方法： let const var 基本型別(primitives types) 介紹 字串 (String) 數字 (Number) 布林 (Boolean) undefined null Symbol 型別操作方法 物件型別，例如陣列(array)與物件(object) JavaScript 記憶體 不會跨頁面共享記憶體空間，每頁網頁都有個別存放位置 小駝峰命名法 變數開頭命名用小寫 若開頭大寫是有其他用意的，主要是建立 class 類別所用(比較進階用法)，所以還請大家先習慣用小駝峰命名 變數、常數與命名 typeof 可以查詢型別 如何宣告變數 ?</description>
     </item>
   </channel>
 </rss>

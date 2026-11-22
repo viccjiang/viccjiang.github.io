@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on JIANGs Daily LAB</title>
+    <title>標籤 on JIANGs Daily LAB</title>
     <link>https://viccjiang.github.io/tags/</link>
-    <description>Recent content in Tags on JIANGs Daily LAB</description>
+    <description>Recent content in 標籤 on JIANGs Daily LAB</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-Hant-TW</language>
     <lastBuildDate>Fri, 01 May 2026 18:00:00 +0800</lastBuildDate>
@@ -93,24 +93,10 @@
       <description></description>
     </item>
     <item>
-      <title>hexschool</title>
-      <link>https://viccjiang.github.io/tags/hexschool/</link>
+      <title>前端</title>
+      <link>https://viccjiang.github.io/tags/%E5%89%8D%E7%AB%AF/</link>
       <pubDate>Wed, 08 May 2024 09:07:47 +0800</pubDate>
-      <guid>https://viccjiang.github.io/tags/hexschool/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>前端學習</title>
-      <link>https://viccjiang.github.io/tags/%E5%89%8D%E7%AB%AF%E5%AD%B8%E7%BF%92/</link>
-      <pubDate>Wed, 08 May 2024 09:07:47 +0800</pubDate>
-      <guid>https://viccjiang.github.io/tags/%E5%89%8D%E7%AB%AF%E5%AD%B8%E7%BF%92/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>進修課程</title>
-      <link>https://viccjiang.github.io/tags/%E9%80%B2%E4%BF%AE%E8%AA%B2%E7%A8%8B/</link>
-      <pubDate>Wed, 08 May 2024 09:07:47 +0800</pubDate>
-      <guid>https://viccjiang.github.io/tags/%E9%80%B2%E4%BF%AE%E8%AA%B2%E7%A8%8B/</guid>
+      <guid>https://viccjiang.github.io/tags/%E5%89%8D%E7%AB%AF/</guid>
       <description></description>
     </item>
     <item>
@@ -128,17 +114,17 @@
       <description></description>
     </item>
     <item>
-      <title>前端</title>
-      <link>https://viccjiang.github.io/tags/%E5%89%8D%E7%AB%AF/</link>
-      <pubDate>Sun, 24 Apr 2022 18:06:06 +0800</pubDate>
-      <guid>https://viccjiang.github.io/tags/%E5%89%8D%E7%AB%AF/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Vue</title>
       <link>https://viccjiang.github.io/tags/vue/</link>
       <pubDate>Wed, 09 Mar 2022 20:46:07 +0800</pubDate>
       <guid>https://viccjiang.github.io/tags/vue/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Vue直播班</title>
+      <link>https://viccjiang.github.io/tags/vue%E7%9B%B4%E6%92%AD%E7%8F%AD/</link>
+      <pubDate>Wed, 09 Mar 2022 20:46:07 +0800</pubDate>
+      <guid>https://viccjiang.github.io/tags/vue%E7%9B%B4%E6%92%AD%E7%8F%AD/</guid>
       <description></description>
     </item>
     <item>
@@ -153,20 +139,6 @@
       <link>https://viccjiang.github.io/tags/%E5%88%87%E7%89%88%E7%9B%B4%E6%92%AD%E7%8F%AD/</link>
       <pubDate>Tue, 31 Aug 2021 10:41:32 +0800</pubDate>
       <guid>https://viccjiang.github.io/tags/%E5%88%87%E7%89%88%E7%9B%B4%E6%92%AD%E7%8F%AD/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Vue直播班</title>
-      <link>https://viccjiang.github.io/tags/vue%E7%9B%B4%E6%92%AD%E7%8F%AD/</link>
-      <pubDate>Wed, 07 Jul 2021 12:48:23 +0800</pubDate>
-      <guid>https://viccjiang.github.io/tags/vue%E7%9B%B4%E6%92%AD%E7%8F%AD/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>學習</title>
-      <link>https://viccjiang.github.io/tags/%E5%AD%B8%E7%BF%92/</link>
-      <pubDate>Wed, 07 Jul 2021 12:48:23 +0800</pubDate>
-      <guid>https://viccjiang.github.io/tags/%E5%AD%B8%E7%BF%92/</guid>
       <description></description>
     </item>
     <item>
@@ -195,20 +167,6 @@
       <link>https://viccjiang.github.io/tags/%E8%81%B7%E6%B6%AF/</link>
       <pubDate>Wed, 05 May 2021 08:47:47 +0800</pubDate>
       <guid>https://viccjiang.github.io/tags/%E8%81%B7%E6%B6%AF/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Front End Development</title>
-      <link>https://viccjiang.github.io/tags/front-end-development/</link>
-      <pubDate>Wed, 24 Feb 2021 16:16:51 +0800</pubDate>
-      <guid>https://viccjiang.github.io/tags/front-end-development/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>職涯規劃</title>
-      <link>https://viccjiang.github.io/tags/%E8%81%B7%E6%B6%AF%E8%A6%8F%E5%8A%83/</link>
-      <pubDate>Mon, 22 Feb 2021 17:59:37 +0800</pubDate>
-      <guid>https://viccjiang.github.io/tags/%E8%81%B7%E6%B6%AF%E8%A6%8F%E5%8A%83/</guid>
       <description></description>
     </item>
     <item>
