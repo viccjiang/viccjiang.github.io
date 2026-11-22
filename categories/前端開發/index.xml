@@ -13,8 +13,9 @@
       <link>https://viccjiang.github.io/blog/20260501_css_is_selector/</link>
       <pubDate>Fri, 01 May 2026 18:00:00 +0800</pubDate>
       <guid>https://viccjiang.github.io/blog/20260501_css_is_selector/</guid>
-      <description>CSS :is() 是什麼？讓選擇器更簡潔的實用語法 在寫 CSS 時，我們常常會遇到多個 selector 需要套用同一組樣式的情境。
-如果每個 selector 都分開寫，CSS 很容易變得冗長、重複，也不太好維護。</description>
+      <description>在寫 CSS 時，我們常常會遇到多個 selector 需要套用同一組樣式的情境。
+如果每個 selector 都分開寫，CSS 很容易變得冗長、重複，也不太好維護。
+這時候就可以使用 CSS 的 :is() 選擇器函式。</description>
     </item>
     <item>
       <title>AJAX 從遠端讀取即時資料</title>
