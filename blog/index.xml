@@ -9,6 +9,13 @@
     <lastBuildDate>Tue, 29 Oct 2019 13:49:23 +0800</lastBuildDate>
     <atom:link href="https://viccjiang.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>網站部署流程測試</title>
+      <link>https://viccjiang.github.io/blog/deployment-smoke-test/</link>
+      <pubDate>Tue, 24 Nov 2026 20:57:43 +0800</pubDate>
+      <guid>https://viccjiang.github.io/blog/deployment-smoke-test/</guid>
+      <description>這是一篇部署測試文章，用來確認部落格從合併原始碼、由 Hugo 建置，到在 GitHub Pages 上線的流程。如果你能在正式網站開啟這個頁面，就表示這次的文章已成功發布。</description>
+    </item>
+    <item>
       <title>CSS :is() 是什麼？讓選擇器更簡潔的實用語法</title>
       <link>https://viccjiang.github.io/blog/20260501_css_is_selector/</link>
       <pubDate>Fri, 01 May 2026 18:00:00 +0800</pubDate>
