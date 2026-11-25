@@ -6,8 +6,16 @@
     <description>Recent content in 課程心得 on JIANGs Daily LAB</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-Hant-TW</language>
-    <lastBuildDate>Sun, 01 Feb 2026 18:00:00 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 25 Nov 2026 21:25:48 +0800</lastBuildDate>
     <atom:link href="https://viccjiang.github.io/categories/%E8%AA%B2%E7%A8%8B%E5%BF%83%E5%BE%97/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AI 時代，工程師的下一步：把自己的價值說清楚</title>
+      <link>https://viccjiang.github.io/blog/ai-era-engineer-value/</link>
+      <pubDate>Wed, 25 Nov 2026 21:25:48 +0800</pubDate>
+      <guid>https://viccjiang.github.io/blog/ai-era-engineer-value/</guid>
+      <description>如果明天 AI 能做完我一半的工作，我會怎麼介紹自己？
+這是六角學院《AI 時代，工程師的下一步》講座裡的一個提問。這個問題我聽了特別有感，因為 AI 早就不是「之後再研究」的東西了：我每天寫前端、查問題、做 Code Review，身邊都開著 AI 工具。</description>
+    </item>
     <item>
       <title>2026 後端工程師體驗營</title>
       <link>https://viccjiang.github.io/blog/20260201_backend_camp/</link>
