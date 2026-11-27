@@ -1,19 +1,19 @@
 <!DOCTYPE html>
 <html lang="zh-Hant-TW"><head>
   <meta charset="utf-8">
-  <title>Get In Touch | JIANGs Daily LAB</title>
+  <title>聯絡我 | JIANGs Daily LAB</title>
 <meta name="description" content="有任何問題、合作邀約，或想交流前端與設計，歡迎透過表單留言給我。">
 
 <meta property="og:site_name" content="JIANGs Daily LAB">
 <meta property="og:locale" content="zh_TW">
-<meta property="og:title" content="Get In Touch">
+<meta property="og:title" content="聯絡我">
 <meta property="og:description" content="有任何問題、合作邀約，或想交流前端與設計，歡迎透過表單留言給我。">
 <meta property="og:url" content="https://viccjiang.github.io/contact/">
 <meta property="og:image" content="https://viccjiang.github.io/images/author.jpg">
 <meta property="og:type" content="website">
 
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Get In Touch">
+<meta name="twitter:title" content="聯絡我">
 <meta name="twitter:description" content="有任何問題、合作邀約，或想交流前端與設計，歡迎透過表單留言給我。">
 <meta name="twitter:image" content="https://viccjiang.github.io/images/author.jpg">
 
@@ -152,41 +152,33 @@
 </header>
 <!-- /navigation --><main id="main">
 
-
-
-</div>
-</div>
-</div>
-</div>
-</section>
-
-
 <section class="section-sm pb-0">
   <div class="container">
     <div class="row justify-content-center">
-      <div class="col-lg-8 text-center">
-        <h1 class="h2 font-weight-bold mb-4">Hi Write To Me</h1>
-
+      <div class="col-lg-8">
+        <h1 class="h2 font-weight-bold mb-3 text-center">聯絡我</h1>
+        
+        <div class="content contact-intro mb-4 text-center"><p>有任何問題、合作邀約，或想交流前端與設計，歡迎透過下方表單留言給我！</p>
+</div>
+        
 
         <form class="form-body" method="POST" action="https://formspree.io/f/moqpwevr">
           <div class="form-group">
-            <label for="email"></label>
-
-
-            <input name="Email" id="email" type="email" class="form-control" placeholder="請輸入您的Email" required>
+            <label for="email">Email（必填）</label>
+            <input name="Email" id="email" type="email" class="form-control" placeholder="請輸入您的Email" autocomplete="email" required>
           </div>
           <div class="form-group">
-            <label for="username"></label>
-            <input name="姓名" id="username" type="text" class="form-control" placeholder="請輸入您的姓名">
+            <label for="username">姓名</label>
+            <input name="姓名" id="username" type="text" class="form-control" placeholder="請輸入您的姓名" autocomplete="name">
           </div>
           <div class="form-group">
-            <label for="comment"></label>
-            <textarea name="留言" id="comment" minlength="2" maxlength="50" cols="30" rows="10" class="form-control"
+            <label for="comment">留言（必填，最多 500 字）</label>
+            <textarea name="留言" id="comment" minlength="2" maxlength="500" cols="30" rows="10" class="form-control"
               placeholder="請輸入留言" required></textarea>
           </div>
           
           <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true" style="display:none">
-          <div class="form-group">
+          <div class="form-group text-center">
             <button class="btn btn-primary" type="submit">送出表單</button>
           </div>
         </form>
