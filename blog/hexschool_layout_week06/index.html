@@ -241,7 +241,7 @@
 <li>輸入指令 npm install 安裝插件環境，會生成「node_modules 資料夾」</li>
 <li>輸入指令 gulp 執行</li>
 <li>瀏覽器，檢查網頁
-<img src="/images/post/hexschool_layout_week06-01.png" alt="" width="1035" height="374" loading="lazy" decoding="async"></li>
+<img src="/images/post/hexschool_layout_week06-01.png" alt="在命令提示字元進入專案資料夾，執行 npm install 與 gulp" width="1035" height="374" loading="lazy" decoding="async"></li>
 </ol>
 </blockquote>
 <ul>
@@ -272,7 +272,7 @@
 <p>使用Gulp範例檔案來編譯時，完全不需要使用 Live Sass Compiler 的 Watch SCSS 功能 或是 Prepros 等工具來編譯！</p>
 </blockquote>
 <p>Q6：依老師教學影片操作有編譯成功，但 Live Sass 編譯出的檔案多了很多個，請問有人有遇到一樣的問題嗎？</p>
-<p><img src="/images/post/hexschool_layout_week06-02.png" alt="" width="663" height="391" loading="lazy" decoding="async"></p>
+<p><img src="/images/post/hexschool_layout_week06-02.png" alt="VS Code 中 all.scss 用 @import 引入 Bootstrap 與 index" width="663" height="391" loading="lazy" decoding="async"></p>
 <blockquote>
 <p>如果不希望他編譯出來，到 bootstrap 資料夾，將對應檔案加上，加上下底線就好，例如 _bootstrap.scss，這是正常的，live sass 會將所有 scss 都編譯成 .css，老師 demo 沒編譯出那些，估計是剛好沒監聽到！</p>
 </blockquote>
@@ -280,7 +280,7 @@
 <p>另一位同學分享：檔名加上底線，不加入監聽就好了。
 錯誤示範：<del>左側以第6週當根目錄，子目錄裡所有的SCSS都編譯跑到外側了，希望其他同學不要跟我一樣設定錯誤</del></p>
 </blockquote>
-<p><img src="/images/post/hexschool_layout_week06-03.png" alt="" width="841" height="638" loading="lazy" decoding="async"></p>
+<p><img src="/images/post/hexschool_layout_week06-03.png" alt="VS Code 資料夾中 Live Sass 編譯出多餘 CSS 檔的畫面" width="841" height="638" loading="lazy" decoding="async"></p>
 <p>Q7：想問關於圖片尺寸設定的問題。不管是使用手刻的&quot;max-width:100%&quot; 以及 &ldquo;height:auto&quot;或是bs4所使用的 &ldquo;.img-fluid&rdquo;，都會遇到圖片實際的縮放高度，和設計稿不一樣，但一般又最好不要寫死圖片高度，請問有沒有更好的方式，讓畫面上的圖片大小可以完全符合設計稿呢?  或者是改成&quot;background-image&quot;的形式來呈現呢?</p>
 <blockquote>
 <p>目前坊間主流大概都是用類似 background cover 去做
@@ -300,7 +300,7 @@
 想知道有沒有更好的設定方法+1</p>
 </blockquote>
 <blockquote>
-<p>如果以這次w6的設計稿為例子，就是用背景圖，然後拿這幾張圖片的高度，去除以整個view port的高度，就可以得到一個百分比，比如說30%。所以在背景圖所在的div，寫上height: 30vh，就可以有縮放效果了<img src="/images/post/hexschool_layout_week06-04.png" alt="" width="814" height="399" loading="lazy" decoding="async"></p>
+<p>如果以這次w6的設計稿為例子，就是用背景圖，然後拿這幾張圖片的高度，去除以整個view port的高度，就可以得到一個百分比，比如說30%。所以在背景圖所在的div，寫上height: 30vh，就可以有縮放效果了<img src="/images/post/hexschool_layout_week06-04.png" alt="香水電商的產品卡片，三張圖片比例不一致" width="814" height="399" loading="lazy" decoding="async"></p>
 </blockquote>
 <blockquote>
 <p>觀念影片：分享六角YT的一個影片
